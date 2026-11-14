@@ -1,0 +1,74 @@
+---
+interface Offer {
+	title: string;
+	copy: string;
+}
+
+interface Step {
+	title: string;
+	copy: string;
+}
+
+interface Props {
+	eyebrow: string;
+	title: string;
+	lead: string;
+	offersHeading: string;
+	offers: Offer[];
+	steps: Step[];
+}
+
+const { eyebrow, title, lead, offersHeading, offers, steps } = Astro.props;
+---
+
+<main id="main">
+	<section class="page-hero page-width">
+		<div class="page-hero__copy">
+			<p class="eyebrow">{eyebrow}</p>
+			<h1 set:html={title} />
+			<p class="hero-lead">{lead}</p>
+			<a class="button" href="/#contact">Let's plan your event</a>
+		</div>
+		<div class="page-hero__art" aria-hidden="true">
+			<span class="page-hero__art-disc"></span>
+			<span class="page-hero__art-label">MAKE<br />IT A<br /><em>NIGHT.</em></span>
+		</div>
+	</section>
+
+	<section class="section page-width">
+		<div class="section-heading">
+			<div>
+				<p class="eyebrow">The good stuff</p>
+				<h2>{offersHeading}</h2>
+			</div>
+			<p class="section-aside">Tell Rachel what matters to you. The details can be shaped around your event.</p>
+		</div>
+		<div class="offer-grid">
+			{offers.map((offer, index) => (
+				<article class="offer-card">
+					<span class="offer-card__number">0{index + 1}</span>
+					<h3>{offer.title}</h3>
+					<p>{offer.copy}</p>
+				</article>
+			))}
+		</div>
+	</section>
+
+	<section class="steps-band">
+		<div class="page-width">
+			<p class="eyebrow">Easy does it</p>
+			<h2>how we make it <em>happen.</em></h2>
+			<div class="steps-grid">
+				{steps.map((step, index) => (
+					<article class="step-card">
+						<span class="step-card__number">0{index + 1}</span>
+						<h3>{step.title}</h3>
+						<p>{step.copy}</p>
+					</article>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<slot />
+</main>

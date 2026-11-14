@@ -1,0 +1,27 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import ServicePage from "../components/ServicePage.astro";
+import ContactCta from "../components/ContactCta.astro";
+---
+
+<SiteLayout title="Weddings | DJ Rachel Entertainment" description="A working draft of DJ Rachel's wedding DJ and MC page.">
+	<ServicePage
+		eyebrow="Wedding DJ + MC"
+		title="your love story,<br /><em>your vibe,</em><br />your way."
+		lead="No script, no one-size-fits-all playlist. Plan the music and moments together, then enjoy the day while Rachel helps keep the night moving."
+		offersHeading="everything your day needs"
+		offers={[
+			{ title: "Ceremony audio", copy: "Microphones and music for the moments you want every guest to hear." },
+			{ title: "Cocktail hour", copy: "A soundtrack that sets the mood and leaves room for conversation." },
+			{ title: "Reception + dance floor", copy: "A mix shaped by your favorites, your guests, and the energy in the room." },
+			{ title: "MC + timeline", copy: "A warm voice on the mic and help coordinating the key moments with your vendor team." },
+		]}
+		steps={[
+			{ title: "Let's talk", copy: "Share your plans, your people, and the kind of night you want." },
+			{ title: "Make the plan", copy: "Gather the songs, special moments, and event details that matter to you." },
+			{ title: "Enjoy your day", copy: "Be with your people while the music and schedule come together." },
+		]}
+	>
+		<ContactCta />
+	</ServicePage>
+</SiteLayout>

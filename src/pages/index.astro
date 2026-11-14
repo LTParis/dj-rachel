@@ -1,0 +1,102 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import ContactCta from "../components/ContactCta.astro";
+import { serviceCards, values } from "../data/site";
+---
+
+<SiteLayout
+	title="DJ Rachel Entertainment | Your vibe, your way"
+	description="A working website preview for DJ Rachel Entertainment."
+>
+	<main id="main">
+		<section class="hero page-width">
+			<div class="hero-copy">
+				<p class="eyebrow">DJ · Event host · Party rocker</p>
+				<h1>your vibe,<br /><em>your way.</em></h1>
+				<p class="hero-lead">
+					Open-format DJ and MC for weddings, brands, and nights worth celebrating.
+					Bold mixes, thoughtful planning, and a dance floor that feels like yours.
+				</p>
+				<div class="button-row">
+					<a class="button" href="#contact">Plan your event</a>
+					<a class="text-link" href="/about/">Get to know Rachel <span aria-hidden="true">→</span></a>
+				</div>
+			</div>
+			<div class="hero-art" role="img" aria-label="Illustration of a vinyl record on a DJ turntable">
+				<div class="record">
+					<div class="record-label">DJ<br />RACHEL</div>
+				</div>
+				<div class="tonearm" aria-hidden="true"></div>
+				<p class="art-caption"><span>01</span> GOOD MUSIC. GOOD PEOPLE. GOOD NIGHT.</p>
+			</div>
+		</section>
+
+		<section class="intro-strip" aria-label="At a glance">
+			<div class="page-width intro-strip__inner">
+				<p>Open-format music</p>
+				<span aria-hidden="true">✳</span>
+				<p>DJ + event host</p>
+				<span aria-hidden="true">✳</span>
+				<p>Weddings · brands · parties</p>
+			</div>
+		</section>
+
+		<section class="section page-width">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">Bring the people. I'll bring the energy.</p>
+					<h2>what are we<br /><em>celebrating?</em></h2>
+				</div>
+				<p class="section-aside">One great night can sound a hundred different ways. Let's make it yours.</p>
+			</div>
+			<div class="service-grid">
+				{serviceCards.map((service, index) => (
+					<a class="service-card" href={service.href}>
+						<span class="service-card__number">0{index + 1}</span>
+						<span class="service-card__mark" aria-hidden="true">{service.mark}</span>
+						<h3>{service.title}</h3>
+						<p>{service.copy}</p>
+						<span class="service-card__link">Explore {service.shortTitle} <span aria-hidden="true">↗</span></span>
+					</a>
+				))}
+			</div>
+		</section>
+
+		<section class="about-band">
+			<div class="page-width about-band__inner">
+				<div class="photo-placeholder">
+					<span>Rachel's photo goes here</span>
+				</div>
+				<div class="about-band__copy">
+					<p class="eyebrow">A little about me</p>
+					<h2>the best nights<br />feel like <em>you.</em></h2>
+					<p>
+						The story, favorite moments, and behind-the-booth photos belong here.
+						Rachel will add the details in her own words.
+					</p>
+					<a class="text-link" href="/about/">Meet Rachel <span aria-hidden="true">→</span></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section page-width">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">The feeling we're after</p>
+					<h2>made for your<br /><em>kind of night.</em></h2>
+				</div>
+			</div>
+			<div class="value-grid">
+				{values.map((value, index) => (
+					<article class="value-card">
+						<span class="value-card__number">0{index + 1}</span>
+						<h3>{value.title}</h3>
+						<p>{value.copy}</p>
+					</article>
+				))}
+			</div>
+		</section>
+
+		<ContactCta />
+	</main>
+</SiteLayout>

@@ -1,0 +1,27 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import ServicePage from "../components/ServicePage.astro";
+import ContactCta from "../components/ContactCta.astro";
+---
+
+<SiteLayout title="Corporate Events | DJ Rachel Entertainment" description="A working draft of DJ Rachel's corporate event page.">
+	<ServicePage
+		eyebrow="Corporate + brand events"
+		title="your brand,<br /><em>your crowd,</em><br />my energy."
+		lead="From store events and grand openings to galas and holiday parties, make the music and sound fit the room, the run of show, and your brand."
+		offersHeading="events we can shape together"
+		offers={[
+			{ title: "Retail + brand activations", copy: "A soundtrack that fits the brand and gives guests a reason to stay awhile." },
+			{ title: "Grand openings", copy: "Music and microphones to help welcome guests and mark the moment." },
+			{ title: "Company celebrations", copy: "From background music to a dance floor, planned around your event." },
+			{ title: "Galas + fundraisers", copy: "Sound for speeches and key moments, with music to close out the night." },
+		]}
+		steps={[
+			{ title: "Share the brief", copy: "Talk through your audience, venue, schedule, and event goals." },
+			{ title: "Set the tone", copy: "Choose the music and sound details that fit your brand and run of show." },
+			{ title: "Bring it to life", copy: "Enjoy the event while the agreed plan guides the music and mic moments." },
+		]}
+	>
+		<ContactCta />
+	</ServicePage>
+</SiteLayout>

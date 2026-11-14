@@ -1,0 +1,37 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import ContactCta from "../components/ContactCta.astro";
+---
+
+<SiteLayout title="About Rachel | DJ Rachel Entertainment" description="A working draft of the About Rachel page.">
+	<main id="main">
+		<section class="page-hero page-width about-hero">
+			<div class="page-hero__copy">
+				<p class="eyebrow">Behind the music</p>
+				<h1>something i<br /><em>fell into...</em></h1>
+				<p class="hero-lead">
+					This page is a space for Rachel's story, in her own words. The final version
+					will share what she wants people to know before they get in touch.
+				</p>
+				<a class="button" href="/#contact">Say hello</a>
+			</div>
+			<div class="photo-placeholder photo-placeholder--portrait">
+				<span>Rachel's photo goes here</span>
+			</div>
+		</section>
+
+		<section class="about-story">
+			<div class="page-width about-story__inner">
+				<p class="eyebrow">A note for the next draft</p>
+				<h2>Rachel's story<br />belongs to <em>Rachel.</em></h2>
+				<p>
+					Add the details she wants to share: how she got started, what she loves
+					about a great event, and a few things that make her herself. No placeholder
+					story or personal details will be published without her approval.
+				</p>
+			</div>
+		</section>
+
+		<ContactCta />
+	</main>
+</SiteLayout>

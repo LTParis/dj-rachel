@@ -1,0 +1,79 @@
+---
+import "../styles/global.css";
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+const currentPath = Astro.url.pathname;
+const links = [
+	{ label: "Weddings", href: "/weddings/" },
+	{ label: "Corporate", href: "/corporate/" },
+	{ label: "Private Events", href: "/private-events/" },
+	{ label: "About", href: "/about/" },
+];
+const contactHref = currentPath === "/" ? "#contact" : "/#contact";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content={description} />
+		<meta name="theme-color" content="#f7f4ef" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<a class="skip-link" href="#main">Skip to content</a>
+		<div class="draft-ribbon">Working preview · Copy and images are not final</div>
+		<header class="site-header">
+			<div class="page-width site-header__inner">
+				<a class="wordmark" href="/" aria-label="DJ Rachel Entertainment, home">
+					<span class="wordmark__disc" aria-hidden="true">R</span>
+					<span>DJ <strong>RACHEL</strong></span>
+				</a>
+				<nav class="desktop-nav" aria-label="Main navigation">
+					<a href="/" aria-current={currentPath === "/" ? "page" : undefined}>Home</a>
+					{links.map((link) => (
+						<a href={link.href} aria-current={currentPath === link.href ? "page" : undefined}>{link.label}</a>
+					))}
+				</nav>
+				<a class="button button--small header-cta" href={contactHref}>Check my date</a>
+				<details class="mobile-nav">
+					<summary>Menu <span aria-hidden="true">+</span></summary>
+					<nav class="mobile-nav__panel" aria-label="Mobile navigation">
+						<a href="/" aria-current={currentPath === "/" ? "page" : undefined}>Home</a>
+						{links.map((link) => (
+							<a href={link.href} aria-current={currentPath === link.href ? "page" : undefined}>{link.label}</a>
+						))}
+						<a href={contactHref}>Check my date</a>
+					</nav>
+				</details>
+			</div>
+		</header>
+		<slot />
+		<footer class="site-footer">
+			<div class="page-width site-footer__top">
+				<div>
+					<a class="wordmark wordmark--footer" href="/">
+						<span class="wordmark__disc" aria-hidden="true">R</span>
+						<span>DJ <strong>RACHEL</strong></span>
+					</a>
+					<p>Good music. Good people. Good night.</p>
+				</div>
+				<nav class="footer-nav" aria-label="Footer navigation">
+					{links.map((link) => <a href={link.href}>{link.label}</a>)}
+				</nav>
+			</div>
+			<div class="page-width site-footer__bottom">
+				<p>DJ Rachel Entertainment</p>
+				<p>Website preview · Details to be confirmed</p>
+			</div>
+		</footer>
+	</body>
+</html>

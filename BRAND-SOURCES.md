@@ -38,3 +38,13 @@ Logo assets were retrieved from the organization’s official site or brand reso
 - `premier-real-estate.png`: https://premierrealestategrp.com/wp-content/uploads/2025/01/PREG_Logo.png
 
 Perks NYC and Farmington Valley Lifestyle display plain-text names pending matching logo files. Do not substitute a different Perks company or the City Lifestyle parent logo for these clients. Bruce Bennett Nissan also remains a plain-text entry. Dunkin’ Brands uses the historical corporate logo from its official press archive, not an Inspire Brands logo.
+
+## Logo-only revision
+
+At Rachel’s request, lululemon is first, the New York Jets entry and logo asset are removed, and event captions and text-only client placeholders are no longer displayed. Perks NYC and Bruce Bennett Nissan remain in the data for future logos but do not produce visible tiles. The grid contains 17 logos.
+
+- lululemon: client relationship confirmed by Rachel. Official asset: https://corporate.lululemon.com/~/media/Images/L/Lululemon/logo/logo-black-full.svg
+- Farmington Valley Lifestyle Magazine: replaced the text entry with the publication-specific logo URL embedded in the official City Lifestyle page’s magazine data: https://citylifestylehq.com/generated/logos/937/CityLifestyle_Farmington_Valley_City_Lifestyle_CT_Black1.png
+- TUFFGIRL Fitness: retained one instance of the official Hamden gym logo from https://www.tuffgirlfitnessct.com/ and made the Hamden identity explicit in alternative text.
+
+Earlier Jets research above is historical provenance only; it no longer appears on the page.

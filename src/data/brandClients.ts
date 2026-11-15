@@ -10,6 +10,12 @@ export interface BrandClient {
 
 export const brandClients: BrandClient[] = [
 	{
+		name: "lululemon",
+		logo: "/brands/lululemon.svg",
+		evidence: "Client relationship and first placement confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://corporate.lululemon.com/~/media/Images/L/Lululemon/logo/logo-black-full.svg",
+	},
+	{
 		name: "Dunkin’ Brands",
 		logo: "/brands/dunkin-brands.jpg",
 		evidence: "Client relationship confirmed by Rachel, November 15, 2026.",
@@ -50,11 +56,13 @@ export const brandClients: BrandClient[] = [
 		logoSource: "https://woe.torrco.com/images/TorrcoNewName.png",
 	},
 	{
-		name: "Farmington Valley Lifestyle",
-		evidence: "Client name confirmed by Rachel, November 15, 2026. Publication-specific logo pending.",
+		name: "Farmington Valley Lifestyle Magazine",
+		logo: "/brands/farmington-lifestyle.png",
+		evidence: "Client name confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://citylifestylehq.com/generated/logos/937/CityLifestyle_Farmington_Valley_City_Lifestyle_CT_Black1.png",
 	},
 	{
-		name: "Tuff Girl Fitness",
+		name: "TUFFGIRL Fitness, Hamden",
 		logo: "/brands/tuff-girl.png",
 		logoBackground: "dark",
 		evidence: "Client relationship confirmed by Rachel, November 15, 2026.",
@@ -118,12 +126,5 @@ export const brandClients: BrandClient[] = [
 		name: "Bruce Bennett Nissan",
 		event: "Company holiday party",
 		evidence: "/reviews/#rachel-review-98",
-	},
-	{
-		name: "New York Jets",
-		logo: "/brands/new-york-jets.svg",
-		event: "Events at MetLife Stadium",
-		evidence: "https://www.idjnow.com/blog/gator-frameworks-id-series-adjustable-speaker-stands-review-with-dj-rachel/",
-		logoSource: "https://static.www.nfl.com/t_q-best/league/api/clubs/logos/NYJ",
 	},
 ];

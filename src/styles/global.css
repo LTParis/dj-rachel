@@ -618,7 +618,24 @@ h2 {
 
 .reviews-section {
 	padding-block: 92px 100px;
-	background: #eee8e2;
+	background: #000;
+	color: #fff;
+}
+
+.reviews-section .eyebrow,
+.reviews-section h2,
+.reviews-section .reviews-all-link,
+.reviews-section .review-source,
+.reviews-section .review-card__byline p + p {
+	color: #fff;
+}
+
+.reviews-section .review-card {
+	background: #000;
+}
+
+.reviews-section .review-card__byline {
+	border-color: rgb(255 255 255 / 30%);
 }
 
 .review-grid {

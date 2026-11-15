@@ -2,6 +2,7 @@
 import SiteLayout from "../layouts/SiteLayout.astro";
 import ContactCta from "../components/ContactCta.astro";
 import ReviewHighlights from "../components/ReviewHighlights.astro";
+import HeroReviews from "../components/HeroReviews.astro";
 import { serviceCards, values } from "../data/site";
 ---
 
@@ -23,12 +24,15 @@ import { serviceCards, values } from "../data/site";
 					<a class="text-link" href="/about/">Get to know Rachel <span aria-hidden="true">→</span></a>
 				</div>
 			</div>
-			<div class="hero-art" role="img" aria-label="Illustration of a vinyl record on a DJ turntable">
-				<div class="record">
-					<div class="record-label">DJ<br />RACHEL</div>
+			<div class="hero-media">
+				<!-- Placeholder until Rachel approves the sizzle reel. Final: muted, looping
+				     vertical video with a still poster frame that loads first. -->
+				<div class="hero-reel">
+					<svg viewBox="0 0 24 24" width="56" height="56" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M10 8l6 4-6 4z" /></svg>
+					<p class="hero-reel__title">Sizzle reel</p>
+					<p class="hero-reel__note">Rachel's best event clips will play here: a muted loop with a still frame that loads first.</p>
 				</div>
-				<div class="tonearm" aria-hidden="true"></div>
-				<p class="art-caption"><span>01</span> GOOD MUSIC. GOOD PEOPLE. GOOD NIGHT.</p>
+				<HeroReviews />
 			</div>
 		</section>
 

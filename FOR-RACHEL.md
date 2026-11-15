@@ -56,8 +56,10 @@ You can publish your own changes. Lou can also review them if you'd like a secon
 
 1. On the pull request page, wait a minute for the **Vercel** check. Tap its **Preview** link (or **Details**) to see your change before it goes live.
 2. Not quite right? Go back to the same Codex task and ask for changes; the pull request updates on its own.
-3. Happy with it? Scroll to the bottom of the pull request, tap **Merge pull request**, then **Confirm merge**.
-4. About two minutes later, the change is on [dj-rachel.vercel.app](https://dj-rachel.vercel.app).
+3. Happy with it? Scroll to the comment box at the bottom of the pull request, type **makeitso**, and tap **Comment**.
+4. A rocket appears on your comment while it checks the site. About a minute later, a reply says **Published**, and two minutes after that the change is on [dj-rachel.vercel.app](https://dj-rachel.vercel.app).
+
+If the reply says it wasn't published, nothing on the website changed. Tell Lou.
 
 If something goes wrong after a merge, tell Lou: every earlier version is saved and can be put back.
 

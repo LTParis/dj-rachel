@@ -1,0 +1,99 @@
+# Publish a pull request when Rachel or Lou comments "makeitlive" on it.
+#
+# Flow: comment -> check who asked -> build the pull request -> merge it into
+# main -> Vercel deploys main to the temporary site.
+#
+# Security: this repository is public, so anyone can comment. Only the logins
+# listed in the check job's `if` can trigger a merge, pull requests from forks are refused, and
+# the pull request's code is built in a job with read-only permissions.
+name: makeitlive
+
+on:
+  issue_comment:
+    types: [created]
+
+concurrency:
+  group: makeitlive-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    if: >-
+      github.event.issue.pull_request &&
+      github.event.issue.state == 'open' &&
+      contains(fromJSON('["Lynch022","LTParis"]'), github.event.comment.user.login) &&
+      contains(github.event.comment.body, 'makeitlive')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    outputs:
+      head_sha: ${{ steps.pr.outputs.head_sha }}
+    steps:
+      - name: Acknowledge
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api -X POST "repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions" -f content=rocket
+
+      - name: Read pull request
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pr=$(gh api "repos/${{ github.repository }}/pulls/${{ github.event.issue.number }}")
+          head_repo=$(jq -r '.head.repo.full_name' <<<"$pr")
+          if [ "$head_repo" != "${{ github.repository }}" ]; then
+            echo "::error::Pull requests from forks can't be published with makeitlive."
+            exit 1
+          fi
+          echo "head_sha=$(jq -r '.head.sha' <<<"$pr")" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.pr.outputs.head_sha }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Build the site
+        run: |
+          npm ci
+          npm run build
+
+  publish:
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Merge into main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          # --match-head-commit refuses to merge if new commits landed after the build.
+          # The repository deletes merged branches automatically.
+          gh pr merge "$PR" --repo "$REPO" --merge \
+            --match-head-commit "${{ needs.check.outputs.head_sha }}"
+          gh pr comment "$PR" --repo "$REPO" --body "Published. The change will be on https://dj-rachel.vercel.app in about two minutes."
+
+  report-failure:
+    needs: [check, publish]
+    if: failure()
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Explain what happened
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh pr comment "$PR" --repo "$REPO" --body "This change was not published. Either the site didn't build or the pull request couldn't be merged. Nothing on the website changed. Lou can see the details here: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

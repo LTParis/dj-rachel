@@ -1,3 +1,10 @@
+@import "@fontsource/archivo/latin-600.css";
+@import "@fontsource/archivo/latin-700.css";
+@import "@fontsource/archivo/latin-800.css";
+@import "@fontsource/archivo/latin-900.css";
+@import "@fontsource/roboto-slab/latin-400.css";
+@import "@fontsource/roboto-slab/latin-700.css";
+
 :root {
 	color-scheme: light;
 	--ink: #211b1e;
@@ -7,8 +14,8 @@
 	--pink: #d20b71;
 	--pink-dark: #a9075b;
 	--line: #ded8d2;
-	--display: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", sans-serif;
-	--body: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+	--display: "Archivo", sans-serif;
+	--body: "Roboto Slab", Georgia, serif;
 	font-family: var(--body);
 	color: var(--ink);
 	background: var(--cream);
@@ -28,7 +35,7 @@ body {
 	margin: 0;
 	min-width: 320px;
 	font-size: 1rem;
-	line-height: 1.55;
+	line-height: 1.65;
 }
 
 a {
@@ -72,7 +79,8 @@ a {
 	color: white;
 	text-align: center;
 	font-size: 0.68rem;
-	font-weight: 700;
+	font-family: var(--display);
+	font-weight: 800;
 	letter-spacing: 0.14em;
 	text-transform: uppercase;
 }
@@ -97,6 +105,7 @@ a {
 	align-items: center;
 	gap: 9px;
 	text-decoration: none;
+	font-family: var(--body);
 	font-size: 0.83rem;
 	letter-spacing: 0.09em;
 	white-space: nowrap;
@@ -128,8 +137,9 @@ a {
 .desktop-nav a,
 .mobile-nav__panel a,
 .footer-nav a {
+	font-family: var(--display);
 	font-size: 0.84rem;
-	font-weight: 650;
+	font-weight: 600;
 	text-decoration: none;
 }
 
@@ -157,8 +167,9 @@ a {
 	border: 1px solid var(--pink);
 	background: var(--pink);
 	color: white;
+	font-family: var(--display);
 	font-size: 0.82rem;
-	font-weight: 750;
+	font-weight: 800;
 	text-align: center;
 	text-decoration: none;
 	transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
@@ -207,8 +218,9 @@ a {
 .eyebrow {
 	margin: 0 0 19px;
 	color: var(--pink-dark);
+	font-family: var(--display);
 	font-size: 0.72rem;
-	font-weight: 800;
+	font-weight: 700;
 	letter-spacing: 0.16em;
 	line-height: 1.4;
 	text-transform: uppercase;
@@ -224,7 +236,7 @@ p {
 h1,
 h2 {
 	font-family: var(--display);
-	font-weight: 850;
+	font-weight: 900;
 	letter-spacing: -0.07em;
 	line-height: 0.92;
 	text-transform: lowercase;
@@ -239,8 +251,9 @@ h1 {
 h1 em,
 h2 em {
 	color: var(--pink);
-	font-family: Georgia, "Times New Roman", serif;
-	font-weight: 400;
+	font-family: var(--display);
+	font-style: normal;
+	font-weight: 900;
 }
 
 .hero-lead {
@@ -259,8 +272,9 @@ h2 em {
 }
 
 .text-link {
+	font-family: var(--display);
 	font-size: 0.84rem;
-	font-weight: 750;
+	font-weight: 700;
 	text-decoration-color: var(--pink);
 	text-decoration-thickness: 1px;
 	text-underline-offset: 5px;
@@ -318,8 +332,9 @@ h2 em {
 	border-radius: 50%;
 	background: var(--pink);
 	color: white;
+	font-family: var(--display);
 	font-size: clamp(0.55rem, 1vw, 0.78rem);
-	font-weight: 850;
+	font-weight: 800;
 	letter-spacing: 0.08em;
 	line-height: 1.05;
 	text-align: center;
@@ -382,8 +397,9 @@ h2 em {
 
 .intro-strip p {
 	margin: 0;
+	font-family: var(--display);
 	font-size: 0.75rem;
-	font-weight: 750;
+	font-weight: 800;
 	letter-spacing: 0.11em;
 	text-align: center;
 	text-transform: uppercase;
@@ -466,8 +482,10 @@ h2 {
 .offer-card h3,
 .value-card h3,
 .step-card h3 {
+	font-family: var(--display);
 	margin-bottom: 10px;
 	font-size: 1.26rem;
+	font-weight: 800;
 	letter-spacing: -0.04em;
 }
 
@@ -482,6 +500,7 @@ h2 {
 
 .service-card__link {
 	margin-top: auto;
+	font-family: var(--display);
 	font-size: 0.76rem;
 	font-weight: 800;
 }
@@ -678,9 +697,10 @@ h2 {
 }
 
 .page-hero__art-label em {
-	font-family: Georgia, serif;
+	font-family: var(--display);
 	font-size: 1.2em;
-	font-weight: 400;
+	font-style: normal;
+	font-weight: 900;
 }
 
 .offer-grid {

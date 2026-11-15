@@ -1,5 +1,6 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
+import { Image } from "astro:assets";
 import ContactCta from "../components/ContactCta.astro";
 import ReviewHighlights from "../components/ReviewHighlights.astro";
 import HeroReviews from "../components/HeroReviews.astro";
@@ -58,7 +59,9 @@ import { serviceCards, values } from "../data/site";
 				{serviceCards.map((service) => (
 					<a class="service-card" href={service.href}>
 						<span class={`service-card__image service-card__image--${service.tone}`}>
-							<span>{service.imageLabel}</span>
+							{service.image ? (
+								<Image src={service.image} alt={service.imageAlt} widths={[400, 640, 900]} sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw" width={900} format="webp" loading="lazy" />
+							) : <span>{service.imageLabel}</span>}
 						</span>
 						<span class="service-card__content">
 							<span class="service-card__eyebrow">{service.eyebrow}</span>

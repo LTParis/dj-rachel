@@ -18,11 +18,12 @@ interface Props {
 	offersHeading: string;
 	offers: Offer[];
 	highlightOffers?: boolean;
+	pinkOffers?: boolean;
 	weddingHero?: boolean;
 	steps: Step[];
 }
 
-const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = false, weddingHero = false } = Astro.props;
+const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = false, pinkOffers = false, weddingHero = false } = Astro.props;
 ---
 
 <main id="main">
@@ -51,7 +52,7 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 			</div>
 			<p class="section-aside">Tell me what matters most. No packages to decode. No equipment to worry about. Just my very best, built around your event, from start to finish.</p>
 		</div>
-		<div class:list={["offer-grid", { "offer-grid--highlighted": highlightOffers }]}>
+		<div class:list={["offer-grid", { "offer-grid--highlighted": highlightOffers, "offer-grid--pink": pinkOffers }]}>
 			{offers.map((offer, index) => (
 				<article class="offer-card">
 					<span class="offer-card__number">0{index + 1}</span>

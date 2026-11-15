@@ -1,4 +1,4 @@
-# Publish a pull request when Rachel or Lou comments "makeitlive" on it.
+# Publish a pull request when Rachel or Lou comments "makeitso" on it.
 #
 # Flow: comment -> check who asked -> build the pull request -> merge it into
 # main -> Vercel deploys main to the temporary site.
@@ -6,14 +6,14 @@
 # Security: this repository is public, so anyone can comment. Only the logins
 # listed in the check job's `if` can trigger a merge, pull requests from forks are refused, and
 # the pull request's code is built in a job with read-only permissions.
-name: makeitlive
+name: makeitso
 
 on:
   issue_comment:
     types: [created]
 
 concurrency:
-  group: makeitlive-${{ github.event.issue.number }}
+  group: makeitso-${{ github.event.issue.number }}
   cancel-in-progress: false
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
       github.event.issue.pull_request &&
       github.event.issue.state == 'open' &&
       contains(fromJSON('["Lynch022","LTParis"]'), github.event.comment.user.login) &&
-      contains(github.event.comment.body, 'makeitlive')
+      contains(github.event.comment.body, 'makeitso')
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -44,7 +44,7 @@ jobs:
           pr=$(gh api "repos/${{ github.repository }}/pulls/${{ github.event.issue.number }}")
           head_repo=$(jq -r '.head.repo.full_name' <<<"$pr")
           if [ "$head_repo" != "${{ github.repository }}" ]; then
-            echo "::error::Pull requests from forks can't be published with makeitlive."
+            echo "::error::Pull requests from forks can't be published with makeitso."
             exit 1
           fi
           echo "head_sha=$(jq -r '.head.sha' <<<"$pr")" >> "$GITHUB_OUTPUT"

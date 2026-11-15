@@ -2,12 +2,90 @@
 export interface BrandClient {
 	name: string;
 	logo?: string;
-	event: string;
+	event?: string;
 	evidence: string;
 	logoSource?: string;
+	logoBackground?: "dark";
 }
 
 export const brandClients: BrandClient[] = [
+	{
+		name: "Dunkin’ Brands",
+		logo: "/brands/dunkin-brands.jpg",
+		evidence: "Client relationship confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://news.dunkindonuts.com/file?fid=5aa986d12cfac20fb037a339",
+	},
+	{
+		name: "Floor & Decor",
+		logo: "/brands/floor-decor.svg",
+		evidence: "Client relationship confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://www.flooranddecor.com/",
+	},
+	{
+		name: "American Cancer Society",
+		logo: "/brands/american-cancer-society.svg",
+		evidence: "Client relationship confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://www.acsresources.org/socialassets/american-cancer-society-logos-all/",
+	},
+	{
+		name: "Perks NYC",
+		evidence: "Client name confirmed by Rachel, November 15, 2026. Original logo pending.",
+	},
+	{
+		name: "NBC Connecticut",
+		logo: "/brands/nbc-connecticut.png",
+		evidence: "Client relationship confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://media.nbcconnecticut.com/2024/08/WVIT_station_logo_light.png",
+	},
+	{
+		name: "Town of Hamden",
+		logo: "/brands/hamden.png",
+		evidence: "Client relationship confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://www.hamden.com/ImageRepository/Document?documentID=8648",
+	},
+	{
+		name: "Torrco",
+		logo: "/brands/torrco.png",
+		evidence: "Client relationship confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://woe.torrco.com/images/TorrcoNewName.png",
+	},
+	{
+		name: "Farmington Valley Lifestyle",
+		evidence: "Client name confirmed by Rachel, November 15, 2026. Publication-specific logo pending.",
+	},
+	{
+		name: "Tuff Girl Fitness",
+		logo: "/brands/tuff-girl.png",
+		logoBackground: "dark",
+		evidence: "Client relationship confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://www.tuffgirlfitnessct.com/",
+	},
+	{
+		name: "Viking Construction",
+		logo: "/brands/viking-construction.svg",
+		logoBackground: "dark",
+		evidence: "Client relationship confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://www.vikingconstruction.net/wp-content/themes/vikingconstruction/img/viking-construction-logo.svg",
+	},
+	{
+		name: "Anastasio Home",
+		logo: "/brands/anastasio-home.svg",
+		evidence: "Client relationship and Connecticut identity confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://anastasiohome.com/",
+	},
+	{
+		name: "Premier Real Estate Group",
+		logo: "/brands/premier-real-estate.png",
+		evidence: "Client relationship and Southington identity confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://premierrealestategrp.com/wp-content/uploads/2025/01/PREG_Logo.png",
+	},
+	{
+		name: "American Metal",
+		logo: "/brands/american-metal.svg",
+		logoBackground: "dark",
+		evidence: "Client relationship and Danbury location confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://www.americanmetalcustoms.com/",
+	},
 	{
 		name: "FP Movement",
 		logo: "/brands/fp-movement.png",

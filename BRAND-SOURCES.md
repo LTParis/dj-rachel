@@ -18,3 +18,23 @@ Add a client to `src/data/brandClients.ts` with its name, a supported event labe
 The search also surfaced DJ-industry relationships with Electro-Voice, Promo Only, I DJ NOW, Digital DJ Tips, Crate Hackers, and NLFX. These were not presented as activation or holiday-party clients because the available evidence described partnerships, education, or equipment content.
 
 No missing retail clients were inferred from tenant directories, nearby businesses, equipment use, or photographs. Rachel can supply additional client names and approved logos to extend this list.
+
+## Additions confirmed by Rachel
+
+Rachel supplied the following client relationships on November 15, 2026: Dunkin’ Brands, Floor & Decor, American Cancer Society, Perks NYC, NBC Connecticut, Town of Hamden, Torrco, Farmington Valley Lifestyle, Tuff Girl Fitness, Viking Construction, Anastasio Home, Premier Real Estate Group, and American Metal in Danbury. FP Movement was already present and was not duplicated. Rachel explicitly confirmed Anastasio Home in Connecticut and Premier Real Estate Group in Southington. No event subtype was supplied for these additions, so none is displayed.
+
+Logo assets were retrieved from the organization’s official site or brand resource page. Source asset URLs:
+
+- `dunkin-brands.jpg`: https://iprsoftwaremedia.com/285/files/20182/5aa986d12cfac20fb037a339_Dunkin%20Brands%20Logo/Dunkin%20Brands%20Logo_mid.jpg?v=02c5f1aa-215b-4779-ba87-a58a1774dfa4
+- `floor-decor.svg`: https://www.flooranddecor.com/on/demandware.static/Sites-floor-decor-Site/-/default/dwa3cbddd6/img/default.svg
+- `american-cancer-society.svg`: https://www.acsresources.org/wp-content/uploads/2023/10/ACS_RGB.svg
+- `nbc-connecticut.png`: https://media.nbcconnecticut.com/2024/08/WVIT_station_logo_light.png
+- `hamden.png`: https://www.hamden.com/ImageRepository/Document?documentID=8648
+- `torrco.png`: https://woe.torrco.com/images/TorrcoNewName.png
+- `tuff-girl.png`: https://images.squarespace-cdn.com/content/v1/667a19866dde1020805b8fac/d99db974-0571-4f7f-9f22-3567cfc50983/TG-white.png?format=500w
+- `viking-construction.svg`: https://www.vikingconstruction.net/wp-content/themes/vikingconstruction/img/viking-construction-logo.svg
+- `anastasio-home.svg`: https://anastasiohome.com/cdn/shop/files/AH_Logo_6C6557_ffdd332d-cd91-4f48-91d9-553ee6110d07.svg?v=1772722505&width=600
+- `american-metal.svg`: https://www.americanmetalcustoms.com/cdn/shop/files/AMC_Script_Logo_-_Color_Dark_BG.svg?v=1736513528&width=600
+- `premier-real-estate.png`: https://premierrealestategrp.com/wp-content/uploads/2025/01/PREG_Logo.png
+
+Perks NYC and Farmington Valley Lifestyle display plain-text names pending matching logo files. Do not substitute a different Perks company or the City Lifestyle parent logo for these clients. Bruce Bennett Nissan also remains a plain-text entry. Dunkin’ Brands uses the historical corporate logo from its official press archive, not an Inspire Brands logo.

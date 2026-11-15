@@ -1,5 +1,6 @@
 ---
-import WeddingCarousel from "./WeddingCarousel.astro";
+import PhotoCarousel from "./PhotoCarousel.astro";
+import { weddingPhotos } from "../data/weddingPhotos";
 interface Offer {
 	title: string;
 	copy: string;
@@ -32,10 +33,12 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 			{(Array.isArray(lead) ? lead : [lead]).map((paragraph) => <p class="hero-lead">{paragraph}</p>)}
 			<a class="button" href="/#contact">Let's plan your event</a>
 		</div>
-		{weddingHero ? <WeddingCarousel /> : <div class="page-hero__art" aria-hidden="true">
+		<slot name="hero-media">
+		{weddingHero ? <PhotoCarousel photos={weddingPhotos} label="Wedding photos" emptyMessage="Wedding photos coming soon" /> : <div class="page-hero__art" aria-hidden="true">
 			<span class="page-hero__art-disc"></span>
 			<span class="page-hero__art-label">MAKE<br />IT A<br /><em>NIGHT.</em></span>
 		</div>}
+		</slot>
 	</section>
 
 	<slot name="after-hero" />

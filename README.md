@@ -32,7 +32,7 @@ npm run preview
 
 ## Safe handoff
 
-Rachel's plain-language getting-started guide is in [FOR-RACHEL.md](./FOR-RACHEL.md). Invite her to the private GitHub repository by her own GitHub account; never share passwords, recovery codes, or access tokens. Choose an AI editing workflow together—Claude and ChatGPT integrations can differ by plan and may be read-only.
+Rachel's plain-language getting-started guide is in [FOR-RACHEL.md](./FOR-RACHEL.md). She has her own GitHub account (`Lynch022`) with write access; never share passwords, recovery codes, or access tokens. She edits through ChatGPT Codex, which reads [AGENTS.md](./AGENTS.md): Codex works on a branch and opens a pull request, Lou reviews and merges, and `main` deploys to the temporary preview site.
 
 Vercel is the proposed temporary preview host, but it is not connected yet. A preview deployment may be publicly viewable even while the GitHub repository is private. Keep private information out of the site, review Vercel's preview-access settings, and do not connect the custom domain or publish as the production site until Rachel approves the content and the preview.
 

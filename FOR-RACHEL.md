@@ -1,38 +1,60 @@
-# Rachel's website: how updates will work
+# Rachel's website: how updates work
 
-This is your website's first draft. You do not need to know how to code. The goal is for you to be able to suggest changes in your own words, see a preview, and approve what goes live.
+This is your website's first draft. You don't need to know how to code. You ask for changes in your own words, see a preview, and approve what goes live.
 
-## First: get your own access
+## The three places to know
 
-1. Create a GitHub account at [github.com](https://github.com/) if you do not already have one.
-2. Send Lou your GitHub username. Lou will invite your account to the private `dj-rachel` website project.
-3. Accept the invitation from GitHub. Your account is your access; never send anyone your password, sign-in code, recovery code, or a token.
+| What | Where | What it's for |
+| --- | --- | --- |
+| The website's files | [github.com/LTParis/dj-rachel](https://github.com/LTParis/dj-rachel) (private) | Where your site lives. ChatGPT makes its edits here. |
+| The temporary website | **[Lou will send this link]** | What the draft looks like right now. Share it only with people you trust. |
+| ChatGPT (Codex) | [chatgpt.com/codex](https://chatgpt.com/codex) | Where you ask for changes. |
 
-The invitation is not the same as connecting an AI tool. Claude and ChatGPT features vary by plan and can have different permissions. Some connections can only read a project; they cannot safely edit or publish it.
+## Step 1: accept your GitHub invitation (one time)
 
-## How to ask for a change
+1. Sign in to GitHub as **Lynch022**.
+2. Open [github.com/LTParis/dj-rachel/invitations](https://github.com/LTParis/dj-rachel/invitations) and click **Accept invitation**.
+3. You should now be able to open [github.com/LTParis/dj-rachel](https://github.com/LTParis/dj-rachel). If you see "404", you're signed into a different GitHub account.
 
-Once you and Lou choose an AI editing setup, you can start with a request like this:
+Never send anyone your password, sign-in code, recovery code, or a token. Your account is your access.
 
-> Please update the draft DJ Rachel website. I want to change [what you want changed]. Keep [what you like]. Do not make up facts, reviews, prices, contact details, or links. Show me what changed and give me a preview before anything is published.
+## Step 2: connect ChatGPT to GitHub (one time)
 
-You can ask for writing, photo swaps, or a different layout in everyday language. If the AI asks for a detail you are unsure about, it is okay to say “leave that out for now.”
+1. Open [chatgpt.com/codex](https://chatgpt.com/codex). Codex is included with paid ChatGPT plans.
+2. When it asks, connect your GitHub account (Lynch022) and allow access.
+3. Choose **LTParis/dj-rachel** as the repository. If it isn't in the list, tell Lou, who may need to approve ChatGPT's access to the repository.
+4. When asked to set up an environment, keep the defaults. The site needs Node.js 22, which Codex normally has.
 
-## Preview first, publish later
+## Step 3: ask for a change
 
-The expected routine is:
+In Codex, with **LTParis/dj-rachel** selected, paste this and fill in the brackets:
 
-1. Ask for a change.
-2. Review a preview link and the list of changes.
-3. Tell Lou whether you approve it or want anything adjusted.
-4. Lou publishes approved changes.
+> Please update the draft DJ Rachel website. Read AGENTS.md first and follow it.
+> I want to: [what you want changed].
+> Keep: [anything you like as it is].
+> Don't make up facts, reviews, prices, contact details, or links. If you need a detail, ask me.
+> When you're done, run the build, open a pull request, and tell me in plain language what changed.
 
-The temporary preview may be visible to anyone with its link, even though the GitHub project is private. Do not put private client information, passwords, or anything you would not want shared on the site.
+Good examples:
+- "Change the About page story to this text: …"
+- "On the Weddings page, make the heading say 'your day, your soundtrack'."
+- "Swap the sizzle reel placeholder for this video" (attach or link the file).
 
-The public domain planned for the website is `djrachellynch.com`, but it is not hosted yet. Search engines are blocked while the draft is being reviewed. Lou will turn indexing on only as part of the approved launch.
+When Codex finishes, click **Create PR** (pull request). That sends the change to Lou to look over. Nothing goes on the website until Lou merges it.
 
-The Reviews page contains the Google and Facebook reviews shared for the project. Each source and its rating or recommendation are labeled; if the same review text appeared on both platforms, it is shown once with both sources listed.
+## Step 4: preview and approve
+
+1. Lou reviews the pull request. You may also see a preview link on the pull request page.
+2. Tell Lou whether you approve it or want changes. You can ask Codex for changes on the same task too.
+3. Once Lou merges it, the temporary website updates within a couple of minutes.
+
+## Good to know
+
+- The temporary website may be visible to anyone who has its link, even though the files are private. Don't put private client info, passwords, or anything you wouldn't want shared on the site.
+- Search engines are blocked while the site is a draft. The planned address is `djrachellynch.com`, and it will only be connected after you approve the finished site.
+- The "Working preview" banner at the top stays until you approve the final words and photos.
+- The Reviews page uses the Google and Facebook reviews you shared, each labeled with its source and rating. A review posted on both platforms is shown once with both sources listed.
 
 ## Before the real website goes live
 
-You and Lou will confirm the final wording, photos, booking email or inquiry link, social links, and any reviews or business facts. The custom domain will only be connected after you have reviewed and approved the finished site.
+You and Lou will confirm the final wording, photos and video, your booking email or inquiry link, social links, and any stats or business facts (for example review counts, YouTube numbers, or brands you've played for).

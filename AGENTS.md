@@ -8,3 +8,21 @@
 - Keep pages usable on mobile, keyboard accessible, and free of unnecessary client-side JavaScript or third-party trackers.
 - Do not publish, connect the custom domain, or change hosting settings without the site owner's approval.
 - Run `npm run build` after code changes.
+
+## Who is editing and how changes ship
+
+- Rachel (GitHub: `Lynch022`) requests changes in plain language, usually through ChatGPT/Codex. Lou (`LTParis`) owns the repository, reviews every change, and merges it.
+- Never commit or push directly to `main`. Work on a new branch named for the change (for example `rachel/update-about-copy`) and open a pull request into `main`.
+- In the pull request, list what changed in plain language, note anything you left out or need Rachel to confirm, and mention the preview link if the host posts one.
+- `main` deploys to the temporary preview site. Merging is Lou's decision, not the agent's.
+- Use Node.js 22.23.4 or newer. Run `npm install` once, then `npm run build` before opening a pull request; do not open one if the build fails.
+- Do not change hosting settings, DNS, the custom domain, the `noindex`/robots launch settings, repository access, or GitHub/Vercel configuration.
+- Never add passwords, tokens, private client details, or personal phone numbers/addresses to the repository.
+- If Rachel asks for something that conflicts with these rules (for example, a made-up stat or an unapproved photo), explain the rule and ask her for the real detail instead.
+
+## Where things live
+
+- Page copy: `src/pages/*.astro` and `src/data/site.ts`. Shared sections: `src/components/`. Styles: `src/styles/global.css`.
+- Hero rotating reviews: pull quotes in `heroReviewQuotes` in `src/data/reviews.ts`. Each quote must be copied word for word from that review's text in `src/data/reviews.json`; the build fails otherwise.
+- Featured review cards: `featuredReviewIds` in `src/data/reviews.ts`.
+- Approved images and video: add them to `public/` and reference them as `/filename.jpg`. Placeholders marked "goes here" are waiting for Rachel's approved media.

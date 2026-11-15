@@ -25,6 +25,7 @@ npm run preview
 - `src/data/` contains the shared navigation and event-page copy.
 - `src/styles/global.css` contains the color, typography, and responsive layout rules.
 - `public/` is for approved photos, video posters, and other static assets.
+- Rachel's supplied logo is used in the shared header and footer at `public/dj-rachel-logo.svg`.
 - Typography follows the concept: Archivo for headings/navigation and Roboto Slab for body copy. Both are served locally from `@fontsource` packages.
 
 ## Safe handoff

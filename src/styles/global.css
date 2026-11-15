@@ -522,6 +522,8 @@ h2 {
 }
 
 .service-card__image {
+	position: relative;
+	overflow: hidden;
 	display: grid;
 	width: 100%;
 	min-height: 205px;
@@ -536,6 +538,15 @@ h2 {
 	letter-spacing: 0.09em;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.service-card__image > img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 65%;
 }
 
 .service-card__image--corporate {

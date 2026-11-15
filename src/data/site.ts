@@ -1,3 +1,5 @@
+import weddingPhoto from "../../public/wedding 1.jpg";
+
 export const serviceCards = [
 	{
 		title: "Weddings",
@@ -6,6 +8,8 @@ export const serviceCards = [
 		tone: "weddings",
 		eyebrow: "Packed dance floor, couple center",
 		imageLabel: "Wedding photo coming soon",
+		image: weddingPhoto,
+		imageAlt: "A couple dancing with wedding guests cheering around them.",
 		copy: "From ceremony audio to the last song, make space for the moments and music that are important to you.",
 	},
 	{

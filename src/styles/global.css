@@ -717,8 +717,9 @@ h2 {
 
 .review-archive-card {
 	padding: 24px clamp(20px, 4vw, 38px);
-	border: 1px solid var(--line);
-	background: var(--paper);
+	border: 4px solid var(--pink);
+	background: #000;
+	color: #fff;
 	scroll-margin-top: 24px;
 }
 
@@ -746,15 +747,15 @@ h2 {
 
 .review-archive-card__sources span {
 	padding: 4px 8px;
-	background: #f0e9e7;
-	color: #55474d;
+	background: #222;
+	color: #fff;
 	font-size: 0.65rem;
 	font-weight: 650;
 }
 
 .review-archive-card blockquote {
 	margin: 0;
-	color: #51484c;
+	color: #fff;
 	font-size: 0.9rem;
 	line-height: 1.75;
 	white-space: pre-line;

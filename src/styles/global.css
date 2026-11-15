@@ -1017,10 +1017,14 @@ h2 {
 	margin-bottom: 25px;
 }
 
-.about-story__inner > p:last-child {
+.about-story__inner > p {
 	max-width: 650px;
-	margin-bottom: 0;
+	margin-bottom: 24px;
 	color: #51484c;
+}
+
+.about-story__inner > p:last-child {
+	margin-bottom: 0;
 }
 
 @media (max-width: 900px) {

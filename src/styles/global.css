@@ -1007,6 +1007,18 @@ h2 {
 .about-hero h1 {
 	margin-bottom: 40px;
 	line-height: 1.05;
+	color: #000;
+}
+
+.story-heading-ending {
+	white-space: nowrap;
+}
+
+.story-heading-period {
+	color: #000;
+	font-size: 1.2em;
+	font-weight: 900;
+	line-height: 0;
 }
 
 .photo-placeholder--portrait {

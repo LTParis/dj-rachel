@@ -9,7 +9,11 @@ import BrandClients from "../components/BrandClients.astro";
 	<ServicePage
 		eyebrow="Corporate + brand events"
 		title="your brand,<br /><em>your crowd,</em><br />my energy."
-		lead="From store events and grand openings to galas and holiday parties, make the music and sound fit the room, the run of show, and your brand."
+		lead={[
+			"Store events. Grand openings. Galas. Holiday parties.",
+			"Corporate doesn’t have to mean stiff. I tune the music and sound to your room, your run of show, and your brand, with polish where it counts and personality everywhere else.",
+			"The night feels deliberate, not generic. No awkward silences. No off-brand song choices. No wedding playlist at the company party.",
+		]}
 		offersHeading="events we can shape together"
 		offers={[
 			{ title: "Retail + brand activations", copy: "A soundtrack that fits the brand and gives guests a reason to stay awhile." },

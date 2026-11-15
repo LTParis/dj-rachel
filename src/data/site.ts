@@ -1,4 +1,5 @@
 import weddingPhoto from "../../public/wedding 1.jpg";
+import corporatePhoto from "../../public/1 corp.jpg";
 
 export const serviceCards = [
 	{
@@ -19,6 +20,8 @@ export const serviceCards = [
 		tone: "corporate",
 		eyebrow: "Brand activation or company party",
 		imageLabel: "Brand event photo coming soon",
+		image: corporatePhoto,
+		imageAlt: "DJ Rachel performing at an indoor event with guests gathered nearby.",
 		copy: "A thoughtful soundtrack, clear mics, and the right energy for the room and the people in it.",
 	},
 	{

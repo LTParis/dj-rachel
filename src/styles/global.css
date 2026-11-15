@@ -553,6 +553,10 @@ h2 {
 	background-color: #e8dfd8;
 }
 
+.service-card__image--corporate > img {
+	object-position: center 45%;
+}
+
 .service-card__image--private {
 	background-color: #f0d7e2;
 }

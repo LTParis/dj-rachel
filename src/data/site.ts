@@ -6,7 +6,7 @@ export const serviceCards = [
 		tone: "weddings",
 		eyebrow: "Packed dance floor, couple center",
 		imageLabel: "Wedding photo coming soon",
-		copy: "From ceremony audio to the last song, make space for the moments and music that feel like you.",
+		copy: "From ceremony audio to the last song, make space for the moments and music that are important to you.",
 	},
 	{
 		title: "Corporate + Brands",

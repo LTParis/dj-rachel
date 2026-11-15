@@ -1,4 +1,5 @@
 ---
+import WeddingCarousel from "./WeddingCarousel.astro";
 interface Offer {
 	title: string;
 	copy: string;
@@ -16,10 +17,11 @@ interface Props {
 	offersHeading: string;
 	offers: Offer[];
 	highlightOffers?: boolean;
+	weddingHero?: boolean;
 	steps: Step[];
 }
 
-const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = false } = Astro.props;
+const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = false, weddingHero = false } = Astro.props;
 ---
 
 <main id="main">
@@ -30,17 +32,17 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 			<p class="hero-lead">{lead}</p>
 			<a class="button" href="/#contact">Let's plan your event</a>
 		</div>
-		<div class="page-hero__art" aria-hidden="true">
+		{weddingHero ? <WeddingCarousel /> : <div class="page-hero__art" aria-hidden="true">
 			<span class="page-hero__art-disc"></span>
 			<span class="page-hero__art-label">MAKE<br />IT A<br /><em>NIGHT.</em></span>
-		</div>
+		</div>}
 	</section>
 
 	<section class="section page-width">
 		<div class="section-heading">
 			<div>
 				<p class="eyebrow">The good stuff</p>
-				<h2>{offersHeading}</h2>
+				<h2>{weddingHero ? <>everything your <em>celebration</em> needs</> : offersHeading}</h2>
 			</div>
 			<p class="section-aside">Tell me what matters most. No packages to decode. No equipment to worry about. Just my very best, built around your event, from start to finish.</p>
 		</div>

@@ -15,10 +15,11 @@ interface Props {
 	lead: string;
 	offersHeading: string;
 	offers: Offer[];
+	highlightOffers?: boolean;
 	steps: Step[];
 }
 
-const { eyebrow, title, lead, offersHeading, offers, steps } = Astro.props;
+const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = false } = Astro.props;
 ---
 
 <main id="main">
@@ -43,7 +44,7 @@ const { eyebrow, title, lead, offersHeading, offers, steps } = Astro.props;
 			</div>
 			<p class="section-aside">Tell me what matters most. No packages to decode. No equipment to worry about. Just my very best, built around your event, from start to finish.</p>
 		</div>
-		<div class="offer-grid">
+		<div class:list={["offer-grid", { "offer-grid--highlighted": highlightOffers }]}>
 			{offers.map((offer, index) => (
 				<article class="offer-card">
 					<span class="offer-card__number">0{index + 1}</span>

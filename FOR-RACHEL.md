@@ -7,7 +7,7 @@ This is your website's first draft. You don't need to know how to code. You ask 
 | What | Where | What it's for |
 | --- | --- | --- |
 | The website's files | [github.com/LTParis/dj-rachel](https://github.com/LTParis/dj-rachel) (private) | Where your site lives. ChatGPT makes its edits here. |
-| The temporary website | **[Lou will send this link]** | What the draft looks like right now. Share it only with people you trust. |
+| The temporary website | [dj-rachel.vercel.app](https://dj-rachel.vercel.app) | What the draft looks like right now. Share it only with people you trust. |
 | ChatGPT (Codex) | [chatgpt.com/codex](https://chatgpt.com/codex) | Where you ask for changes. |
 
 ## Step 1: accept your GitHub invitation (one time)

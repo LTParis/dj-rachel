@@ -127,4 +127,10 @@ export const brandClients: BrandClient[] = [
 		event: "Company holiday party",
 		evidence: "/reviews/#rachel-review-98",
 	},
+	{
+		name: "University of New Haven",
+		logo: "/brands/university-new-haven.png",
+		evidence: "Client relationship and final logo placement confirmed by Rachel, November 15, 2026.",
+		logoSource: "https://newhaven.edu/_resources/img/logos/header-logo.png",
+	},
 ];

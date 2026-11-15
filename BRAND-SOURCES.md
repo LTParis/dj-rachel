@@ -48,3 +48,7 @@ At Rachel’s request, lululemon is first, the New York Jets entry and logo asse
 - TUFFGIRL Fitness: retained one instance of the official Hamden gym logo from https://www.tuffgirlfitnessct.com/ and made the Hamden identity explicit in alternative text.
 
 Earlier Jets research above is historical provenance only; it no longer appears on the page.
+
+## University of New Haven
+
+Rachel confirmed the client relationship and requested the last open logo position. The official university homepage header logo was downloaded from https://newhaven.edu/_resources/img/logos/header-logo.png and added as the final visible tile, bringing the grid to 18 logos. No event subtype was inferred.

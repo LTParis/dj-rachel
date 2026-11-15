@@ -6,7 +6,7 @@ This is your website's first draft. You don't need to know how to code. You ask 
 
 | What | Where | What it's for |
 | --- | --- | --- |
-| The website's files | [github.com/LTParis/dj-rachel](https://github.com/LTParis/dj-rachel) (private) | Where your site lives. ChatGPT makes its edits here. |
+| The website's files | [github.com/LTParis/dj-rachel](https://github.com/LTParis/dj-rachel) (public: anyone can read it, only you and Lou can change it) | Where your site lives. ChatGPT makes its edits here. |
 | The temporary website | [dj-rachel.vercel.app](https://dj-rachel.vercel.app) | What the draft looks like right now. Share it only with people you trust. |
 | ChatGPT (Codex) | [chatgpt.com/codex](https://chatgpt.com/codex) | Where you ask for changes. |
 
@@ -18,12 +18,20 @@ This is your website's first draft. You don't need to know how to code. You ask 
 
 Never send anyone your password, sign-in code, recovery code, or a token. Your account is your access.
 
-## Step 2: connect ChatGPT to GitHub (one time)
+## Step 2: connect ChatGPT to your website (one time, about 5 minutes)
 
-1. Open [chatgpt.com/codex](https://chatgpt.com/codex). Codex is included with paid ChatGPT plans.
-2. When it asks, connect your GitHub account (Lynch022) and allow access.
-3. Choose **LTParis/dj-rachel** as the repository. If it isn't in the list, tell Lou, who may need to approve ChatGPT's access to the repository.
-4. When asked to set up an environment, keep the defaults. The site needs Node.js 22, which Codex normally has.
+You need a paid ChatGPT plan, since Codex is the part of ChatGPT that edits websites. The GitHub app isn't needed: your phone's browser is enough.
+
+1. On your phone, open your browser (Safari or Chrome) and go to [chatgpt.com/codex](https://chatgpt.com/codex). Sign in to ChatGPT if asked.
+2. Tap **Connect to GitHub** (it may say **Get started** or **Connect GitHub**).
+3. A GitHub page opens. Sign in as **Lynch022** if it asks.
+4. GitHub asks you to **Authorize ChatGPT Codex Connector**. Tap **Authorize**. If it asks where to install it instead, tap **Cancel** and go back: Lou has already done that part.
+5. Back in Codex, open the repository picker and choose **LTParis/dj-rachel**.
+6. If it asks you to create an environment, pick **LTParis/dj-rachel**, keep every default setting, and tap **Create**.
+
+Doesn't see **LTParis/dj-rachel**? Go to ChatGPT **Settings**, then **Connectors** (or **Apps**), then **GitHub**. Disconnect it, connect it again, and check the list. Still missing? Text Lou a screenshot.
+
+After this first setup, you can ask for changes from the ChatGPT app or the browser. Codex reads the website's rules file (AGENTS.md) on its own, so you never have to explain the rules.
 
 ## Step 3: ask for a change
 
@@ -40,17 +48,22 @@ Good examples:
 - "On the Weddings page, make the heading say 'your day, your soundtrack'."
 - "Swap the sizzle reel placeholder for this video" (attach or link the file).
 
-When Codex finishes, click **Create PR** (pull request). That sends the change to Lou to look over. Nothing goes on the website until Lou merges it.
+When Codex finishes, tap **Create PR** (pull request), then tap the link Codex shows to open it on GitHub. Nothing goes on the website until the pull request is merged.
 
-## Step 4: preview and approve
+## Step 4: preview and publish
 
-1. Lou reviews the pull request. You may also see a preview link on the pull request page.
-2. Tell Lou whether you approve it or want changes. You can ask Codex for changes on the same task too.
-3. Once Lou merges it, the temporary website updates within a couple of minutes.
+You can publish your own changes. Lou can also review them if you'd like a second look.
+
+1. On the pull request page, wait a minute for the **Vercel** check. Tap its **Preview** link (or **Details**) to see your change before it goes live.
+2. Not quite right? Go back to the same Codex task and ask for changes; the pull request updates on its own.
+3. Happy with it? Scroll to the bottom of the pull request, tap **Merge pull request**, then **Confirm merge**.
+4. About two minutes later, the change is on [dj-rachel.vercel.app](https://dj-rachel.vercel.app).
+
+If something goes wrong after a merge, tell Lou: every earlier version is saved and can be put back.
 
 ## Good to know
 
-- The temporary website may be visible to anyone who has its link, even though the files are private. Don't put private client info, passwords, or anything you wouldn't want shared on the site.
+- The temporary website and the website's files are both public. Don't put private client info, passwords, or anything you wouldn't want shared on the site.
 - Search engines are blocked while the site is a draft. The planned address is `djrachellynch.com`, and it will only be connected after you approve the finished site.
 - The "Working preview" banner at the top stays until you approve the final words and photos.
 - The Reviews page uses the Google and Facebook reviews you shared, each labeled with its source and rating. A review posted on both platforms is shown once with both sources listed.

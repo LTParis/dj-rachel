@@ -11,13 +11,13 @@
 
 ## Who is editing and how changes ship
 
-- Rachel (GitHub: `Lynch022`) requests changes in plain language, usually through ChatGPT/Codex. Lou (`LTParis`) owns the repository, reviews every change, and merges it.
+- Rachel (GitHub: `Lynch022`) requests changes in plain language, usually through ChatGPT/Codex. Lou (`LTParis`) owns the repository. Either Rachel or Lou may review and merge a pull request.
 - Never commit or push directly to `main`. Work on a new branch named for the change (for example `rachel/update-about-copy`) and open a pull request into `main`.
 - In the pull request, list what changed in plain language, note anything you left out or need Rachel to confirm, and mention the preview link if the host posts one.
-- `main` deploys to the temporary preview site. Merging is Lou's decision, not the agent's.
+- `main` deploys to the temporary preview site, and each pull request gets its own Vercel preview link. Merging is a person's decision (Rachel or Lou), never the agent's.
 - Use Node.js 22.23.4 or newer. Run `npm install` once, then `npm run build` before opening a pull request; do not open one if the build fails.
 - Do not change hosting settings, DNS, the custom domain, the `noindex`/robots launch settings, repository access, or GitHub/Vercel configuration.
-- Never add passwords, tokens, private client details, or personal phone numbers/addresses to the repository.
+- The repository is public. Never add passwords, tokens, private client details, or personal phone numbers/addresses to it.
 - If Rachel asks for something that conflicts with these rules (for example, a made-up stat or an unapproved photo), explain the rule and ask her for the real detail instead.
 
 ## Where things live

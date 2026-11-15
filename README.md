@@ -32,9 +32,9 @@ npm run preview
 
 ## Safe handoff
 
-Rachel's plain-language getting-started guide is in [FOR-RACHEL.md](./FOR-RACHEL.md). She has her own GitHub account (`Lynch022`) with write access; never share passwords, recovery codes, or access tokens. She edits through ChatGPT Codex, which reads [AGENTS.md](./AGENTS.md): Codex works on a branch and opens a pull request, Lou reviews and merges, and `main` deploys to the temporary preview site.
+Rachel's plain-language getting-started guide is in [FOR-RACHEL.md](./FOR-RACHEL.md). She has her own GitHub account (`Lynch022`) with write access; never share passwords, recovery codes, or access tokens. She edits through ChatGPT Codex, which reads [AGENTS.md](./AGENTS.md): Codex works on a branch and opens a pull request; Rachel (or Lou) checks the Vercel preview and merges, and `main` deploys to the temporary preview site.
 
-The temporary preview is hosted on Vercel at https://dj-rachel.vercel.app (Hobby project `lou-paris-projects/dj-rachel`); every push to `main` redeploys it. Vercel's Hobby plan only deploys private-repo commits authored by the project owner (LTParis), so the repository allows merge commits only: merging Rachel's pull requests creates an LTParis-authored commit that Vercel will deploy. Pull request previews from her branches are blocked on Hobby; that needs Vercel Pro. A preview deployment may be publicly viewable even while the GitHub repository is private. Keep private information out of the site, review Vercel's preview-access settings, and do not connect the custom domain or publish as the production site until Rachel approves the content and the preview.
+The temporary preview is hosted on Vercel at https://dj-rachel.vercel.app (Hobby project `lou-paris-projects/dj-rachel`); every push to `main` redeploys it. The GitHub repository is public on purpose: Vercel's Hobby plan blocks deployments of commits by collaborators on private repositories, but collaboration is free for public ones, so Rachel's own merges and pull request previews deploy. Do not make it private again without moving to Vercel Pro. Nothing secret belongs in the repository. Keep private information out of the site, review Vercel's preview-access settings, and do not connect the custom domain or publish as the production site until Rachel approves the content and the preview.
 
 ## SEO and launch status
 

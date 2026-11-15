@@ -970,6 +970,18 @@ h2 {
 	border: 4px solid var(--pink);
 }
 
+.offer-grid--pink .offer-card {
+	border: 4px solid #000;
+	background: var(--pink);
+	color: #000;
+}
+
+.offer-grid--pink .offer-card h3,
+.offer-grid--pink .offer-card p,
+.offer-grid--pink .offer-card__number {
+	color: #000;
+}
+
 .offer-card h3 {
 	margin-top: 23px;
 }

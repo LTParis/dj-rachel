@@ -977,9 +977,12 @@ h2 {
 }
 
 .offer-grid--pink .offer-card h3,
-.offer-grid--pink .offer-card p,
 .offer-grid--pink .offer-card__number {
 	color: #000;
+}
+
+.offer-grid--pink .offer-card p {
+	color: #fff;
 }
 
 .offer-card h3 {

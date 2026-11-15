@@ -2,6 +2,7 @@
 import SiteLayout from "../layouts/SiteLayout.astro";
 import ServicePage from "../components/ServicePage.astro";
 import ContactCta from "../components/ContactCta.astro";
+import BrandClients from "../components/BrandClients.astro";
 ---
 
 <SiteLayout title="Corporate Event DJ | DJ Rachel Lynch" description="DJ and event-host services for corporate events, brand activations, grand openings, company celebrations, and galas.">
@@ -22,6 +23,7 @@ import ContactCta from "../components/ContactCta.astro";
 			{ title: "Bring it to life", copy: "Enjoy the event while the agreed plan guides the music and mic moments." },
 		]}
 	>
+		<BrandClients slot="after-hero" />
 		<ContactCta />
 	</ServicePage>
 </SiteLayout>

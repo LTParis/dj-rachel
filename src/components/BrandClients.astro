@@ -1,0 +1,37 @@
+---
+import { brandClients } from "../data/brandClients";
+---
+
+<section class="brand-clients" aria-labelledby="brand-clients-heading">
+	<div class="page-width">
+		<p class="eyebrow">Retail + corporate clients</p>
+		<h2 id="brand-clients-heading">their brand.<br /><em>my kind of energy.</em></h2>
+		<p class="brand-clients__intro">Grand openings. Brand events. Holiday parties. A few of the names I’ve brought the music to.</p>
+		<ul class="brand-clients__grid">
+			{brandClients.map((brand) => (
+				<li class="brand-clients__card">
+					<div class="brand-clients__logo">
+						{brand.logo ? <img src={brand.logo} alt={brand.name} width="240" height="110" loading="lazy" /> : <span>{brand.name}</span>}
+					</div>
+					<p>{brand.event}</p>
+				</li>
+			))}
+		</ul>
+	</div>
+</section>
+
+<style>
+	.brand-clients { padding-block: clamp(56px, 7vw, 88px); background: #000; color: #fff; }
+	.brand-clients .eyebrow { color: #f17eb2; }
+	.brand-clients h2 { color: #fff; font-size: clamp(2.7rem, 5vw, 4.5rem); }
+	.brand-clients h2 em { color: #f17eb2; }
+	.brand-clients__intro { max-width: 620px; margin: 24px 0 36px; line-height: 1.7; }
+	.brand-clients__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding: 0; margin: 0; list-style: none; }
+	.brand-clients__card { display: flex; flex-direction: column; background: #fff; color: #191216; border: 3px solid var(--pink); padding: 24px; text-align: center; }
+	.brand-clients__logo { display: grid; place-items: center; min-height: 120px; }
+	.brand-clients__logo img { width: 100%; max-width: 240px; height: 110px; object-fit: contain; }
+	.brand-clients__logo span { font-family: var(--display); font-size: clamp(1.3rem, 2vw, 1.8rem); font-weight: 800; line-height: 1.3; }
+	.brand-clients__card p { margin: 20px 0 0; padding-top: 16px; border-top: 1px solid #e5dbe0; font-size: 0.8rem; line-height: 1.5; }
+	@media (max-width: 700px) { .brand-clients__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .brand-clients__card { padding: 16px; } }
+	@media (max-width: 380px) { .brand-clients__grid { grid-template-columns: 1fr; } }
+</style>

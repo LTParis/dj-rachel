@@ -78,9 +78,11 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           # --match-head-commit refuses to merge if new commits landed after the build.
-          # The repository deletes merged branches automatically.
           gh pr merge "$PR" --repo "$REPO" --merge \
             --match-head-commit "${{ needs.check.outputs.head_sha }}"
+          # GitHub's auto-delete skips merges made by Actions, so tidy up here.
+          branch=$(gh pr view "$PR" --repo "$REPO" --json headRefName --jq .headRefName)
+          gh api -X DELETE "repos/$REPO/git/refs/heads/$branch" || true
           gh pr comment "$PR" --repo "$REPO" --body "Published. The change will be on https://dj-rachel.vercel.app in about two minutes."
 
   report-failure:

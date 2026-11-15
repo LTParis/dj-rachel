@@ -13,7 +13,7 @@ interface Step {
 interface Props {
 	eyebrow: string;
 	title: string;
-	lead: string;
+	lead: string | string[];
 	offersHeading: string;
 	offers: Offer[];
 	highlightOffers?: boolean;
@@ -29,7 +29,7 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 		<div class="page-hero__copy">
 			<p class="eyebrow">{eyebrow}</p>
 			<h1 set:html={title} />
-			<p class="hero-lead">{lead}</p>
+			{(Array.isArray(lead) ? lead : [lead]).map((paragraph) => <p class="hero-lead">{paragraph}</p>)}
 			<a class="button" href="/#contact">Let's plan your event</a>
 		</div>
 		{weddingHero ? <WeddingCarousel /> : <div class="page-hero__art" aria-hidden="true">

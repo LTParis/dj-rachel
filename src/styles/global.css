@@ -1000,13 +1000,23 @@ h2 {
 	grid-template-columns: 1fr 0.82fr;
 }
 
+.about-hero .eyebrow {
+	margin-bottom: 24px;
+}
+
+.about-hero h1 {
+	margin-bottom: 40px;
+	line-height: 1.05;
+}
+
 .photo-placeholder--portrait {
 	min-height: 440px;
 }
 
 .about-story {
 	padding-block: 96px;
-	background: #eee8e2;
+	background: #000;
+	color: #fff;
 }
 
 .about-story__inner {
@@ -1020,7 +1030,8 @@ h2 {
 .about-story__inner > p {
 	max-width: 650px;
 	margin-bottom: 24px;
-	color: #51484c;
+	color: #fff;
+	font-weight: 700;
 }
 
 .about-story__inner > p:last-child {

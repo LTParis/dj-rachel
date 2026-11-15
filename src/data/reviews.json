@@ -1,0 +1,1904 @@
+{
+  "meta": {
+    "inputRecords": 130,
+    "includedUniqueReviews": 108,
+    "excludedEmptyRecords": 16,
+    "mergedDuplicateRecords": 6,
+    "sourceRecords": {
+      "Google": 68,
+      "Facebook": 46
+    }
+  },
+  "reviews": [
+    {
+      "id": "rachel-review-1",
+      "text": "We’re probably DJ Rachel’s most recent wedding at the time of this writing (my wedding was on 11/6) so look no further and trust when I say this: you should hire her. My wedding had unique cultural elements (a whole tea ceremony among other things) but we communicated a lot to make sure we pulled it off smoothly. And that’s one of the best things about her: communication on every detail. Her playlist app is a godsend and easy to use. The amount of professionalism she exhibited with me and my wife, the photographer and videographer, the officiant, and the venue coordinator was nothing short of impressive from beginning to end. It’s thanks to her that people kept telling us that our wedding was so fun. You won’t regret having Rachel on board for your wedding!",
+      "reviewer": "Alex Lee",
+      "sources": [
+        {
+          "id": 1,
+          "platform": "Google",
+          "reviewer": "Alex Lee",
+          "date": "2026-11-12",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "id": "rachel-review-2",
+      "text": "DJ Rachel is the best!! There is no one that we could recommend more for your big day. We had to pivot endlessly the night before and morning of our wedding (thanks, nor’easter!) but DJ Rachel made us feel so at ease when we knew so little! She coordinated beautifully with the rest of the wedding team and made sure our night was totally unforgettable!! Our wedding was just over a month ago, and I get told still about how great our DJ was. Everyone was on the dance floor: kids, friends, parents, grandparents!! DJ Rachel saved the day. We had the best wedding EVER!!",
+      "reviewer": null,
+      "sources": [
+        {
+          "id": 2,
+          "platform": "Google",
+          "reviewer": "Gwen Stuard",
+          "date": "2026-11-10",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        },
+        {
+          "id": 4,
+          "platform": "Facebook",
+          "reviewer": "Gwenyth Stuard",
+          "date": "2026-11-09",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "id": "rachel-review-3",
+      "text": "There isn’t a higher praise when it comes to DJ Rachel, if you want someone that knows the industry knows the crowd and can craft a playlist for your specific wedding. You have to contact DJ Rachel. From remote venues with no power to hosting the biggest weddings. Rachel can do it all. My experience with her and her company have been nothing but the absolute best.",
+      "reviewer": "Tony Sinoyiannis",
+      "sources": [
+        {
+          "id": 3,
+          "platform": "Google",
+          "reviewer": "Tony Sinoyiannis",
+          "date": "2026-11-10",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "id": "rachel-review-5",
+      "text": "DJ Rachel was truly one of the best parts of our wedding. She made the entire event seamless, on-track, and completely stress-free. Her incredible organization and attention to detail gave us 100% confidence heading into our big day.\nWorking with her was a dream! She was responsive, easy to communicate with, and always happy to jump on a call to answer any questions. As a Type-A bride, the planning app she uses was an absolute dream come true! Having all the details neatly organized in one shared location made the planning process so smooth.\nBeyond her professionalism, DJ Rachel absolutely killed it when it came to keeping the party going all night. We gave her only general genres rather than a strict must-play or no-play list, fully trusting her to read the crowd, and she delivered! The dance floor was packed the entire night. We continue to receive compliments from guests across every generation, from our 20-year-old cousins to our 92-year-old grandfather.\nI would highly recommend DJ Rachel to anyone looking for a DJ for a wedding or any other special event!!",
+      "reviewer": "Collin & Marissa",
+      "sources": [
+        {
+          "id": 5,
+          "platform": "Google",
+          "reviewer": "Collin & Marissa",
+          "date": "2026-10",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-10"
+    },
+    {
+      "id": "rachel-review-6",
+      "text": "DJ Rachel was amazing! From the very beginning of wedding planning, she made the process seamless and helped to make our day exactly what we wanted. The organization she brought was just one of the many incredible things about her. She provided audio from the ceremony all the way until the end of the night—the dance floor was literally nonstop for 3 hours. We had so many guests telling us afterwards how awesome she was! Best DJ ever. Thank you SO much Rachel for helping to make our day as perfect as it was!!",
+      "reviewer": "Leah Rubinstein",
+      "sources": [
+        {
+          "id": 6,
+          "platform": "Google",
+          "reviewer": "Leah Rubinstein",
+          "date": "2026-10",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-10"
+    },
+    {
+      "id": "rachel-review-7",
+      "text": "Rachel is incredible!! We recommend DJ Rachel to all of our couples and for good reason: that dance floor is packed the entire night, she’s able to pivot to any venue or weather changes, and she keeps the party going.\nWonderfully communicative during the entire planning process with other vendors (thank you!!!) and clients.\nShe listens to the clients needs and requests for vibe throughout the night. Her music and lighting set the tone for every minute of the party.\nWe can’t recommend DJ Rachel Lynch enough - she’s the best!!! (Kristin Ferrarese, owner, Fortuna’s Catering Co.)",
+      "reviewer": "Kristin Ferrarese",
+      "sources": [
+        {
+          "id": 7,
+          "platform": "Google",
+          "reviewer": "Kristin Ferrarese",
+          "date": "2026-10",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-10"
+    },
+    {
+      "id": "rachel-review-8",
+      "text": "Rachel absolutely crushed it at our wedding. She was incredibly organized and professional throughout the whole process, making us feel super comfortable. She handled all of the audio from ceremony to reception, and every part of it was seamless. Our favorite part was the dancing, we requested club-style quick-mixing with lots of remixes and transitions and she totally nailed it. A bunch of our guests got her card and told us the next day that we had one of the most active dance floors they had seen at a wedding. She was able to incorporate many of our song requests including even the craziest ones, while keeping a perfect flow. She is awesome and we would recommend her for any wedding or event!",
+      "reviewer": "T Reviews",
+      "sources": [
+        {
+          "id": 8,
+          "platform": "Google",
+          "reviewer": "T Reviews",
+          "date": "2026-10",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-10"
+    },
+    {
+      "id": "rachel-review-9",
+      "text": "Let me start with this: BOOK DJ RACHEL ASAP! Rachel is a true professional from start to finish. She is energetic, detail oriented and does not miss!!!! We had a three hour dance window mostly in daylight and in the summer heat for our 100 person wedding and despite those “challenges” EVERYONE was on the dance floor the whole time!!! Rachel used an app during planning which helps type A brides like me relax and feel as involved in song selection as you want to be with still no pressure! She is just pure talent and was meant to be doing this. So many of our guests made a point to find me during and after the wedding to tell me what an amazing job Rachel did. Thank you so so much Rachel for making our day so amazing!! 💛🍦",
+      "reviewer": "Ab",
+      "sources": [
+        {
+          "id": 9,
+          "platform": "Google",
+          "reviewer": "Ab",
+          "date": "2026-09",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-09"
+    },
+    {
+      "id": "rachel-review-10",
+      "text": "There truly aren't enough wonderful things we can say about DJ Rachel. We originally hired her to be our DJ, but she quickly became so much more. She was one of the biggest reasons our wedding day came together so seamlessly, and we genuinely can't imagine the day without her. She truly was our wedding fairy godmother!\nAs music lovers, choosing the right songs for our wedding was one of the hardest parts of planning. Rachel made the entire process enjoyable, helping us curate music that reflected who we are while also creating an incredible atmosphere for our guests. On the wedding day, she absolutely delivered. The dance floor was packed, she flawlessly incorporated our requests, and she put together one of the best DJ sets we could have imagined. Several of our guests told us we had the most fun wedding they had been to, and Rachel’s DJ and MC skills were a huge contributor to that.\nWhat truly sets Rachel apart, though, is everything she does beyond the music. She took the lead in helping us build our day-of timeline, attended our venue walkthrough to make sure every detail had been considered, coordinated with our vendors, set up audio for the ceremony, and even provided equipment to support other vendors when needed. Her professionalism, organization, and genuine care for our wedding were evident every step of the way.\nIf you're lucky enough to have DJ Rachel on your vendor team, you're getting far more than an incredible DJ. You're getting someone who will invest in your wedding as if it were her own, and that is truly priceless.",
+      "reviewer": "Joan Iezin",
+      "sources": [
+        {
+          "id": 10,
+          "platform": "Google",
+          "reviewer": "Joan Iezin",
+          "date": "2026-08",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-08"
+    },
+    {
+      "id": "rachel-review-11",
+      "text": "DJ Rachel was absolutely incredible! From the very first conversation through the last song of the night, everything was handled with professionalism, enthusiasm, and attention to detail.\nThe music was perfect from start to finish. She read the room flawlessly, kept the dance floor packed all night, and made sure guests of all ages had an amazing time. Every special moment—from our ceremony to our first dance and the reception to our private last dance—was timed perfectly and felt seamless.\nWe received so many compliments from our family and friends about how much fun everyone had, and a huge part of that was thanks to DJ Rachel. Their energy, organization, and ability to keep the celebration flowing made our wedding unforgettable.\nIf you're looking for someone who is reliable, talented, and truly knows how to create an incredible atmosphere, I can't recommend DJ Rachel highly enough. Thank you for helping make our wedding the best day of our lives!",
+      "reviewer": "Sophie Veilleux",
+      "sources": [
+        {
+          "id": 11,
+          "platform": "Google",
+          "reviewer": "Sophie Veilleux",
+          "date": "2026-08",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-08"
+    },
+    {
+      "id": "rachel-review-12",
+      "text": "DJ Rachel was fantastic to work with! As a wedding photographer, finding vendors who work well with others is always so important. She was INCREDIBLY personable and smiled the entire time!",
+      "reviewer": "Ephe Nicolakis",
+      "sources": [
+        {
+          "id": 12,
+          "platform": "Google",
+          "reviewer": "Ephe Nicolakis",
+          "date": "2026-07",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-07"
+    },
+    {
+      "id": "rachel-review-13",
+      "text": "My wedding got rocked to the max because of Rachel she provided such excellent service",
+      "reviewer": "jeanette sanna",
+      "sources": [
+        {
+          "id": 13,
+          "platform": "Google",
+          "reviewer": "jeanette sanna",
+          "date": "2026-07",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-07"
+    },
+    {
+      "id": "rachel-review-14",
+      "text": "DJ Rachel did an amazing job with the planning process for my daughters sweet 16 party. The final result was magical. The uplighting she used really elevated the party. My family, my daughter and all her friends had a great time. She was even able to capture a group picture of everyone ❤️\nHighly recommend ✅",
+      "reviewer": "Katie Becker",
+      "sources": [
+        {
+          "id": 14,
+          "platform": "Google",
+          "reviewer": "Katie Becker",
+          "date": "2026-06",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-06"
+    },
+    {
+      "id": "rachel-review-15",
+      "text": "INCREDIBLE DJ!!! Dj Rachel is so personable and feels like an immediate best friend at your first call! Her skills are through the roof! As a wedding DJ myself, I was nervous about who would Dj my wedding when the time came. A year before I was engaged to my husband, I was following Dj Rachel on instagram and YouTube channel (originally learning from her as a fellow DJ). So when it was finally time to plan a wedding, I 100% needed her!!! I had full and complete confidence in DJ Rachel, and she was above and beyond my dreams! It’s almost four months since our wedding and our guests continue to say just how “LEGENDARY” the wedding was - especially the music and dancing! I am so grateful for Dj Rachel 😄",
+      "reviewer": "Meredith Kercher",
+      "sources": [
+        {
+          "id": 15,
+          "platform": "Google",
+          "reviewer": "Meredith Kercher",
+          "date": "2026-05",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-05"
+    },
+    {
+      "id": "rachel-review-16",
+      "text": "I’ve known DJ Rachel for years through our regular work, so when it came to our wedding, my now wife and I didn’t consider anyone else.\nThis review is completely honest. Rachel knows I wouldn’t hold back if there were issues.\nShe absolutely delivered.\nThe entire night ran flawlessly. Rachel acted as a true master of ceremonies, keeping everything on track and ensuring every detail was executed perfectly. Her ability to read the crowd and keep the dance floor energized was invaluable.\nHer experience made the planning process straightforward and stress-free. From the music to the lighting, setup, and photo booth, everything looked and felt top-tier.\nRachel was exceptional, as always. If you have a wedding or event coming up, hiring her will be one of the best decisions you make.\nThank you, Rachel. You made the night unforgettable.",
+      "reviewer": "Pierre Rhodes",
+      "sources": [
+        {
+          "id": 16,
+          "platform": "Google",
+          "reviewer": "Pierre Rhodes",
+          "date": "2026-05",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-05"
+    },
+    {
+      "id": "rachel-review-17",
+      "text": "DJ Rachel is a 10 out of 10! She is off the charts fantastic! We communicated multiple times before my birthday party. She encouraged me to put together a play list of all my favorite songs. She did a great job getting the crowd up and dancing and keeping them engaged. She is hands down the best DJ I’ve ever encountered. I highly recommend her for your next party. Your guests will rave about her!",
+      "reviewer": "Stacy Henrikson",
+      "sources": [
+        {
+          "id": 17,
+          "platform": "Google",
+          "reviewer": "Stacy Henrikson",
+          "date": "2025-12",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2025-12"
+    },
+    {
+      "id": "rachel-review-18",
+      "text": "Absolutely the hands down the best decision we made in our wedding planning! Rachel was amazing to work with, super responsive, detail oriented, listened to what we wanted for the flow of the evening, and had the dance floor going all night! Even two months later our guests are still talking about how awesome she was!\nI’d work with her again in a heartbeat.",
+      "reviewer": "Paige Cahill",
+      "sources": [
+        {
+          "id": 18,
+          "platform": "Google",
+          "reviewer": "Paige Cahill",
+          "date": "2025-12",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2025-12"
+    },
+    {
+      "id": "rachel-review-19",
+      "text": "Rachel was our dj for our wedding two weeks ago. She did an absolutely amazing job! Throughout this whole process she was timely, communicative and encouraging. She was someone I could truly rely on during all of the wedding craziness. She was not only a DJ but she also did so much more- she helped plan the timeline of the day, communicated with our other vendors, and worked amazing under pressure when there was last minute change. She made our music vision come to life. I highly recommend DJ Rachel for any event you may be planning. She was by far the most complimented aspect of our wedding by guests. Thank you Rachel for making our wedding day the best day ever! 😊",
+      "reviewer": "Savannah Quartuccio",
+      "sources": [
+        {
+          "id": 19,
+          "platform": "Google",
+          "reviewer": "Savannah Quartuccio",
+          "date": "2025",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2025"
+    },
+    {
+      "id": "rachel-review-20",
+      "text": "We booked DJ Rachel for our wedding on the basis of her immediate mix of personability and professionalism, and we were blown away throughout by her exceptional skill and attentiveness to the whole wedding process. In the build up to the wedding she gave us an enormous amount of support and guidance as we put our music together. She was also very attuned to the kind of evening that we wanted to have. On the day of, she made everything entirely stress-free and joyful. I don't think either of us had appreciated just how much of a difference a truly skilled DJ can make to an evening, but we very much do so now! Almost all of our guests made a point of saying how good DJ Rachel was. She made our choices flow together and used exceptional judgement to complement them with other songs that added so much exuberance to the dancing. She is also a wonderful human being who genuinely wanted to make our evening as special as possible. We cannot recommend DJ Rachel more highly, and should we ever need a DJ again we would hire her without hesitation.",
+      "reviewer": "Edward Watson",
+      "sources": [
+        {
+          "id": 20,
+          "platform": "Google",
+          "reviewer": "Edward Watson",
+          "date": "2025",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2025"
+    },
+    {
+      "id": "rachel-review-21",
+      "text": "DJ Rachel was exceptional at my son and daughter-in-law's wedding! She is organized, personable and professional. Did I forget thorough? There is so much more to this job than just playing a song. Detailed planning prior to the event, microphones for the ceremony and speeches, lighting to accent the songs, inviting banter to get guests up and dancing, and friendly to all who attended. My favorite part was the mash up of 2 songs she did for my son and I to dance to. We started out with a more traditional slow number but it transitioned into an upbeat dance tune that we both love. It was certainly a highlight for me and it thoroughly surprised our guests and signaled the opening of the dance floor. Rachel's expertise definitely added to our beautiful day. I highly recommend DJ Rachel Entertainment!",
+      "reviewer": "Boni Riether",
+      "sources": [
+        {
+          "id": 21,
+          "platform": "Google",
+          "reviewer": "Boni Riether",
+          "date": "2025",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2025"
+    },
+    {
+      "id": "rachel-review-22",
+      "text": "DJ Rachel made our wedding day special. Rachel not only ensured that the entire event went forward seamlessly, but she also made sure to put my spouse and I’s “wants” at the forefront, catering to special requests, and handling last minute changes incredibly professionally. Thank you Rachel!",
+      "reviewer": "Bailey Holloway",
+      "sources": [
+        {
+          "id": 22,
+          "platform": "Google",
+          "reviewer": "Bailey Holloway",
+          "date": "2025",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2025"
+    },
+    {
+      "id": "rachel-review-23",
+      "text": "We recently hosted a birthday party and DJ Rachel was fantastic! She understood the vibe we were going for and really facilitated a fun party with dancing and a lot of great music to celebrate with. Would highly recommend her and plan to use her again in the future!",
+      "reviewer": "Sinead Harrington",
+      "sources": [
+        {
+          "id": 23,
+          "platform": "Google",
+          "reviewer": "Sinead Harrington",
+          "date": "2025",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2025"
+    },
+    {
+      "id": "rachel-review-24",
+      "text": "I truly think that my husband and I are a wedding DJ's worst nightmare 😅 we are on the opposite end of the spectrum when it comes to music tastes and party vibe (I'm more of a dance floor girl while he enjoys hanging out and talking with his buddies) and I definitely had some anxiety about how our wedding would shake out. Enter DJ Rachel - she absolutely understood the assignment. She walked us through options for every part of the day, and we were able to compromise in the best way - it was truly an event centered around both of our preferences. We didn't want to do speeches, and she recommended doing a 30-45m dance set between cocktail hour and dinner, and it was SO PERFECT.\nThe actual day was flawless - if anything didn't go exactly to plan, I had no idea about it 😆 DJ Rachel was professional, flexible, and handled bumps amazingly; I accidentally forgot to include parents in the grand entrances and she pivoted to include them without batting an eye. The reception was AMAZING!!! She absolutely nailed it; being surrounded by my favorite people while scream singing and dancing for 2+ hours will forever be a core memory. Many of my guests mentioned their voices were gone the next day and no one was sad about it 😉 It was very important to me to find a DJ who actually mixes songs, and doesn't just run through a playlist and let songs fade; she kept the party going the entire night. I am still receiving compliments on how great the music was and am so thankful that we found her as our wedding DJ!",
+      "reviewer": "Liz Peterson",
+      "sources": [
+        {
+          "id": 24,
+          "platform": "Google",
+          "reviewer": "Liz Peterson",
+          "date": "2025",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2025"
+    },
+    {
+      "id": "rachel-review-25",
+      "text": "We had an absolutely fantastic experience working with DJ Rachel Entertainment at our recent TogetHER Event . From start to finish, her professionalism and organization were evident in every detail. Communication was seamless, even despite some issues with our email accounts! Her cool, state-of-the-art music equipment really stood out and made a difference, ensuring a first class experience. We couldn’t have asked for better service and will absolutely work with her again in the future! Highly recommend!\nThe Shops at Farmington Valley Team",
+      "reviewer": "Liz Ackerman",
+      "sources": [
+        {
+          "id": 25,
+          "platform": "Google",
+          "reviewer": "Liz Ackerman",
+          "date": "2025",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2025"
+    },
+    {
+      "id": "rachel-review-26",
+      "text": "Went to 2 weddings with her. She is amazing! She makes the dance floor more fun",
+      "reviewer": "Laura Salion",
+      "sources": [
+        {
+          "id": 26,
+          "platform": "Google",
+          "reviewer": "Laura Salion",
+          "date": "2025",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2025"
+    },
+    {
+      "id": "rachel-review-27",
+      "text": "DJ Rachel is fantastic! She made our wedding night unforgettable in the best way. She kept the crowd engaged and everyone was dancing the entire night. She is so kind and easy to work with and talk to. She even hopped in and danced with us throughout the night which was awesome! I’ll recommend her to everyone and anyone I know looking for a DJ.",
+      "reviewer": "Maddie Romano",
+      "sources": [
+        {
+          "id": 27,
+          "platform": "Facebook",
+          "reviewer": "Maddie Romano",
+          "date": "2024-09-15",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2024-09-15"
+    },
+    {
+      "id": "rachel-review-28",
+      "text": "Rachel was absolutely amazing to work with! We loved her app for managing the schedule for the event and the song requests. It was so easy to share with our guests. Rachel transformed the room with her uplighting - 100% necessary for your party! Rachel read the room and used her expertise to keep the party going! I can't remember seeing such a talented DJ at any other event I've attended! I highly recommend her for your next event! She will absolutely make your event!",
+      "reviewer": "Marissa Fraser",
+      "sources": [
+        {
+          "id": 28,
+          "platform": "Google",
+          "reviewer": "Marissa Fraser",
+          "date": "2024",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2024"
+    },
+    {
+      "id": "rachel-review-29",
+      "text": "Would absolutely recommend DJ Rachel for your wedding or event. The planning in the lead up to our wedding was made very easy with a step by step questionnaire on vibo that allowed us to select songs for particular parts of the ceremony. On the wedding day itself, Rachel was extremely attentive and thoughtful in making sure the specifics we wanted were achieved. She provided the sound for our ceremony, and music for our cocktail hour and reception. The mix of music turned out extremely well, and Rachel blended between songs smoothly. We attended a wedding with a different DJ shortly after our own, and both turned to each other to say, we wish DJ Rachel was here.",
+      "reviewer": "Kyle Riether",
+      "sources": [
+        {
+          "id": 29,
+          "platform": "Google",
+          "reviewer": "Kyle Riether",
+          "date": "2024",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2024"
+    },
+    {
+      "id": "rachel-review-30",
+      "text": "DJ Rachel was fantastic! Leading up to our wedding, my wife and I found her to be a professional, calming presence who had quick answers to our questions and a plan for every scenario. She has a super fun personality and definitely made our reception more fun and energetic. I would recommend her to anyone planning to have a DJ at their wedding. Thanks Rachel!",
+      "reviewer": "Matthew Fuller",
+      "sources": [
+        {
+          "id": 30,
+          "platform": "Google",
+          "reviewer": "Matthew Fuller",
+          "date": "2024",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2024"
+    },
+    {
+      "id": "rachel-review-31",
+      "text": "We have sat down multiple times to write this review but can never seem to find the exact right words to capture how thankful we are that we chose DJ Rachel for our October wedding. They say your guests will likely miss the small details you put into your wedding but it’s the big things that matter – venue, food, and your DJ. We spent months trying to find vendors that we felt were a good match for who we are as a couple. We needed to find a DJ that could relate to our crowd, especially as it was a multigenerational party crowd. After one phone call with Rachel, we knew she was our person. She put up with our many questions and was excited by the nontraditional things we wanted to do. Rachel traveled to the area a day early (from over four hours away!) to ensure she was familiar with the area. She even participated in our rehearsal dinner which meant a lot to us. From the moment she arrived you could tell she was putting together the finishing touches in her mind on how she was going to make our wedding an epic night to remember for everyone. We never had to worry about Rachel – a true professional. She kept the party going literally as people were walking out the door to go home. DJ Rachel was sure a top memory for all of us…even our venue shared that she was the best DJ they have seen in many years!",
+      "reviewer": "Jonathan Spaeth",
+      "sources": [
+        {
+          "id": 31,
+          "platform": "Google",
+          "reviewer": "Jonathan Spaeth",
+          "date": "2024",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2024"
+    },
+    {
+      "id": "rachel-review-32",
+      "text": "We hired DJ Rachel for our wedding and let me tell you, she was INCREDIBLE. She was So attentive to me as the bride, helped me figure so much how as far as timeline, music for all the different parts, helped so much day of to make sure we stayed on track. Through and through, DJ Rachel absolutely killed it. She had my guests pumped, ready to party and have the greatest night (as per my request!) if you’re looking for a DJ - do yourself and your party a favor and hire Rachel. I cannot thank her enough for making my wedding the best day & night of my life!",
+      "reviewer": "krista gerstberger",
+      "sources": [
+        {
+          "id": 32,
+          "platform": "Google",
+          "reviewer": "krista gerstberger",
+          "date": "2024",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2024"
+    },
+    {
+      "id": "rachel-review-33",
+      "text": "Rachel is it!!! If you’re looking for a DJ that is easy to work with, will LISTEN to your desires for your event needs/goals… Rachel is your girl! I’ve been a professional event planner (lots of weddings!) for 12 years and I always have a hard time recommending DJ’s. Not anymore! I was extremely impressed with Rachel’s clean setup. It wasn’t bulky or ugly like lots of others I’ve seen. I can’t recommend her enough. You won’t be disappointed!",
+      "reviewer": "Shannon English",
+      "sources": [
+        {
+          "id": 33,
+          "platform": "Google",
+          "reviewer": "Shannon English",
+          "date": "2024",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2024"
+    },
+    {
+      "id": "rachel-review-34",
+      "text": "A few weekends ago I had the honor of bing the best man at a wedding, and as the best man one of my responsibilities is to coordinate with all the vendors on the day of the wedding to help support the bride and groom on their big day. There was unanimous feedback from all the the vendors on how incredible prepared, professional, and on point Rachel was. Asking all the right questions, while also giving great suggestions she helped usher the group from ceremony to party time flawlessly. I have known Rachel since grade schools so of course I have somewhat of a bias opinion, but I felt it necessary to pass along the extremely positive feedback from the other seasoned vendors that took part in making this an amazing day for the bride and groom. I love what you’re doing Dj rachel keep it up!!!!!",
+      "reviewer": "John Urbanowicz",
+      "sources": [
+        {
+          "id": 34,
+          "platform": "Google",
+          "reviewer": "John Urbanowicz",
+          "date": "2024",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2024"
+    },
+    {
+      "id": "rachel-review-35",
+      "text": "DJ Rachel was wonderful to work with for two corporate events. She chose the perfect songs to play for our guests and anticipated all our needs. She is fantastic! We look forward to having her at future events.",
+      "reviewer": "Michele Wright",
+      "sources": [
+        {
+          "id": 35,
+          "platform": "Google",
+          "reviewer": "Michele Wright",
+          "date": "2024",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2024"
+    },
+    {
+      "id": "rachel-review-36",
+      "text": "DJ Rachel is the BEST! My husband, guests and I were blown away by her talents. We danced the night away, and could not have been happier with having Rachel as our dj!",
+      "reviewer": "Georgina Luongo",
+      "sources": [
+        {
+          "id": 36,
+          "platform": "Google",
+          "reviewer": "Georgina Luongo",
+          "date": "2024",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2024"
+    },
+    {
+      "id": "rachel-review-37",
+      "text": "Wow! If I could give DJ Rachel more than 5 stars I totally would. Booked her for a Restaurant Grand Opening and she knocked it out of the park! A true professional and entertainer who brought the same energy from the morning throughout the day and into the evening. Her ability to adapt on the fly was much appreciated. Looking for entertainment, you're in the right place and you will not be dissapointed!! ☝️❤️",
+      "reviewer": "Heather Santoro",
+      "sources": [
+        {
+          "id": 37,
+          "platform": "Google",
+          "reviewer": "Heather Santoro",
+          "date": "2024",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2024"
+    },
+    {
+      "id": "rachel-review-38",
+      "text": "DJ Rachel made my husbands 50th surprise party! The music selection was perfect, the lighting beautiful, and just kept the party moving flawlessly. Highly recommend DJ Rachel for your next party 🎉",
+      "reviewer": "Sonja Arnold",
+      "sources": [
+        {
+          "id": 38,
+          "platform": "Google",
+          "reviewer": "Sonja Arnold",
+          "date": "2024",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2024"
+    },
+    {
+      "id": "rachel-review-39",
+      "text": "Best DJ ever! She powered through a storm/lost power and still made our day perfect! Dance vibes the whole night. She can read a crowd!!",
+      "reviewer": "Carey Belansky",
+      "sources": [
+        {
+          "id": 39,
+          "platform": "Google",
+          "reviewer": "Carey Belansky",
+          "date": "2024",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2024"
+    },
+    {
+      "id": "rachel-review-43",
+      "text": "Working with DJ Rachel was absolutely seamless from start to finish! When we were shopping around, we had a phone call with Rachel about the process. I knew just from talking with her that we had to go with her. She is so knowledgeable, transparent, and professional, and wants to ensure couples have the best day possible. Throughout the year we worked on the app she uses to upload our songs, requests, and timeline. She is more than available to answer any questions to assist with this process. It seemed like a daunting task, but she assured us that as long as we give her a genre and/or “don’t play,” she would take care of it. When our big day came, she was there early setting up and making sure her system worked for the space. She was very flexible as the original plan of where she would set up was changed, and she adapted in the moment to do what we needed. Her system is minimalist in nature - not those big, clunky DJ setups some of us are used to seeing. It is modern and professional, and would work with any space. She has wireless speakers and mics that she can set up around the venue to provide music for the ceremony and cocktail hour. She helped with day-of coordination and worked with our catering team to ensure the timeline was followed. She even helped move the chairs from the ceremony site to the reception, and at one point stopped what she was doing to assist me with my dress! She is so conscientious and thoughtful, and my family and friends made numerous comments about how wonderful Rachel is throughout the day. We were worried that our crew wouldn’t want to dance,  but she played an awesome mix that got people out of their seats and dancing until the very end! She also made a mix for my brother and I, because we did a special dance together that required a few songs mashed up. She truly went above and beyond in every sense, but to her, that is what is expected, and she would never do any less. She takes incredible pride in her work, as evidenced by the way she works with couples, the vendors, and guests throughout the entire process. If you go with Rachel, you won’t have to worry about a thing on your wedding day, which is exactly what you want. I couldn’t recommend DJ Rachel more, and if I did the day over again, I would have her there in a heartbeat!",
+      "reviewer": "Hannah McNeil Socha",
+      "sources": [
+        {
+          "id": 43,
+          "platform": "Facebook",
+          "reviewer": "Hannah McNeil Socha",
+          "date": "2023-07-12",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2023-07-12"
+    },
+    {
+      "id": "rachel-review-44",
+      "text": "Rachel is a very talented DJ. Her energy and skills are superior. She allows you and your guests to pre-recommend songs via an app so she can be prepared on how to cater to your crowd. With a crowd of people with ages ranging from 22-60, she knew how to keep everyone dancing. By far, the best DJ. I cannot recommend her more.",
+      "reviewer": "Erika Wahlers",
+      "sources": [
+        {
+          "id": 44,
+          "platform": "Facebook",
+          "reviewer": "Erika Wahlers",
+          "date": "2023-05-06",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2023-05-06"
+    },
+    {
+      "id": "rachel-review-45",
+      "text": "We booked Rachel for our 2023 New Haven prom themed party/fundraiser and she absolutely killed it. Everyone had a blast and kept commenting how incredible the music was. The Vibo app. she suggested we use to connect about song suggestions and playlists was so easy to use. Was able to add in all the songs we wanted to hear along with the ones we didn't want.\nShe coordinated so well with the band we had playing too. The whole evening was so seamless. Can't wait to book her again for next year's prom! Thank you so much Rachel!",
+      "reviewer": null,
+      "sources": [
+        {
+          "id": 61,
+          "platform": "Google",
+          "reviewer": "Samantha Angermann",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        },
+        {
+          "id": 45,
+          "platform": "Facebook",
+          "reviewer": "Sam Angermann",
+          "date": "2023-03-05",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2023-03-05"
+    },
+    {
+      "id": "rachel-review-46",
+      "text": "Rachel is a very talented DJ. Her energy and skills are superior. She allows you and your guests to pre-recommend songs via an app so she can be prepared on how to cater to your crowd. With a crowd of people with ages ranging from 22-60, she knew how to keep everyone dancing. By far, the best DJ. I cannot recommend her more.\nAnd she made sure group photos were taken",
+      "reviewer": "Erika Wahlers",
+      "sources": [
+        {
+          "id": 46,
+          "platform": "Google",
+          "reviewer": "Erika Wahlers",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-47",
+      "text": "I recently had the pleasure of working with the amazing DJ Rachel for my wedding, and I cannot express enough how impressed and thrilled I am with everything. From the moment we first contacted her until the very last song played, our experience was nothing short of amazing!\nFirst and foremost, she was an absolute professional. She was incredibly organized, prompt, and attentive to our needs throughout the entire planning process. She took the time to understand our vision, preferences, and the overall vibe we wanted to create on our special day. The attention to detail was outstanding, ensuring that no request or important aspect was overlooked. Even with all of the last minute changes and everything we threw at her, she handled it all with ease!\nShe has the coolest set up with the coolest gear & lights that really lit the venue up! Our guests are still talking about it : )\nIts very clear how dedicated and passionate she is about her business. Our wedding would not have been the same without her.\nIf you're in search of a DJ who will go above and beyond to make your wedding truly extraordinary, I wholeheartedly recommend DJ Rachel! Her talent, professionalism, and genuine passion for creating unforgettable experiences will undoubtedly make your special day absolutely magical. We are eternally grateful for the incredible memories she helped us create.\nThank you again from the bottom of our hearts for making our special day an absolute blast!!!",
+      "reviewer": "Taylor Cote",
+      "sources": [
+        {
+          "id": 47,
+          "platform": "Google",
+          "reviewer": "Taylor Cote",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-48",
+      "text": "DJ Rachel is absolutely incredible. She worked seamlessly with our photographer and day of coordinator to make sure our wedding went off without a hitch. She is incredibly organized. She anticipated all of our needs. And then on top of everything, her song choices were spot on. I cannot recommend DJ Rachel enough. Everyone at our wedding commented on how awesome she is. If she has your date available, seriously, book her.",
+      "reviewer": "Christina Lakomski",
+      "sources": [
+        {
+          "id": 48,
+          "platform": "Google",
+          "reviewer": "Christina Lakomski",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-49",
+      "text": "If you are considering DJ Rachel for your\nnext event, just do it and hire her!! We got married this past Saturday and had Rachel dj our wedding. Rachel is the best at what she does and really knows how to keep the party rocking. I had been referred to Rachel by a co-worker whose son had recently gotten married. He also referred her to my bridesmaid who got married a few weeks ago. All I can say is after her wedding, I was even more pumped for ours. I knew Rachel would crush it again. Our guests are still raving about Rachel and the vibe on the dance floor she created. Rachel thinks about every little detail. She watches the energy on the floor and re-adjusts as needed for the crowd. We asked Rachel to play some pop punk songs but to make it “dance-y”. What did that mean? We didn’t know but Rachel did. What Rachel put together was a hit and we had the most amazing time. Rachel is professional, hard working and dedicated and I am so happy fate brought us to her.",
+      "reviewer": "Allie Herman",
+      "sources": [
+        {
+          "id": 49,
+          "platform": "Google",
+          "reviewer": "Allie Herman",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-50",
+      "text": "DJ Rachel is just phenomenal! When we were interviewing DJ's for our wedding, we were looking for a DJ that broke the traditional wedding DJ mold. We wanted someone who wasn’t pushing addons or claiming they knew exactly what we needed having not met us before. DJ Rachel is different, she brings so much expertise to the table, being extremely knowledgeable of her equipment, and setting the standard for other DJs to follow through her weekend mixes and YouTube presence. Seeing her content beforehand made me certain it was going to be awesome. Rachel does so much more than just provide equipment and press play on songs, she’s truly a “party rocker”! From the onset her personality shined through and her attention to detail could match any type-A personality. It was so easy to use the app to select music and make our wedding dreams come true. She was super helpful in making timeline suggestions when we met her at the venue before our event. On our wedding day, she delivered hits at the perfect time and brought so much energy to the dance floor making our day so memorable. She even recorded her own video content that we would have missed otherwise which showed an awesome recap of the night. Our friends and family raved about DJ Rachel and we could not be happier to recommend her to others!",
+      "reviewer": "Kevin Brown",
+      "sources": [
+        {
+          "id": 50,
+          "platform": "Google",
+          "reviewer": "Kevin Brown",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-51",
+      "text": "Rachel was very organized, fun and overall a great person and DJ! She helped us navigate the app to choose our music, sent reminders when needed, met with us in person to discuss details of timeline and so much more! My guests loved the music and the song choices DJ Rachel threw in as needed. DJ Rachel did not disappoint!",
+      "reviewer": "Alexa Villa",
+      "sources": [
+        {
+          "id": 51,
+          "platform": "Google",
+          "reviewer": "Alexa Villa",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-52",
+      "text": "I rarely review, but DJ Rachel warrants spending time to make sure everyone knows how professional, responsive & FUN she is as a DJ. She came highly recommended & still exceeded our expectations. Our daughter's Sweet 16 was everything she wished for & DJ Rachel was a major part. DJ Rachel listened and incorporated our requests; was super flexible with our unique wish list & brought a lot of great ideas and energy to the overall event. Any and all events that we need a DJ, she is it!",
+      "reviewer": "Janae Ciszek",
+      "sources": [
+        {
+          "id": 52,
+          "platform": "Google",
+          "reviewer": "Janae Ciszek",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-53",
+      "text": "Rachel has recently DJ my daughters Sweet 16. I was impressed as soon as we walked into the room. She was set and ready to go, her lighting was incredible, really set the mood for the evening. She kept the crowd going all night. Rachel was AMAZING from start to finish, and we look forward to hiring for our next event.",
+      "reviewer": "Jillian Adams",
+      "sources": [
+        {
+          "id": 53,
+          "platform": "Google",
+          "reviewer": "Jillian Adams",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-54",
+      "text": "My wife and I booked DJ Rachel for our wedding earlier this month and we were so happy with her! Not only were her mixes absolutely perfect, but DJ Rachel was extremely attentive to the vibes of the night. In addition to to her being a great DJ, she also was able to navigate challenges with the venue when they sprang upon us last minute that they had noise level restrictions. We were made aware of a 10pm noise ordinance when booking the venue which was fine, but were never made aware of noise level restrictions until about 2 weeks before the wedding, after already booking both DJ Rachel and the venue. She ensured it would be ok and everything was! It did not stop Rachel from crushing it and keeping the dance floor alive. She uses an app for the couples to pick out songs for the day and worked with what we wanted, but read the room and knew what songs for what moments applied. DJing is more than just playing music at a party, and DJ Rachel exemplified just that. We highly recommend Rachel for all parties requiring a DJ in the Connecticut area.",
+      "reviewer": "Shannan O'Neil",
+      "sources": [
+        {
+          "id": 54,
+          "platform": "Google",
+          "reviewer": "Shannan O'Neil",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-55",
+      "text": "Honestly wish I could give 10 stars. Not only did DJ Rachel provide a seamlessly curated playlist to please the crowd, but she also was the sole reason the wedding kept on timeline. As a guest and vendor of this wedding I can say truly that it is unlikely you will find a DJ better at their job than Rachel. I even caught her vlogging her speaker set up for troubleshooting...I mean, come ON. That's someone who constantly wants to do better for their clients. Quality vendor material right there.... we love you DJ Rachel. Can't wait to rock with you again on 6/17! 😁",
+      "reviewer": "Julie Falcone",
+      "sources": [
+        {
+          "id": 55,
+          "platform": "Google",
+          "reviewer": "Julie Falcone",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-56",
+      "text": "DJ Rachel is THE BEST. Great personality and wonderful to work with. This is the 2nd year she has provided DJ services for our EntreprenHER event and once again it was a pleasure. She comes fully equipped with all of her own equipment. She even provided mics for us since hers was more crisp and clear. Oh and the portable speaker was a huge bonus for those who were in a different area of the building to allow them to hear the music. I highly recommend DJ Rachel for your special events. I am so looking forward to next year's event!!",
+      "reviewer": "Candi Deal",
+      "sources": [
+        {
+          "id": 56,
+          "platform": "Google",
+          "reviewer": "Candi Deal",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-57",
+      "text": "Rachel did an amazing job as our DJ. She was organized, very communicative and really helped us through the whole process. We loved the lighting she used and we additionally purchased the photo booth, which is definitely worth it. I highly recommend Rachel for any event!",
+      "reviewer": "Melissa Lundstedt",
+      "sources": [
+        {
+          "id": 57,
+          "platform": "Google",
+          "reviewer": "Melissa Lundstedt",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-58",
+      "text": "Working with DJ Rachel was absolutely seamless from start to finish! When we were shopping around, we had a phone call with Rachel about the process. I knew just from talking with her that we had to go with her. She is so knowledgeable, transparent, and professional, and wants to ensure couples have the best day possible. Throughout the year we worked on the app she uses to upload our songs, requests, and timeline. She is more than available to answer any questions to assist with this process. It seemed like a daunting task, but she assured us that as long as we give her a genre and/or “don’t play,” she would take care of it. When our big day came, she was there early setting up and making sure her system worked for the space. She was very flexible as the original plan of where she would set up was changed, and she adapted in the moment to do what we needed. Her system is minimalist in nature - not those big, clunky DJ setups some of us are used to seeing. It is modern and professional, and would work with any space. She has wireless speakers and mics that she can set up around the venue to provide music for the ceremony and cocktail hour. She helped with day-of coordination and worked with our catering team to ensure the timeline was followed. She even helped move the chairs from the ceremony site to the reception, and at one point stopped what she was going to assist me with my dress! She is so conscientious and thoughtful, and my family and friends made numerous comments about how wonderful Rachel is throughout the day. We were worried that our crew wouldn’t want to dance, but she played an awesome mix that got people out of their seats and dancing until the very end! She also made a mix for my brother and I, because we did a special dance together that required a few songs mashed up. She truly went above and beyond in every sense, but to her, that is what is expected, and she would never do any less. She takes incredible pride in her work, as evidenced by the way she works with couples, the vendors, and guests throughout the entire process. If you go with Rachel, you won’t have to worry about a thing on your wedding day, which is exactly what you want. I couldn’t recommend DJ Rachel more, and if I did the day over again, I would have her there in a heartbeat!",
+      "reviewer": "Hannah McNeil",
+      "sources": [
+        {
+          "id": 58,
+          "platform": "Google",
+          "reviewer": "Hannah McNeil",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-59",
+      "text": "DJ Rachel made our wedding absolutely amazing. All of our guests (of all ages) were complimenting us in our DJ and asking how we found her! She’s incredible and we couldn’t recommend her more. Thank you again <3",
+      "reviewer": "Lianna Luke",
+      "sources": [
+        {
+          "id": 59,
+          "platform": "Google",
+          "reviewer": "Lianna Luke",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-60",
+      "text": "DJ Rachel facilitated our Women's Real Estate event June 10! She was phenomenal with providing the music and providing the microphones/amps and such that we needed to properly facilitate this event! It was a large success and much of that was in part to her support! All was very professional and timely, could not be happier - highly recommend!",
+      "reviewer": "Premier Real Estate Group",
+      "sources": [
+        {
+          "id": 60,
+          "platform": "Google",
+          "reviewer": "Premier Real Estate Group",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-62",
+      "text": "DJ Rachel is phenomenal! She has helped perform at the University several times! She brings such an aura and exciting presence to music! I would definitely recommend DJ Rachel services to anyone!",
+      "reviewer": "Kiana White",
+      "sources": [
+        {
+          "id": 62,
+          "platform": "Google",
+          "reviewer": "Kiana White",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-63",
+      "text": "This is our third time working with Rachel and we are always so happy with the experience. She is so easy to work with, very dependable, and her lighting and music create the perfect vibe. We will definitely be booking her again next year.",
+      "reviewer": "Kacy Hey",
+      "sources": [
+        {
+          "id": 63,
+          "platform": "Google",
+          "reviewer": "Kacy Hey",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-64",
+      "text": "Rachel always does her best for the crowd she plays for. I would recommend her for any event!",
+      "reviewer": "Sam Abdallah",
+      "sources": [
+        {
+          "id": 64,
+          "platform": "Google",
+          "reviewer": "Sam Abdallah",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-65",
+      "text": "Only regret is I can't give 6 stars. Amazing mixing all night.",
+      "reviewer": "Darren Fazzino",
+      "sources": [
+        {
+          "id": 65,
+          "platform": "Google",
+          "reviewer": "Darren Fazzino",
+          "date": "2023",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2023"
+    },
+    {
+      "id": "rachel-review-66",
+      "text": "rachel absolutely KILLED it as our wedding dj! this is the third event she has done for us and we could not have asked for anything more! from her bubbly personality to her knowledge about lighting, speaker placement, and top notch MC skills, she definitely brought the party with her and everyone had such an amazing time! thank you so much rachel for making the biggest party we’ll ever throw so unforgetable! looking forward to our next party together! xo lindsay & tj",
+      "reviewer": "Lindsay Crimmins",
+      "sources": [
+        {
+          "id": 66,
+          "platform": "Facebook",
+          "reviewer": "Lindsay Crimmins",
+          "date": "2022-10-08",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2022-10-08"
+    },
+    {
+      "id": "rachel-review-67",
+      "text": "I truly can’t put into words how amazing Rachel was. I recommend her whole heartedly without any doubt!!! She was extremely personable, fun, organized, engaging, responsive, and helpful throughout the entire process. Rachel provided us with numerous timelines and advice for how to make our day flow perfectly. My husband and I wanted a specific walkout song but didn’t like a certain part and Rachel literally remixed the song to edit out the part we didn’t like. Soooo accommodating and made our day just perfect. I didn’t have a wedding coordinator and on the day of Rachel was sure to kept everything moving smoothly and on track. There were so many people on the dance floor the entire wedding, I couldn’t have asked for anything more! Thank you DJ Rachel!!!!",
+      "reviewer": null,
+      "sources": [
+        {
+          "id": 78,
+          "platform": "Google",
+          "reviewer": "Gina Pequignot",
+          "date": "2022",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        },
+        {
+          "id": 67,
+          "platform": "Facebook",
+          "reviewer": "Gina Odenwaelder",
+          "date": "2022-08-24",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2022-08-24"
+    },
+    {
+      "id": "rachel-review-68",
+      "text": "Rachel is by far the best DJ I have ever seen. From the beginning, she has been extremely communicative, friendly, funny and really knows what she is talking about. My husband and I chatted with her while looking for DJs for our wedding and as soon as we were off the phone we said to one another \"that's the one\".\nShe checked in with us consistently leading up to our wedding day to make sure we had everything we needed and that we were on the same page about how the night would go. She uses an app where you can pick out all of the songs you'd like to play as well as specifying your \"must-plays\". She drafted up a timeline for how the schedule would go on the wedding night and sent it to the rest of our vendors so that everyone involved were all on the same page.\nShe is an absolute delight and you can tell that she is incredibly passionate about her job and ensuring she delivers on quality work while making sure everyone is having a blast. Her uplighting for our venue was AMAZING. It really amped up the atmosphere. Her photobooth setup was awesome too!\nWe've heard nothing but wonderful things from our guests about how great of a job she did. People danced the entire night and didn't want to stop. My feet are still hurting me 3 days later because I didn't want to sit down. Her mixes were amazing, she really knows what she is doing.\nBook this woman - you will not regret it!",
+      "reviewer": "Amanda Mooney",
+      "sources": [
+        {
+          "id": 80,
+          "platform": "Google",
+          "reviewer": "Amanda Mooney",
+          "date": "2022",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        },
+        {
+          "id": 68,
+          "platform": "Facebook",
+          "reviewer": "Amanda Mooney",
+          "date": "2022-06-28",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2022-06-28"
+    },
+    {
+      "id": "rachel-review-69",
+      "text": "DJ Rachel is one of my absolute favorite, She was The DJ for our firehouse dinner dance,Her music and the remix’s she put together were awesome. I recommend her too be your DJ too\nThank you For everything you did for us and for making our night. Hope too have you back next year!!!!",
+      "reviewer": "Amanda Dingee",
+      "sources": [
+        {
+          "id": 69,
+          "platform": "Facebook",
+          "reviewer": "Amanda Dingee",
+          "date": "2022-05-09",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2022-05-09"
+    },
+    {
+      "id": "rachel-review-70",
+      "text": "A good DJ can make or break a wedding reception and DJ Rachel was incredible. Would hire her again in a heartbeat! She was quick to respond to my emails and texts. The app she suggested really helped us pick the perfect songs for our wedding. She really got the crowd hyped. Her mixes were great and got everyone on the dance floor. The dance floor was crowded all night. DJ Rachel is bubbly and professional. Everything that day went smooth and put this bride at ease. We had so much fun dancing the night away. She took our song requests and mixed them together to sound amazing. The night was perfect thanks to DJ Rachel. Thank you! I would highly recommend her to anyone.",
+      "reviewer": null,
+      "sources": [
+        {
+          "id": 70,
+          "platform": "Google",
+          "reviewer": "Gary V",
+          "date": "2022",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        },
+        {
+          "id": 84,
+          "platform": "Facebook",
+          "reviewer": "Lana Jovelle Vasas",
+          "date": "2021-07-30",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2022"
+    },
+    {
+      "id": "rachel-review-71",
+      "text": "DJ Rachel is amazing! She did my wedding for me and then did 2 additional parties for me. She makes it so easy to select all the songs you would like to hear with the order. I typically give her free range on the events and she NEVER disappoints! She is very quick with responding and brings so much to the table! We will continue to use her over and over, and can say she is pretty much family!!!",
+      "reviewer": "Kimberly Gelada",
+      "sources": [
+        {
+          "id": 71,
+          "platform": "Google",
+          "reviewer": "Kimberly Gelada",
+          "date": "2022",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2022"
+    },
+    {
+      "id": "rachel-review-72",
+      "text": "Rachel did an incredible job at our wedding. She was prompt in her communication and very organized even with our last minute song changes. The photo booth was a huge hit as well. We highly recommend adding that to your package. You are in very good hands with Rachel as your wedding DJ. She is worth every cent!",
+      "reviewer": "slundste",
+      "sources": [
+        {
+          "id": 72,
+          "platform": "Google",
+          "reviewer": "slundste",
+          "date": "2022",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2022"
+    },
+    {
+      "id": "rachel-review-73",
+      "text": "I have known Rachel for almost 20 years and she has been our “family DJ” for all our special celebrations. Recently, she just did my parents 50th anniversary party and she made the day amazing for everyone! Rachel is passionate, kind, and so much fun. I can’t recommend her enough.\nThe thought and effort she puts in to each and every event to make it customized and special can not be overstated. She is a pure professional through and through. Book her now!!!!!",
+      "reviewer": "Nicole Noel",
+      "sources": [
+        {
+          "id": 73,
+          "platform": "Google",
+          "reviewer": "Nicole Noel",
+          "date": "2022",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2022"
+    },
+    {
+      "id": "rachel-review-74",
+      "text": "Rachel truly went WAY above and beyond the call of duty for our wedding day. She made time to attend our walk-through of the venue with the caterer and seemed very engaged the entire time. She asked great questions throughout, stayed until the very end and worked through every concern of mine with me. She responded to all of my emails and texts promptly, she had great suggestions and was so chill and easy to work with. But then!!! When the day of the wedding rolled around, she showed up on time, worked with every single vendor so very well, made our officiant and cellist feel extremely comfortable, and guided us all through our night with professionalism, confidence and joy. When plans changed throughout the evening, she pivoted smoothly and communicated changes effectively with everyone involved. It is so clear that Rachel takes a lot of pride in her work, and I could not be more glad that I booked her for our wedding.\nI truly can't express how powerful Rachel's impact on our day was. We will remember it for the rest of our lives, and so will all our family and friends!",
+      "reviewer": "Taylor Cannon",
+      "sources": [
+        {
+          "id": 74,
+          "platform": "Google",
+          "reviewer": "Taylor Cannon",
+          "date": "2022",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2022"
+    },
+    {
+      "id": "rachel-review-75",
+      "text": "DJ Rachel was phenomenal! She was so helpful, thoughtful, and encouraging during the planning process, and could not have been more wonderful on the wedding day. She is clearly very knowledgeable and skilled, and her insight was invaluable. She ran things smoothly and was easily adaptable when things inevitably changed or ran behind schedule. I can't say enough wonderful things about her!",
+      "reviewer": "Abbey Meeks",
+      "sources": [
+        {
+          "id": 75,
+          "platform": "Google",
+          "reviewer": "Abbey Meeks",
+          "date": "2022",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2022"
+    },
+    {
+      "id": "rachel-review-76",
+      "text": "DJ Rachel led our daughter's wedding last night and to say she was incredible is an understatement!! Professional, helpful, had everyone on the dance floor and took the reigns (which is exactly what this momma needed) I literally had not a worry the entire night!! Thank you Rachel for being fantastic. If I could give 10 stars I would. Highly, highly recommend!",
+      "reviewer": "Ed Pequignot",
+      "sources": [
+        {
+          "id": 76,
+          "platform": "Google",
+          "reviewer": "Ed Pequignot",
+          "date": "2022",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2022"
+    },
+    {
+      "id": "rachel-review-77",
+      "text": "DJ Rachel Lynch was hands down the best DJ I have ever experienced in my life. The 80’d Music hit all facets of the 80’s and she mixed them in a way that hit it out of the park. My guests and I could not leave the dance floor because ever song was Amazing. This 50th birthday party was supposed to happen on March 14th 2020 the day after the world shut down from Covid and Rachel was incredibly flexible with having to rebook 2.5 years later. And when it finally happened, she brought the heat and there was so much joy and fun that was had. I had also completely forgot that she would bring lighting and it created a gorgeous atmosphere! People could not stop talking about Rachel!! Highly recommend !!!",
+      "reviewer": "colleen olphie",
+      "sources": [
+        {
+          "id": 77,
+          "platform": "Google",
+          "reviewer": "colleen olphie",
+          "date": "2022",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2022"
+    },
+    {
+      "id": "rachel-review-79",
+      "text": "DJ Rachel ROCKED our reception!!!! There’s NO other way to put it. If you want someone who really listens to what you want for music, choose her! Everything about her is amazing! Her personality to her quality of equipment, her lighting skills (who knew DJ’s also add lighting to your venue…I didn’t), her desire to make every wedding like her 1st!! She’s always striving to learn more, teach others what works/what doesn’t! Her music mashing skills are awesome! All my songs blended with no gaps. I truly was blown away by her! There is so much more to playing the music you want to hear, so realize all the effort and hard work behind the scenes because she really made my day the BESTEST EVER!!! Rachel works so hard for each an every client and she truly shined on my day on June 12, 2021!!! You won’t be disappointed!\nLove,\nJill Pavlica & Jason Pavlica",
+      "reviewer": null,
+      "sources": [
+        {
+          "id": 79,
+          "platform": "Google",
+          "reviewer": "Jill McDowell",
+          "date": "2022",
+          "dateIsExact": false,
+          "rating": 5,
+          "recommendation": null
+        },
+        {
+          "id": 85,
+          "platform": "Facebook",
+          "reviewer": "Jill Pavlica",
+          "date": "2021-06-26",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2022"
+    },
+    {
+      "id": "rachel-review-81",
+      "text": "DJ Rachel played such a huge part in making our day absolutely perfect! Not only did she totally rock it with the music, but she really helped us with a timeline for the whole night and kept everything moving along so that we didn't have to stress about anything at all! The photo booth was also a huge hit and everyone had a blast with it! We can't thank you enough, Rachel!!",
+      "reviewer": "Maggie Ann",
+      "sources": [
+        {
+          "id": 81,
+          "platform": "Facebook",
+          "reviewer": "Maggie Ann",
+          "date": "2021-09-27",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2021-09-27"
+    },
+    {
+      "id": "rachel-review-82",
+      "text": "Thank you Rachel for the best experience!  Our day was nothing short of amazing and you rocked it for us!!  We thank you for your attention to detail, your communication, your professionalism and the way you made sure WE WERE OK the whole night!",
+      "reviewer": "Michele Ann",
+      "sources": [
+        {
+          "id": 82,
+          "platform": "Facebook",
+          "reviewer": "Michele Ann",
+          "date": "2021-09-22",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2021-09-22"
+    },
+    {
+      "id": "rachel-review-83",
+      "text": "DJ Rachel was amazing to work with.\nI happened to fine her through a Facebook convo on a bridal forum and was instantly impressed.\nI honestly can’t thank her enough for all her help in making our wedding great. We have gotten so many compliments on how fun it was and she was a huge part of making it fun. People who usual would never be on the dance floor were out there having a ball, including my now husband. Her timing and her ability to work with all my vendors made our lives so easy.\nAs a DJ you just have to show up and play music and she does way more than that. She brought lighting, speakers, mikes, and catered to the needs of the space since we were in the backyard. The photo booth was a huge success and people had so much fun.\nI would recommend her every time!\nIt was such a pleasure to have her DJ our wedding!\nThank you DJ Rachel\nIf you want to check her out at our wedding check out her vlog of 9/4/21, and you can see how much she does to make it great. And her vlogs are one of the reasons I booked her in the first place!",
+      "reviewer": "Kristine Marie",
+      "sources": [
+        {
+          "id": 83,
+          "platform": "Facebook",
+          "reviewer": "Kristine Marie",
+          "date": "2021-09-10",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2021-09-10"
+    },
+    {
+      "id": "rachel-review-86",
+      "text": "Super responsive and informative, and a great sense of humor",
+      "reviewer": "Tasio Morales",
+      "sources": [
+        {
+          "id": 86,
+          "platform": "Facebook",
+          "reviewer": "Tasio Morales",
+          "date": "2021-01-07",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2021-01-07"
+    },
+    {
+      "id": "rachel-review-87",
+      "text": "one the best d.js I've ever seen\nshes so professional  and really cares aboutbthe quality  of her shows. her smile lights up the room brighter than the lights she brings...",
+      "reviewer": "Bryan Calhoun",
+      "sources": [
+        {
+          "id": 87,
+          "platform": "Facebook",
+          "reviewer": "Bryan Calhoun",
+          "date": "2020-08-13",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2020-08-13"
+    },
+    {
+      "id": "rachel-review-88",
+      "text": "DJ Rachel Entertainment Is My Favorite Female DJ & She Knows How To Move A Crowd",
+      "reviewer": "Larry Holness",
+      "sources": [
+        {
+          "id": 88,
+          "platform": "Facebook",
+          "reviewer": "Larry Holness",
+          "date": "2020-03-29",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2020-03-29"
+    },
+    {
+      "id": "rachel-review-89",
+      "text": "DJ Rachel is more than a dance floor DJ. Her remarkable skills extend into promoting and teaching her craft through her software learning videos and tips on better rig setups on YouTube !",
+      "reviewer": "Andrew Mobley",
+      "sources": [
+        {
+          "id": 89,
+          "platform": "Facebook",
+          "reviewer": "Andrew Mobley",
+          "date": "2020-03-24",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2020-03-24"
+    },
+    {
+      "id": "rachel-review-90",
+      "text": "Rachel loves what she does and she cares about her clients!!!",
+      "reviewer": "Jeffrey Schildroth",
+      "sources": [
+        {
+          "id": 90,
+          "platform": "Facebook",
+          "reviewer": "Jeffrey Schildroth",
+          "date": "2020-01-13",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2020-01-13"
+    },
+    {
+      "id": "rachel-review-91",
+      "text": "She is a Perfectionist! She is an Artist @ Her Craft! She Love Music,People & is a True Entertainer. She Knows how to Light Up  a Room!\nShe is Truly a Full Spectrum DJ!",
+      "reviewer": "Hayden Pate",
+      "sources": [
+        {
+          "id": 91,
+          "platform": "Facebook",
+          "reviewer": "Hayden Pate",
+          "date": "2019-12-22",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2019-12-22"
+    },
+    {
+      "id": "rachel-review-92",
+      "text": "I can not say enough about DJ Rachel! She recently DJ'd my wedding and my husband and I were beyond impressed.\nRachel's professionalism is top notch. We were so impressed with her attention to detail in our initial meetings and in making sure she got to know our venue and what equipment she needed.\nCome wedding day she did a fantastic job with our cocktail hour music facilitating the beginning of our celebration and come time for the dancing to begin she absolutely killed it.\nWe had almost every single guest out on that dance floor even those who are typically shy and quiet and I attest this to Rachel's ability to bring a room together through music. We loved her choice of music and she did a great job playing the songs we requested as well. All of our guests were raving about Rachel's music afterwards. I can not say enough about this woman. She ROCKS and is incredibly talented.",
+      "reviewer": "Hillary Mellicent",
+      "sources": [
+        {
+          "id": 92,
+          "platform": "Facebook",
+          "reviewer": "Hillary Mellicent",
+          "date": "2019-10-22",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2019-10-22"
+    },
+    {
+      "id": "rachel-review-93",
+      "text": "everything just everything\nShe is first class all the way",
+      "reviewer": "Denny McConnell",
+      "sources": [
+        {
+          "id": 93,
+          "platform": "Facebook",
+          "reviewer": "Denny McConnell",
+          "date": "2019-09-09",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2019-09-09"
+    },
+    {
+      "id": "rachel-review-94",
+      "text": "I’m just a long distance Dj friend of Dj Rachel, i never met her personally But I can tell that she is the real deal, sometimes I see her Dj-ing on Facebook at a car show or a clothing store and people are just walking on by, They don’t realize how good she is! and how smart she is! She very humble just doing her Job, but in all reality she’s good! Mark my words she’s going to explode, and make it big time, Her skills and knowledge are excellent! Hire Dj Rachel she won’t let u down, if you want a discount bring her a pizza! Lol just kidding, I wish I can ship her a Chicago Pizza, We got the best Pizza. Keep Rocking it upz Rachel! Your the best! - Dj Will from Chicago",
+      "reviewer": "William Pagan",
+      "sources": [
+        {
+          "id": 94,
+          "platform": "Facebook",
+          "reviewer": "William Pagan",
+          "date": "2019-04-25",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2019-04-25"
+    },
+    {
+      "id": "rachel-review-95",
+      "text": "I hired DJ Rachel for my 40th Birthday house party! She turned my home into the coolest place to be on a Friday night! She lit up the house, literally! She had the coolest lighting equipment, and her sound equipment was excellent! If you’re looking for crowd pleaser Rachel is cool, friendly, fun and her equipment is the real deal!!",
+      "reviewer": "Elizabeth Pereira Felicione",
+      "sources": [
+        {
+          "id": 95,
+          "platform": "Facebook",
+          "reviewer": "Elizabeth Pereira Felicione",
+          "date": "2019-04-13",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2019-04-13"
+    },
+    {
+      "id": "rachel-review-96",
+      "text": "I haven't met DJ Rachel personally but I saw a video of her in a DJ group here on Facebook & her energy & charisma is contagious! She's very informative & when I reached out to her she was very helpful & hopefully in 2019 we'll be able to connect! Happy New Year DJ Rachel & continue to ROCK it out!!!",
+      "reviewer": "LeVelle Damon Salter Sr.",
+      "sources": [
+        {
+          "id": 96,
+          "platform": "Facebook",
+          "reviewer": "LeVelle Damon Salter Sr.",
+          "date": "2019-01-02",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2019-01-02"
+    },
+    {
+      "id": "rachel-review-97",
+      "text": "She is amazing!! Very fun outgoing personality knows her music and mixes the songs perfectly!!! We loved having her here at Tommy Hilfiger in Lee,Mass",
+      "reviewer": "Candice Briggs",
+      "sources": [
+        {
+          "id": 97,
+          "platform": "Facebook",
+          "reviewer": "Candice Briggs",
+          "date": "2018-12-23",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-12-23"
+    },
+    {
+      "id": "rachel-review-98",
+      "text": "We just had our annual Bruce Bennett Nissan holiday party DJ'd by Rachel. The best party we've had, 3 hours of soild dancing, couldn't have asked for a better music selection. She did an amazing job from the music, to the sound and lighting. Thank you DJ Rachel!!",
+      "reviewer": "Todd Bennett",
+      "sources": [
+        {
+          "id": 98,
+          "platform": "Facebook",
+          "reviewer": "Todd Bennett",
+          "date": "2018-12-22",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-12-22"
+    },
+    {
+      "id": "rachel-review-99",
+      "text": "We used DJ Rachel for our Company Holiday Party last week and we could not have been happier. She was so easy to work with. Besides playing great music she added so much more to the atmosphere. We loved her DJ booth, which swapped back and forth between our logo and a virtual roaring fireplace. Her lighting was amazing and really transformed the room. I highly recommend DJ Rachel and will definitely use her again and again.",
+      "reviewer": "Kacy Fardy Hey",
+      "sources": [
+        {
+          "id": 99,
+          "platform": "Facebook",
+          "reviewer": "Kacy Fardy Hey",
+          "date": "2018-12-17",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-12-17"
+    },
+    {
+      "id": "rachel-review-100",
+      "text": "My now wife and I chose DJ Rachel for our wedding DJ back on October 6th, 2018 in Bloomfield CT. We truly can not say enough amazing things about Rachel. Her professionalism, energy, thoughtfulness, flexibility and talent exceeded every expectation we had and made our event unforgettable. Rachel DJ'ed the music for our ceremony and cocktail hour in one location and then sprinted over to the reception venue to make sure the place was pumping when the guests arrived. She listened to our vision and totally matched it in every way- we were going for a total dance party vibe- no sit down meal- so a bit un-traditional. We are also two women...and of course wanted a DJ who would respect and celebrate our love the same way they would any couple while also being sensitive to the changes we were of course making as a result. Rachel totally got everything we were about and collaborated with us to make the day everything we envisioned. On your wedding day you want things to go seamlessly without having to stress out and Rachel made that possible for us. She suggested we do a simple lighting package and she was totally on point...the place was beautiful!  People literally danced the entire night from start to finish and everyone had amazing things to say about Rachel's choice of music ( we got lots of say in our requests...don't worry), her skills and her attitude. Everyone we talk to who attended comments on how fantastic she was. There is no question that a huge part of what made our wedding everything that we hoped for was DJ Rachel and her partner. Obviously- we both couldn't recommend her high enough- she was literally the best.",
+      "reviewer": "Alana Grainsky",
+      "sources": [
+        {
+          "id": 100,
+          "platform": "Facebook",
+          "reviewer": "Alana Grainsky",
+          "date": "2018-11-12",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-11-12"
+    },
+    {
+      "id": "rachel-review-101",
+      "text": "We had DJ Rachel at our wedding last night. She was incredibly amazing, spicing things up outside and inside, has a great energy, and really kept the party going allowing people of all ages to dance together and have a great time. She was incredibly flexible with a complex venue and setup, and very communicative throughout the planning process. She met all of our crazy logistical requests without batting an eyelash. All of our guests commented on what a great DJ she was and how she really appealed to everyone's tastes. I highly recommend her!",
+      "reviewer": "Amy Morocco",
+      "sources": [
+        {
+          "id": 101,
+          "platform": "Facebook",
+          "reviewer": "Amy Morocco",
+          "date": "2018-10-14",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-10-14"
+    },
+    {
+      "id": "rachel-review-102",
+      "text": "High energy, professional entertainer. I highly recommend her.",
+      "reviewer": "Rob Walker",
+      "sources": [
+        {
+          "id": 102,
+          "platform": "Facebook",
+          "reviewer": "Rob Walker",
+          "date": "2018-10-07",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-10-07"
+    },
+    {
+      "id": "rachel-review-103",
+      "text": "We had DJ Rachel for our wedding this past Friday, Aug. 31st. She did such an amazing job! We couldn't be happier with how everything went. We would definitely recommend DJ Rachel!",
+      "reviewer": "Jamie O'Brien Bowers",
+      "sources": [
+        {
+          "id": 103,
+          "platform": "Facebook",
+          "reviewer": "Jamie O'Brien Bowers",
+          "date": "2018-09-03",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-09-03"
+    },
+    {
+      "id": "rachel-review-104",
+      "text": "We recently had my daughters graduation party at our home and DJ Rachel spiced things up with her hip beats and great energy. We first met her at the food truck festival in Hamden and knew we had to have her!",
+      "reviewer": "Dina Lyon Lemieux",
+      "sources": [
+        {
+          "id": 104,
+          "platform": "Facebook",
+          "reviewer": "Dina Lyon Lemieux",
+          "date": "2018-08-14",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-08-14"
+    },
+    {
+      "id": "rachel-review-105",
+      "text": "One of the best DJs in the entire industry, super talented and very professional!! Book her now!!",
+      "reviewer": "Max Victory",
+      "sources": [
+        {
+          "id": 105,
+          "platform": "Facebook",
+          "reviewer": "Max Victory",
+          "date": "2018-07-19",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-07-19"
+    },
+    {
+      "id": "rachel-review-106",
+      "text": "One of a kind DJ who is constantly helping other DJ's and businesses.",
+      "reviewer": "Brandon Ragoza",
+      "sources": [
+        {
+          "id": 106,
+          "platform": "Facebook",
+          "reviewer": "Brandon Ragoza",
+          "date": "2018-07-18",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-07-18"
+    },
+    {
+      "id": "rachel-review-107",
+      "text": "She is one of the best DJs in the world.",
+      "reviewer": "Gabriel Prox Menashe",
+      "sources": [
+        {
+          "id": 107,
+          "platform": "Facebook",
+          "reviewer": "Gabriel Prox Menashe",
+          "date": "2018-07-17",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-07-17"
+    },
+    {
+      "id": "rachel-review-108",
+      "text": "Dj Rachel is one of the best female Dj in industry",
+      "reviewer": "Hatim DamamSound",
+      "sources": [
+        {
+          "id": 108,
+          "platform": "Facebook",
+          "reviewer": "Hatim DamamSound",
+          "date": "2018-06-19",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-06-19"
+    },
+    {
+      "id": "rachel-review-109",
+      "text": "DJ Rachel does our Relay for Life Hamden-North Haven every year! Her outgoing personality and amazing energy makes brings a positive vibe to our event. We couldn’t ask for a better DJ for our event.",
+      "reviewer": "Ashley Leighton",
+      "sources": [
+        {
+          "id": 109,
+          "platform": "Facebook",
+          "reviewer": "Ashley Leighton",
+          "date": "2018-06-15",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-06-15"
+    },
+    {
+      "id": "rachel-review-111",
+      "text": "this girl is awesome i love it",
+      "reviewer": "Alex Evans",
+      "sources": [
+        {
+          "id": 111,
+          "platform": "Facebook",
+          "reviewer": "Alex Evans",
+          "date": "2018-04-23",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-04-23"
+    },
+    {
+      "id": "rachel-review-113",
+      "text": "DJ WOLF APPROVED. Watch out DJ's she will show you up. If you want an amazing dj then look no further. DJ Rachel is one of the best females I have had the chance to work with and listen to. I have traveled all over the United States and always look for up and coming DJ's well you saw me say it first she will be at the top of the game soon.",
+      "reviewer": "Craig Wolf",
+      "sources": [
+        {
+          "id": 113,
+          "platform": "Facebook",
+          "reviewer": "Craig Wolf",
+          "date": "2018-03-12",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-03-12"
+    },
+    {
+      "id": "rachel-review-117",
+      "text": "Exceptionally skilled entertainer. Professional. Pleasant personality. Innovative",
+      "reviewer": "Derek Labarko",
+      "sources": [
+        {
+          "id": 117,
+          "platform": "Facebook",
+          "reviewer": "Derek Labarko",
+          "date": "2018-03-11",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-03-11"
+    },
+    {
+      "id": "rachel-review-118",
+      "text": "DJ Rachel is amazing!! We recently had a cornhole tournament fundraiser and DJ Rachel made the evening with her great music! She got the crowd going and is a rockstar! Highly recommend her!",
+      "reviewer": "Katy Nicholas Micros",
+      "sources": [
+        {
+          "id": 118,
+          "platform": "Facebook",
+          "reviewer": "Katy Nicholas Micros",
+          "date": "2018-03-11",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2018-03-11"
+    },
+    {
+      "id": "rachel-review-121",
+      "text": "Rachel at S-Town Entertainment is incredibly professional, fun and flexible. We even had a venue change about two weeks before the wedding and she was very understanding and stuck with us! During the wedding we had many people come up to us and ask who the DJ service was and comment on how much they enjoyed her personality. We could not have been happier!!",
+      "reviewer": "Jules CountTappula",
+      "sources": [
+        {
+          "id": 121,
+          "platform": "Facebook",
+          "reviewer": "Jules CountTappula",
+          "date": "2017-10-15",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2017-10-15"
+    },
+    {
+      "id": "rachel-review-122",
+      "text": "DJ Rachel performed at my wedding and did a stellar job. From the get go, Rachel was easy to deal with and provided all the necessary support. We had a great preliminary meeting at the wedding venue about two months prior to the event so that everyone would have a familiarity with the venue. As far as the night of the wedding, we couldn’t have asked for a better performance. Rachel’s ability to read and lead a room is top notch and the party ebbed and flowed seamlessly through the night from relaxed cocktail vibes to full on dance party.\nThe execution was perfect, DJ Rachel is a complete professional and I couldn’t recommend her highly enough.",
+      "reviewer": "Trevor Darling",
+      "sources": [
+        {
+          "id": 122,
+          "platform": "Facebook",
+          "reviewer": "Trevor Darling",
+          "date": "2017-10-13",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2017-10-13"
+    },
+    {
+      "id": "rachel-review-123",
+      "text": "I first met Rachel probably 10years ago now, she is amazing. Extremely professional, reliable, talented and passionate - you won't be disappointed!!",
+      "reviewer": "Nicole Noel",
+      "sources": [
+        {
+          "id": 123,
+          "platform": "Facebook",
+          "reviewer": "Nicole Noel",
+          "date": "2017-07-28",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2017-07-28"
+    },
+    {
+      "id": "rachel-review-125",
+      "text": "I cannot recommend DJ Rachel enough! She recently was the DJ for the American Cancer Society's Relay For Life of Hamden/North Haven event. She is so friendly, energetic, and accommodating! The music was fantastic, and she really knew how to get the crowd going. Thank you, DJ Rachel!!!",
+      "reviewer": "Hayley McGannon",
+      "sources": [
+        {
+          "id": 125,
+          "platform": "Facebook",
+          "reviewer": "Hayley McGannon",
+          "date": "2017-06-12",
+          "dateIsExact": true,
+          "rating": null,
+          "recommendation": true
+        }
+      ],
+      "date": "2017-06-12"
+    }
+  ]
+}

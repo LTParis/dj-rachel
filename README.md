@@ -26,6 +26,8 @@ npm run preview
 - `src/styles/global.css` contains the color, typography, and responsive layout rules.
 - `public/` is for approved photos, video posters, and other static assets.
 - Rachel's supplied logo is used in the shared header and footer at `public/dj-rachel-logo.svg`.
+- `src/data/reviews.json` contains the deduplicated Google and Facebook review export. The source export is not committed; regenerate with `npm run reviews:import -- /path/to/dj-rachel-reviews.json`.
+- `/reviews/` displays the sourced reviews and `/reviews.json` serves their machine-readable data. Reviewer names, source ratings, and recommendations are kept per source; owner replies are excluded.
 - Typography follows the concept: Archivo for headings/navigation and Roboto Slab for body copy. Both are served locally from `@fontsource` packages.
 
 ## Safe handoff
@@ -33,3 +35,9 @@ npm run preview
 Rachel's plain-language getting-started guide is in [FOR-RACHEL.md](./FOR-RACHEL.md). Invite her to the private GitHub repository by her own GitHub account; never share passwords, recovery codes, or access tokens. Choose an AI editing workflow together—Claude and ChatGPT integrations can differ by plan and may be read-only.
 
 Vercel is the proposed temporary preview host, but it is not connected yet. A preview deployment may be publicly viewable even while the GitHub repository is private. Keep private information out of the site, review Vercel's preview-access settings, and do not connect the custom domain or publish as the production site until Rachel approves the content and the preview.
+
+## SEO and launch status
+
+The canonical site URL is configured as `https://djrachellynch.com`. The site includes page-specific titles/descriptions, canonical/Open Graph/Twitter metadata, organization/website JSON-LD, an XML sitemap, and `/llms.txt`.
+
+While this is a draft, pages emit `noindex, nofollow` and `/robots.txt` blocks crawlers. Before the approved public launch, change the robots response to allow crawling and advertise the sitemap, then remove the `noindex` meta tag. Review cards and source metadata are visible and machine-readable, but review/aggregate-rating schema is intentionally omitted: first-party testimonials on the reviewed business's own site are self-serving review markup and should not be presented as Google review snippets.

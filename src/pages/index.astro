@@ -1,18 +1,19 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
 import ContactCta from "../components/ContactCta.astro";
+import ReviewHighlights from "../components/ReviewHighlights.astro";
 import { serviceCards, values } from "../data/site";
 ---
 
 <SiteLayout
-	title="DJ Rachel Entertainment | Your vibe, your way"
-	description="A working website preview for DJ Rachel Entertainment."
+	title="DJ Rachel Lynch | Connecticut Wedding & Event DJ"
+	description="DJ Rachel Lynch brings personalized DJ and MC services to weddings, corporate events, and private celebrations in Connecticut and across the Northeast."
 >
 	<main id="main">
 		<section class="hero page-width">
 			<div class="hero-copy">
 				<p class="eyebrow">DJ · Event host · Party rocker</p>
-				<h1>your vibe,<br /><em>your way.</em></h1>
+				<h1 class="hero-title">your vibe,<br /><em>your way.</em></h1>
 				<p class="hero-lead">
 					Open-format DJ and MC for weddings, brands, and nights worth celebrating.
 					Bold mixes, thoughtful planning, and a dance floor that feels like yours.
@@ -50,17 +51,23 @@ import { serviceCards, values } from "../data/site";
 				<p class="section-aside">One great night can sound a hundred different ways. Let's make it yours.</p>
 			</div>
 			<div class="service-grid">
-				{serviceCards.map((service, index) => (
+				{serviceCards.map((service) => (
 					<a class="service-card" href={service.href}>
-						<span class="service-card__number">0{index + 1}</span>
-						<span class="service-card__mark" aria-hidden="true">{service.mark}</span>
-						<h3>{service.title}</h3>
-						<p>{service.copy}</p>
-						<span class="service-card__link">Explore {service.shortTitle} <span aria-hidden="true">↗</span></span>
+						<span class={`service-card__image service-card__image--${service.tone}`}>
+							<span>{service.imageLabel}</span>
+						</span>
+						<span class="service-card__content">
+							<span class="service-card__eyebrow">{service.eyebrow}</span>
+							<h3>{service.title}</h3>
+							<span class="service-card__copy">{service.copy}</span>
+							<span class="service-card__link">Explore {service.shortTitle} <span aria-hidden="true">→</span></span>
+						</span>
 					</a>
 				))}
 			</div>
 		</section>
+
+		<ReviewHighlights />
 
 		<section class="about-band">
 			<div class="page-width about-band__inner">

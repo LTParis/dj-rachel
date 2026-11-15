@@ -29,6 +29,10 @@ The expected routine is:
 
 The temporary preview may be visible to anyone with its link, even though the GitHub project is private. Do not put private client information, passwords, or anything you would not want shared on the site.
 
+The public domain planned for the website is `djrachellynch.com`, but it is not hosted yet. Search engines are blocked while the draft is being reviewed. Lou will turn indexing on only as part of the approved launch.
+
+The Reviews page contains the Google and Facebook reviews shared for the project. Each source and its rating or recommendation are labeled; if the same review text appeared on both platforms, it is shown once with both sources listed.
+
 ## Before the real website goes live
 
 You and Lou will confirm the final wording, photos, booking email or inquiry link, social links, and any reviews or business facts. The custom domain will only be connected after you have reviewed and approved the finished site.

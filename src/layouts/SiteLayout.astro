@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Seo from "../components/Seo.astro";
+import Schema from "../components/Schema.astro";
 
 interface Props {
 	title: string;
@@ -13,6 +15,7 @@ const links = [
 	{ label: "Corporate", href: "/corporate/" },
 	{ label: "Private Events", href: "/private-events/" },
 	{ label: "About", href: "/about/" },
+	{ label: "Reviews", href: "/reviews/" },
 ];
 const contactHref = currentPath === "/" ? "#contact" : "/#contact";
 ---
@@ -22,11 +25,11 @@ const contactHref = currentPath === "/" ? "#contact" : "/#contact";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content={description} />
 		<meta name="theme-color" content="#f7f4ef" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<Seo {title} {description} />
+		<Schema />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	</head>
 	<body>
 		<a class="skip-link" href="#main">Skip to content</a>

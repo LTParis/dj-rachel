@@ -1,0 +1,58 @@
+---
+import reviewData from "../data/reviews.json";
+import { featuredReviewIds, reviewExcerpt } from "../data/reviews";
+
+const reviews = featuredReviewIds
+	.map((id) => reviewData.reviews.find((review) => review.id === id))
+	.filter((review) => review !== undefined);
+---
+
+<section class="reviews-section" id="reviews">
+	<div class="page-width">
+		<div class="section-heading">
+			<div>
+				<p class="eyebrow">Kind words from real events</p>
+				<h2>don't take my<br /><em>word for it.</em></h2>
+			</div>
+			<a class="text-link reviews-all-link" href="/reviews/">
+				Read all {reviewData.meta.includedUniqueReviews} reviews <span aria-hidden="true">→</span>
+			</a>
+		</div>
+		<div class="review-grid">
+			{reviews.map((review) => {
+				const ratingSource = review.sources.find((source) => source.rating !== null);
+				return (
+					<article class="review-card">
+						{ratingSource ? (
+						<p
+							class="review-rating"
+							aria-label={`${ratingSource.rating} out of 5 stars`}
+						>
+							<span aria-hidden="true">
+								{"★".repeat(ratingSource.rating ?? 0)}
+							</span>
+							<span class="review-source">
+								{ratingSource.platform} · {ratingSource.rating}-star review
+							</span>
+						</p>
+						) : (
+							<p class="review-rating">
+								<span class="review-source">Facebook recommendation</span>
+							</p>
+						)}
+						<blockquote>“{reviewExcerpt(review.text, 205)}”</blockquote>
+						<div class="review-card__byline">
+							<p>
+								{review.reviewer ??
+									review.sources
+										.map((source) => `${source.reviewer ?? "Reviewer"} · ${source.platform}`)
+										.join(" / ")}
+							</p>
+							<p>{review.sources.map((source) => source.platform).join(" + ")}</p>
+						</div>
+					</article>
+				);
+			})}
+		</div>
+	</div>
+</section>

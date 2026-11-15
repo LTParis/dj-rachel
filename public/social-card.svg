@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+	<rect width="1200" height="630" fill="#f7f4ef" />
+	<path d="M770 0h430v630H770z" fill="#efc4d5" />
+	<path d="M770 0v630" stroke="#211b1e" stroke-opacity=".14" />
+	<image href="dj-rachel-logo.svg" x="30" y="55" width="650" height="520" preserveAspectRatio="xMidYMid meet" />
+	<text x="805" y="250" fill="#211b1e" font-family="Archivo, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="1">YOUR VIBE,</text>
+	<text x="805" y="320" fill="#d20b71" font-family="Archivo, Arial, sans-serif" font-size="46" font-weight="900" letter-spacing="-2">YOUR WAY.</text>
+	<text x="809" y="390" fill="#211b1e" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1">DJ RACHEL ENTERTAINMENT</text>
+	<text x="809" y="575" fill="#211b1e" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1">WEDDINGS · EVENTS · GOOD MUSIC</text>
+</svg>

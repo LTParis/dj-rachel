@@ -1,0 +1,31 @@
+---
+const siteUrl = Astro.site!.href;
+const organizationId = new URL("/#organization", siteUrl).href;
+const websiteId = new URL("/#website", siteUrl).href;
+const logoUrl = new URL("/dj-rachel-logo.svg", siteUrl).href;
+
+const graph = {
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "Organization",
+			"@id": organizationId,
+			name: "DJ Rachel Entertainment",
+			url: siteUrl,
+			logo: logoUrl,
+			image: logoUrl,
+			description: "DJ and event-host services for weddings, corporate events, and private celebrations.",
+		},
+		{
+			"@type": "WebSite",
+			"@id": websiteId,
+			url: siteUrl,
+			name: "DJ Rachel Entertainment",
+			publisher: { "@id": organizationId },
+			inLanguage: "en-US",
+		},
+	],
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(graph)} />

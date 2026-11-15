@@ -45,7 +45,7 @@ const contactHref = currentPath === "/" ? "#contact" : "/#contact";
 						<a href={link.href} aria-current={currentPath === link.href ? "page" : undefined}>{link.label}</a>
 					))}
 				</nav>
-				<a class="button button--small header-cta" href={contactHref}>Check my date</a>
+				<a class="button button--small header-cta" href={contactHref}>Check my availability</a>
 				<details class="mobile-nav">
 					<summary>Menu <span aria-hidden="true">+</span></summary>
 					<nav class="mobile-nav__panel" aria-label="Mobile navigation">
@@ -53,7 +53,7 @@ const contactHref = currentPath === "/" ? "#contact" : "/#contact";
 						{links.map((link) => (
 							<a href={link.href} aria-current={currentPath === link.href ? "page" : undefined}>{link.label}</a>
 						))}
-						<a href={contactHref}>Check my date</a>
+						<a href={contactHref}>Check my availability</a>
 					</nav>
 				</details>
 			</div>

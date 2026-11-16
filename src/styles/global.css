@@ -197,6 +197,17 @@ a {
 	transform: none;
 }
 
+.home-hero {
+	background: #000;
+	color: #fff;
+}
+
+.home-hero .hero-lead,
+.home-hero .text-link,
+.home-hero .eyebrow {
+	color: #fff;
+}
+
 .hero {
 	display: grid;
 	min-height: 600px;

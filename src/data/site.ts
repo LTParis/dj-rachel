@@ -1,5 +1,6 @@
 import weddingPhoto from "../../public/wedding 1.jpg";
 import corporatePhoto from "../../public/1 corp.jpg";
+import privatePartyPhoto from "../../public/unnamed (12).jpg";
 
 export const serviceCards = [
 	{
@@ -31,6 +32,8 @@ export const serviceCards = [
 		tone: "private",
 		eyebrow: "Milestone birthday or sweet 16",
 		imageLabel: "Private party photo coming soon",
+		image: privatePartyPhoto,
+		imageAlt: "Guests dancing and celebrating at an indoor party with green lighting.",
 		copy: "Birthdays, anniversaries, reunions, and all the reasons to get your favorite people together.",
 	},
 ];

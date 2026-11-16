@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import { weddingPhotos } from "../../../data/weddingPhotos";
+export function getStaticPaths() {
+	return weddingPhotos.map((photo, index) => ({ params: { photo: String(index + 1) }, props: { photo, index } }));
+}
+const { photo, index } = Astro.props;
+const count = weddingPhotos.length;
+---
+<SiteLayout title={`Wedding photo ${index + 1} | DJ Rachel Lynch`} description="Explore wedding dance-floor photos from DJ Rachel’s celebrations.">
+	<main id="main" class="gallery page-width">
+		<a class="text-link" href="/weddings/">← Back to weddings</a>
+		<h1>Wedding <em>gallery.</em></h1>
+		<nav class="gallery-controls" aria-label="Photo navigation">
+			<a class="button" href={`/weddings/gallery/${(index + count - 1) % count + 1}/`}>← Previous photo</a>
+			<p>Photo {index + 1} of {count}</p>
+			<a class="button" href={`/weddings/gallery/${(index + 1) % count + 1}/`}>Next photo →</a>
+		</nav>
+		<figure>
+			<Image src={photo.src} alt={photo.alt} width={Math.min(2000, photo.src.width)} format="webp" loading="eager" />
+			<figcaption>{photo.alt}</figcaption>
+		</figure>
+		<nav class="gallery-thumbnails" aria-label="Choose a wedding photo">
+			{weddingPhotos.map((item, i) => <a href={`/weddings/gallery/${i + 1}/`} aria-label={`View wedding photo ${i + 1}`} aria-current={i === index ? "page" : undefined}><Image src={item.src} alt={item.alt} width={240} format="webp" loading="lazy" /></a>)}
+		</nav>
+	</main>
+</SiteLayout>
+<style>
+	.gallery { padding-block: 45px 70px; }
+	h1 { font-size: clamp(2.5rem, 7vw, 5rem); margin-top: 30px; }
+	.gallery-controls { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+	.gallery-controls p { margin: 0; }
+	figure { margin: 0; }
+	figure img { display: block; width: 100%; height: auto; max-height: 80vh; object-fit: contain; background: #000; }
+	figcaption { margin-top: 12px; }
+	.gallery-thumbnails { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+	.gallery-thumbnails a { width: min(150px, 40%); border: 3px solid transparent; }
+	.gallery-thumbnails a[aria-current], .gallery-thumbnails a:focus-visible { border-color: var(--pink); }
+	.gallery-thumbnails img { display: block; width: 100%; height: 100px; object-fit: cover; }
+</style>

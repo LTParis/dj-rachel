@@ -36,7 +36,7 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 			<a class="button" href="/#contact">Let's plan your event</a>
 		</div>
 		<slot name="hero-media">
-		{weddingHero ? <PhotoCarousel photos={weddingPhotos} label="Wedding photos" emptyMessage="Wedding photos coming soon" /> : <div class="page-hero__art" aria-hidden="true">
+		{weddingHero ? <PhotoCarousel photos={weddingPhotos} label="Wedding photos" galleryBase="/weddings/gallery/" emptyMessage="Wedding photos coming soon" /> : <div class="page-hero__art" aria-hidden="true">
 			<span class="page-hero__art-disc"></span>
 			<span class="page-hero__art-label">MAKE<br />IT A<br /><em>NIGHT.</em></span>
 		</div>}

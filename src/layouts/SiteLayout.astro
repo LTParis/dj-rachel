@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Seo from "../components/Seo.astro";
 import Schema from "../components/Schema.astro";
+import SocialLinks from "../components/SocialLinks.astro";
 
 interface Props {
 	title: string;
@@ -65,7 +66,8 @@ const contactHref = currentPath === "/" ? "#contact" : "/#contact";
 					<a class="wordmark wordmark--footer" href="/">
 						<img src="/dj-rachel-logo.svg" alt="DJ Rachel" />
 					</a>
-					<p>Your love story. Your vibe. Your way.</p>
+					<p>Open-format DJ &amp; Event Host ✳ Connecticut &amp; Northeast</p>
+					<SocialLinks />
 				</div>
 				<nav class="footer-nav" aria-label="Footer navigation">
 					{links.map((link) => <a href={link.href}>{link.label}</a>)}

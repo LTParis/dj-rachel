@@ -1,4 +1,4 @@
-import weddingPhoto from "../../public/wedding 1.jpg";
+import weddingPhoto from "../../public/unnamed (35).jpg";
 import corporatePhoto from "../../public/1 corp.jpg";
 import privatePartyPhoto from "../../public/unnamed (12).jpg";
 
@@ -11,7 +11,7 @@ export const serviceCards = [
 		eyebrow: "Packed dance floor, couple center",
 		imageLabel: "Wedding photo coming soon",
 		image: weddingPhoto,
-		imageAlt: "A couple dancing with wedding guests cheering around them.",
+		imageAlt: "A bride and groom singing and celebrating with guests on a packed wedding dance floor.",
 		copy: "From ceremony audio to the last song, make space for the moments and music that are important to you.",
 	},
 	{

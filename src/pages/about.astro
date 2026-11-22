@@ -1,38 +1,109 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
 import ContactCta from "../components/ContactCta.astro";
+
+const uploads = "UU4qAyR0Rh2FslaZBxeK3Mgw";
+const instagram = "https://www.instagram.com/djrachelrlynch/";
 ---
 
 <SiteLayout title="About DJ Rachel Lynch | DJ Rachel Entertainment" description="Get to know DJ Rachel Lynch, event DJ and host for weddings, corporate events, and private celebrations.">
 	<main id="main">
 		<section class="page-hero page-width about-hero">
 			<div class="page-hero__copy">
-				<p class="eyebrow">My Story</p>
 				<h1>The Day I Said <span class="story-heading-ending"><em>Yes</em><span class="story-heading-period">.</span></span></h1>
-				<p class="hero-lead">
-					I never planned to be a DJ. Crazy, right?
-				</p>
 				<a class="button" href="/#contact">Let’s connect</a>
 			</div>
-			<div class="photo-placeholder photo-placeholder--portrait">
-				<span>Rachel's photo goes here</span>
+			<img class="about-portrait" src="/rachel-at-the-decks.jpg" width="1280" height="979" alt="Rachel wearing headphones and smiling as she DJs." />
+		</section>
+
+		<section class="about-story" aria-labelledby="my-story">
+			<div class="page-width about-story__inner">
+				<h2 id="my-story">My Story</h2>
+				<p>Nearly 20 years ago, a family medical emergency left a wedding without a DJ on the day it was supposed to happen. A couple was counting on their celebration and having a DJ. Nobody was available to help. I thought I couldn't be worse than having no DJ, and offered to help out. So I said yes.</p>
+				<p>I was a teenager with no wedding experience, just some tinkering on my brother's gear at home. I had no idea how I'd pull it off. I only knew that couple deserved their day.</p>
+				<p>Somewhere in the nerves and chaos, I found a talent I never knew I had. A favor for family turned into a turning point.</p>
+				<p>So I kept saying yes. Yes to nightlife, where I sharpened my skills night after night, and that blossomed into weddings. Yes to corporate events. Yes to bigger stages than I ever dreamed up, including opening for Gloria Gaynor and George Clinton &amp; Parliament-Funkadelic.</p>
+				<p>Along the way, I built The DJ Help Desk, a community of 17,000+ DJs rooted in kindness and education. I wanted it to be a welcoming place for anyone trying to break into the industry, especially women. I also run a YouTube channel with over 17,000 subscribers, where I share what I've learned. I've guest lectured at MIT, keynoted DJX Atlantic City, and in 2024 became the youngest person ever inducted into the Mobile Entertainment Expo Hall of Fame. Most importantly, I've been part of the best days of hundreds of couples' lives.</p>
+				<p>There was never a master plan. Just passion, a willingness to learn, and one opportunity leading to the next.</p>
+				<p>Today I still run on instinct, skill, and fearless energy, powered by a real love for music and people. Two decades of saying yes taught me there's nothing I can't figure out. I was meant to do this and I'm so glad I did.</p>
 			</div>
 		</section>
 
-		<section class="about-story">
-			<div class="page-width about-story__inner">
-				<p>Nearly 20 years ago, a family medical emergency left a wedding without a DJ on the day it was supposed to happen. A couple was counting on their celebration. Nobody was available to help. So I did.</p>
-				<p>I was a teenager with no wedding experience, and I had no idea how I'd pull it off. But in my heart, I knew that couple deserved their wedding day. So I said yes.</p>
-				<p>Somewhere in the uncertainty and stress, I found a talent I never knew I had.</p>
-				<p>What started as a favor for my family and an act of love became a defining moment.</p>
-				<p>So I kept saying yes. Yes to more weddings. Yes to corporate events, bigger stages, and opportunities I never could have dreamed up.</p>
-				<p>Along the way, I've opened for legends like Gloria Gaynor and George Clinton &amp; Parliament-Funkadelic. I created The DJ Help Desk, a 17,000+ member community of DJs built on kindness and education. I've guest lectured at MIT and keynoted DJX Atlantic City. In 2024, I became the youngest person ever inducted into the Mobile Entertainment Expo Hall of Fame. And most importantly I've helped hundreds of couples celebrate the best days of their lives.</p>
-				<p>There was no master plan. Just real passion, a willingness to learn, and one opportunity leading to the next on this crazy DJ journey of mine.</p>
-				<p>Today, I still run on instinct, skill, and fearless energy, powered by a real love for music and people. Because every yes opens a world of possibilities.</p>
-				<p>And I'm so glad I said yes.</p>
+		<section class="page-width media-section" aria-labelledby="backstage-pass">
+			<div>
+				<p class="eyebrow">On YouTube</p>
+				<h2 id="backstage-pass">Consider this your backstage pass.</h2>
+				<p>Come behind the booth with me. Start with my latest upload.</p>
+				<a class="button" href="https://www.youtube.com/@DJRachelLynch/videos">Browse my YouTube videos</a>
+			</div>
+			<iframe
+				class="youtube-player"
+				src={`https://www.youtube-nocookie.com/embed/videoseries?list=${uploads}`}
+				title="DJ Rachel’s latest YouTube uploads"
+				loading="lazy"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allow="encrypted-media; picture-in-picture; fullscreen"
+				allowfullscreen
+			></iframe>
+		</section>
+
+		<section class="instagram-section" aria-labelledby="on-instagram">
+			<div class="page-width media-section">
+				<div>
+					<h2 id="on-instagram">Find me on Instagram.</h2>
+					<p>See my recent posts from the booth and beyond. Open any post to see the conversation and join in.</p>
+					<a class="button" href={instagram}>Follow @djrachelrlynch</a>
+				</div>
+				<iframe
+					class="instagram-feed"
+					src={`${instagram}embed/`}
+					title="Recent posts from DJ Rachel’s Instagram"
+					loading="lazy"
+					referrerpolicy="strict-origin-when-cross-origin"
+				></iframe>
 			</div>
 		</section>
 
 		<ContactCta />
 	</main>
 </SiteLayout>
+
+<style>
+	#my-story,
+	#backstage-pass {
+		text-transform: none;
+	}
+
+	.about-portrait {
+		display: block;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+		object-position: center top;
+		border-radius: 8px;
+	}
+
+	.youtube-player {
+		display: block;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		border: 0;
+		border-radius: 8px;
+		background: #000;
+	}
+
+	.instagram-section {
+		background: var(--paper);
+	}
+
+	.instagram-feed {
+		display: block;
+		width: 100%;
+		max-width: 540px;
+		height: clamp(300px, 95vw, 580px);
+		border: 0;
+		border-radius: 8px;
+		background: #fff;
+	}
+</style>

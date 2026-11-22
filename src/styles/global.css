@@ -1437,3 +1437,25 @@ h2 {
 @media (max-width: 360px) {
 	.section-heading h2 { font-size: 2.9rem; }
 }
+
+.media-section {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+	align-items: center;
+	gap: clamp(24px, 5vw, 70px);
+	padding-block: clamp(48px, 8vw, 96px);
+}
+
+.media-section h2 {
+	font-size: clamp(2.2rem, 4.5vw, 4.5rem);
+}
+
+.media-section p:not(.eyebrow) {
+	margin-block: 18px 24px;
+}
+
+@media (max-width: 760px) {
+	.media-section {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}

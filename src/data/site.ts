@@ -1,6 +1,6 @@
 import weddingPhoto from "../../public/unnamed (35).jpg";
 import corporatePhoto from "../../public/1 corp.jpg";
-import privatePartyPhoto from "../../public/unnamed (12).jpg";
+import privatePartyPhoto from "../../public/private-bar-party.jpg";
 
 export const serviceCards = [
 	{
@@ -8,11 +8,11 @@ export const serviceCards = [
 		shortTitle: "weddings",
 		href: "/weddings/",
 		tone: "weddings",
-		eyebrow: "Packed dance floor, couple center",
+		eyebrow: "Personalized Wedding Experiences.",
 		imageLabel: "Wedding photo coming soon",
 		image: weddingPhoto,
 		imageAlt: "A bride and groom singing and celebrating with guests on a packed wedding dance floor.",
-		copy: "From ceremony audio to the last song, make space for the moments and music that are important to you.",
+		copy: "From ceremony audio to the last song, we’ll make space for the moments and music important to you.",
 	},
 	{
 		title: "Corporate + Brands",
@@ -23,14 +23,14 @@ export const serviceCards = [
 		imageLabel: "Brand event photo coming soon",
 		image: corporatePhoto,
 		imageAlt: "DJ Rachel performing at an indoor event with guests gathered nearby.",
-		copy: "A thoughtful soundtrack, clear mics, and the right energy for the room and the people in it.",
+		copy: "A thoughtful soundtrack, clear mics, and the right energy for the room and the people in it. Here your brand is felt, not just seen.",
 	},
 	{
 		title: "Private Events",
 		shortTitle: "private events",
 		href: "/private-events/",
 		tone: "private",
-		eyebrow: "Milestone birthday or sweet 16",
+		eyebrow: "Any Celebration. Any time. Any place.",
 		imageLabel: "Private party photo coming soon",
 		image: privatePartyPhoto,
 		imageAlt: "Guests dancing and celebrating at an indoor party with green lighting.",
@@ -41,7 +41,7 @@ export const serviceCards = [
 export const values = [
 	{
 		title: "Music that feels like you",
-		copy: "Start with what you love. Build a soundtrack that makes room for your guests, too.",
+		copy: "Your taste sets the tone. Tell me what you love. I'll make sure your guests feel like they belong, too.",
 	},
 	{
 		title: "A plan that keeps things easy",
@@ -49,6 +49,6 @@ export const values = [
 	},
 	{
 		title: "Room for a little magic",
-		copy: "A good night has a rhythm of its own. Leave space for the unexpected sing-along.",
+		copy: "I understand a celebration has a rhythm of its own. Sometimes the best moments aren't on the timeline. I'm always listening for them. Intuition and creativity lead every set.",
 	},
 ];

@@ -1,6 +1,7 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
 import { Image } from "astro:assets";
+import rachelPortrait from "../../public/485803166_3118932788254150_7100244311701559589_n.jpg";
 import ContactCta from "../components/ContactCta.astro";
 import ReviewHighlights from "../components/ReviewHighlights.astro";
 import HeroReviews from "../components/HeroReviews.astro";
@@ -18,7 +19,7 @@ import { serviceCards, values } from "../data/site";
 				<p class="eyebrow">DJ · Event host · Party rocker</p>
 				<h1 class="hero-title">your vibe,<br /><em>your way.</em></h1>
 				<p class="hero-lead">
-					I’m an experienced Party Rocker, DJ, and MC delivering upscale entertainment for weddings, corporate events, and moments worth celebrating. Seamless mixes. Dance floors nobody leaves. No cheesy gimmicks. Thoughtful planning. A celebration that feels made for you.
+					I’m an experienced Party Rocker, DJ, and MC delivering upscale entertainment for weddings, corporate events, and moments worth celebrating. Seamless and creative mixes. Dance floors nobody leaves. No cheesy gimmicks. Thoughtful planning. A celebration that feels made for you.
 				</p>
 				<div class="button-row">
 					<a class="button" href="#contact">Let’s connect</a>
@@ -79,15 +80,14 @@ import { serviceCards, values } from "../data/site";
 
 		<section class="about-band">
 			<div class="page-width about-band__inner">
-				<div class="photo-placeholder">
-					<span>Rachel's photo goes here</span>
+				<div class="about-band__portrait">
+					<Image src={rachelPortrait} alt="DJ Rachel smiling in a silver jacket." widths={[400, 640, 900]} sizes="(max-width: 700px) 100vw, 45vw" width={900} format="webp" loading="lazy" />
 				</div>
 				<div class="about-band__copy">
 					<p class="eyebrow">A little about me</p>
-					<h2>the best nights<br />feel like <em>you.</em></h2>
+					<h2>Let's get acquainted.<br /><em>I'll go first.</em></h2>
 					<p>
-						The story, favorite moments, and behind-the-booth photos belong here.
-						Rachel will add the details in her own words.
+						Pull up a chair. I'd like to tell you a story. You should love your DJ. Part of that is knowing how this whole thing started. Grab a snack, it's a good one. Spoiler: it wasn't the plan.
 					</p>
 					<a class="text-link" href="/about/">Meet Rachel <span aria-hidden="true">→</span></a>
 				</div>
@@ -109,6 +109,20 @@ import { serviceCards, values } from "../data/site";
 						<p>{value.copy}</p>
 					</article>
 				))}
+			</div>
+		</section>
+
+		<section class="mix-sample" aria-labelledby="mix-heading">
+			<div class="page-width mix-sample__inner">
+				<div>
+					<p class="eyebrow">Hear the energy</p>
+					<h2 id="mix-heading">press play.<br /><em>feel the vibe.</em></h2>
+					<p>A taste of my sound. Listen to a live set on Mixcloud.</p>
+				</div>
+				<a class="mix-sample__play" href="https://www.mixcloud.com/djrachellynch/dj-rachel-fp-movement-grand-opening-set-part-1/" target="_blank" rel="noopener noreferrer" aria-label="Listen to DJ Rachel’s FP Movement live mix on Mixcloud (opens in a new tab)">
+					<span class="mix-sample__record" aria-hidden="true"><span><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M8 4v16l13-8z" /></svg></span></span>
+					<span><strong>Listen to the mix →</strong><small>DJ Rachel · Live at FP Movement · Part 1</small></span>
+				</a>
 			</div>
 		</section>
 

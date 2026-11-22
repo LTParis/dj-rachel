@@ -1,10 +1,10 @@
 import corporateEvent from "../../public/1 corp.jpg";
-import retailEvent from "../../public/unnamed.jpg";
-import photo15 from "../../public/unnamed (15).jpg";
+import retailEvent from "../../public/corporate-retail-event.jpg";
+import photo15 from "../../public/corporate-event-15.jpg";
 import photo16 from "../../public/unnamed (16).jpg";
 import photo17 from "../../public/unnamed (17).jpg";
 import photo18 from "../../public/unnamed (18).jpg";
-import photo19 from "../../public/unnamed (19).jpg";
+import photo19 from "../../public/corporate-event-19.jpg";
 import photo20 from "../../public/unnamed (20).jpg";
 import photo21 from "../../public/unnamed (21).jpg";
 import photo22 from "../../public/unnamed (22).jpg";
@@ -15,11 +15,11 @@ import photo31 from "../../public/unnamed (31).jpg";
 import photo32 from "../../public/unnamed (32).jpg";
 import photo33 from "../../public/unnamed (33).jpg";
 import photo34 from "../../public/unnamed (34).jpg";
-import photo4 from "../../public/unnamed (4).jpg";
-import photo9 from "../../public/unnamed (9).jpg";
-import photo10 from "../../public/unnamed (10).jpg";
-import photo11 from "../../public/unnamed (11).jpg";
-import photo13 from "../../public/unnamed (13).jpg";
+import photo4 from "../../public/corporate-event-4.jpg";
+import photo9 from "../../public/corporate-event-9.jpg";
+import photo10 from "../../public/corporate-event-10.jpg";
+import photo11 from "../../public/corporate-event-11.jpg";
+import photo13 from "../../public/corporate-event-13.jpg";
 
 // Rachel-approved event photos; descriptions use only visible details.
 export const corporatePhotos = [

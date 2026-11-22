@@ -1,6 +1,7 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import type { MarkdownInstance } from "astro";
+import { publishedArticles } from "../../data/publishedArticles";
 interface Article { title: string; description: string; date: string; topic: string; draft?: boolean; }
 const articles = Object.values(import.meta.glob<MarkdownInstance<Article>>("./posts/*.md", { eager: true }))
 	.filter(article => !article.frontmatter.draft)
@@ -20,7 +21,16 @@ const articles = Object.values(import.meta.glob<MarkdownInstance<Article>>("./po
 				<h3>{article.frontmatter.title}</h3>
 				<p>{article.frontmatter.description}</p>
 				<span class="text-link">Read article →</span>
-			</a>)}</div> : <p>New writing and past articles will be shared here soon.</p>}
+			</a>)}</div> : null}
+			<p class="writing-introduction">Thoughts and advice I’ve shared with the industry. Read each article at its original publication.</p>
+			<div class="writing-grid">
+				{publishedArticles.map(article => <a class="writing-card published-article" href={article.href} target="_blank" rel="noopener noreferrer">
+					<p class="eyebrow">{article.publication} · {article.topic}</p>
+					<h3>{article.title}</h3>
+					<p>{article.description}</p>
+					<span class="text-link">{article.archive ? "Read in the publication archive" : "Read the original article"} →</span>
+				</a>)}
+			</div>
 		</section>
 	</main>
 </SiteLayout>

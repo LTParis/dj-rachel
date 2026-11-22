@@ -19,7 +19,6 @@ const count = weddingPhotos.length;
 		</nav>
 		<figure>
 			<Image src={photo.src} alt={photo.alt} width={Math.min(2000, photo.src.width)} format="webp" loading="eager" />
-			<figcaption>{photo.alt}</figcaption>
 		</figure>
 		<nav class="gallery-thumbnails" aria-label="Choose a wedding photo">
 			{weddingPhotos.map((item, i) => <a href={`/weddings/gallery/${i + 1}/`} aria-label={`View wedding photo ${i + 1}`} aria-current={i === index ? "page" : undefined}><Image src={item.src} alt={item.alt} width={240} format="webp" loading="lazy" /></a>)}
@@ -33,7 +32,6 @@ const count = weddingPhotos.length;
 	.gallery-controls p { margin: 0; }
 	figure { margin: 0; }
 	figure img { display: block; width: 100%; height: auto; max-height: 80vh; object-fit: contain; background: #000; }
-	figcaption { margin-top: 12px; }
 	.gallery-thumbnails { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 	.gallery-thumbnails a { width: min(150px, 40%); border: 3px solid transparent; }
 	.gallery-thumbnails a[aria-current], .gallery-thumbnails a:focus-visible { border-color: var(--pink); }

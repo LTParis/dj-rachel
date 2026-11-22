@@ -1396,3 +1396,44 @@ h2 {
 		transition-duration: 0.01ms !important;
 	}
 }
+
+/* Homepage music strip and listening invitation. */
+.intro-strip__inner {
+	justify-content: center;
+	gap: clamp(16px, 3vw, 44px);
+}
+.intro-strip p {
+	font-size: clamp(0.68rem, 1vw, 0.85rem);
+	letter-spacing: 0.08em;
+}
+.about-band__portrait img {
+	display: block;
+	width: 100%;
+	max-height: 620px;
+	object-fit: cover;
+	object-position: center 30%;
+}
+.mix-sample { padding-block: 70px; background: #000; color: #fff; }
+.mix-sample__inner { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 44px; }
+.mix-sample .eyebrow { color: #fff; }
+.mix-sample h2 { font-size: clamp(2.1rem, 5vw, 4.8rem); }
+.mix-sample__play { display: flex; align-items: center; gap: 24px; padding: 28px; border: 3px solid var(--pink); color: #fff; text-decoration: none; }
+.mix-sample__play:hover, .mix-sample__play:focus-visible { background: #241019; outline: 3px solid #fff; outline-offset: 5px; }
+.mix-sample__record { display: grid; place-items: center; flex: 0 0 120px; aspect-ratio: 1; border-radius: 50%; background: repeating-radial-gradient(circle, #292329 0 2px, #111 3px 6px); }
+.mix-sample__record > span { display: grid; place-items: center; width: 55px; height: 55px; border-radius: 50%; background: var(--pink); font-size: 24px; }
+.mix-sample__play strong { display: block; font-family: var(--display); font-size: 1.25rem; }
+.mix-sample__play small { display: block; margin-top: 10px; line-height: 1.6; }
+@media (max-width: 700px) {
+	.intro-strip__inner { flex-direction: column; gap: 7px; padding-block: 24px; }
+	.intro-strip p { font-size: clamp(0.65rem, 2.7vw, 0.8rem); line-height: 1.6; }
+	.intro-strip span { font-size: 0.9rem; line-height: 1; }
+	.mix-sample__inner { grid-template-columns: 1fr; gap: 24px; }
+	.mix-sample__play { padding: 20px; gap: 16px; }
+	.mix-sample__record { flex-basis: 84px; }
+	.mix-sample__play strong { font-size: 1.05rem; }
+}
+
+.about-band__copy h2 { font-size: clamp(2.2rem, 5vw, 4.5rem); }
+@media (max-width: 360px) {
+	.section-heading h2 { font-size: 2.9rem; }
+}

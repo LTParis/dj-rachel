@@ -21,7 +21,6 @@ const articles = Object.values(import.meta.glob<MarkdownInstance<Article>>("./po
 				<p>{article.frontmatter.description}</p>
 				<span class="text-link">Read article →</span>
 			</a>)}</div> : null}
-			<p class="writing-introduction">Thoughts and advice I’ve shared with the industry. Read each article at its original publication.</p>
 			<div class="writing-grid">
 				{publishedArticles.map(article => <a class="writing-card published-article" href={article.href} target="_blank" rel="noopener noreferrer">
 					<p class="eyebrow">{article.publication} · {article.topic}</p>
@@ -38,6 +37,7 @@ const articles = Object.values(import.meta.glob<MarkdownInstance<Article>>("./po
 	h1 { font-size: clamp(3rem, 8vw, 7rem); }
 	.writing-list { padding-block: 35px 90px; }
 	.writing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 24px; }
+	.writing-grid + .writing-grid { margin-top: 24px; }
 	.writing-card { padding: 28px; border: 4px solid var(--pink); background: #000; color: #fff; text-decoration: none; }
 	.writing-card:hover, .writing-card:focus-visible { background: #241019; outline: 3px solid var(--pink); outline-offset: 4px; }
 	.writing-card .eyebrow { color: #fff; }

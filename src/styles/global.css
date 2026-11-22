@@ -1406,13 +1406,7 @@ h2 {
 	font-size: clamp(0.68rem, 1vw, 0.85rem);
 	letter-spacing: 0.08em;
 }
-.about-band__portrait img {
-	display: block;
-	width: 100%;
-	max-height: 620px;
-	object-fit: cover;
-	object-position: center 30%;
-}
+
 .mix-sample { padding-block: 70px; background: #000; color: #fff; }
 .mix-sample__inner { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 44px; }
 .mix-sample .eyebrow { color: #fff; }

@@ -2,6 +2,11 @@
 import SiteLayout from "../layouts/SiteLayout.astro";
 import ServicePage from "../components/ServicePage.astro";
 import ContactCta from "../components/ContactCta.astro";
+
+const latestMix = "https://www.mixcloud.com/djrachellynch/dj-rachel-wedding-reception-rewind-edm-festival-vibes-2hrs/";
+const publicMixPath = "/djrachellynch/dj-rachel-wedding-reception-rewind-meredith-caleb-part-1/";
+const publicMix = `https://www.mixcloud.com${publicMixPath}`;
+const mixPlayer = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=${encodeURIComponent(publicMixPath)}`;
 ---
 
 <SiteLayout title="Wedding DJ & MC | DJ Rachel Lynch" description="Plan a wedding soundtrack that feels like you with DJ Rachel Lynch. Wedding DJ and MC services, ceremony audio, and thoughtful event coordination.">
@@ -24,6 +29,55 @@ import ContactCta from "../components/ContactCta.astro";
 			{ title: "Enjoy your day", copy: "Dance. Eat. Celebrate. Enjoy every moment. I'll make sure the music and the schedule come together flawlessly." },
 		]}
 	>
+		<section class="mix-sample" aria-labelledby="wedding-mix">
+			<div class="page-width media-section">
+				<div>
+					<p class="eyebrow">On Mixcloud</p>
+					<h2 id="wedding-mix">Hear a real wedding set.</h2>
+					<p>Press play for a set from Meredith and Caleb’s reception.</p>
+					<a class="wedding-mix-link" href={latestMix}>Latest wedding mix · EDM Festival Vibes</a>
+					<small class="mix-access">Available to Mixcloud subscribers</small>
+				</div>
+				<div class="wedding-mix-player">
+					<iframe
+						src={mixPlayer}
+						title="Mixcloud player for Meredith and Caleb’s wedding reception mix"
+						height="120"
+						loading="lazy"
+						allow="autoplay"
+					></iframe>
+					<a class="wedding-mix-link" href={publicMix}>Open Meredith and Caleb’s mix on Mixcloud</a>
+				</div>
+			</div>
+		</section>
+
 		<ContactCta />
 	</ServicePage>
 </SiteLayout>
+
+<style>
+	.mix-sample {
+		padding-block: 0;
+	}
+
+	.wedding-mix-player {
+		display: grid;
+		gap: 12px;
+	}
+
+	.wedding-mix-player iframe {
+		display: block;
+		width: 100%;
+		border: 0;
+	}
+
+	.wedding-mix-link {
+		color: inherit;
+		text-underline-offset: 0.2em;
+	}
+
+	.mix-access {
+		display: block;
+		margin-top: 4px;
+	}
+</style>

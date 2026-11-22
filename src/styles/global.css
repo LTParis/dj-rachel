@@ -1427,7 +1427,7 @@ h2 {
 	.mix-sample__play strong { font-size: 1.05rem; }
 }
 
-.about-band__copy h2 { font-size: clamp(2.2rem, 5vw, 4.5rem); }
+.about-band__copy h2 { font-size: clamp(3.2rem, 6vw, 6.2rem); overflow-wrap: anywhere; }
 @media (max-width: 360px) {
 	.section-heading h2 { font-size: 2.9rem; }
 }
@@ -1452,4 +1452,9 @@ h2 {
 	.media-section {
 		grid-template-columns: minmax(0, 1fr);
 	}
+}
+
+@media (min-width: 741px) and (max-width: 1100px) {
+	.site-header__inner { flex-wrap: wrap; padding-block: 12px; }
+	.desktop-nav { order: 3; width: 100%; justify-content: center; flex-wrap: wrap; }
 }

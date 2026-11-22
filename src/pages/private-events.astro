@@ -2,6 +2,8 @@
 import SiteLayout from "../layouts/SiteLayout.astro";
 import ServicePage from "../components/ServicePage.astro";
 import ContactCta from "../components/ContactCta.astro";
+import PhotoCarousel from "../components/PhotoCarousel.astro";
+import { partyPhotos } from "../data/partyPhotos";
 ---
 
 <SiteLayout title="Private Party DJ | DJ Rachel Lynch" description="Make birthdays, anniversaries, reunions, graduations, and private celebrations memorable with DJ Rachel Lynch.">
@@ -23,6 +25,7 @@ import ContactCta from "../components/ContactCta.astro";
 			{ title: "Enjoy the party", copy: "Be with your guests while the music brings the night together." },
 		]}
 	>
+		<PhotoCarousel slot="hero-media" photos={partyPhotos} label="Party photos" />
 		<ContactCta />
 	</ServicePage>
 </SiteLayout>

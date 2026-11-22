@@ -1,0 +1,36 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import type { MarkdownInstance } from "astro";
+interface Article { title: string; description: string; date: string; topic: string; draft?: boolean; }
+const articles = Object.values(import.meta.glob<MarkdownInstance<Article>>("./posts/*.md", { eager: true }))
+	.filter(article => !article.frontmatter.draft)
+	.sort((a, b) => String(b.frontmatter.date).localeCompare(String(a.frontmatter.date)));
+---
+<SiteLayout title="Writing | DJ Rachel Lynch" description="Advice, thoughts, and articles from DJ Rachel about weddings, DJing, the industry, and more.">
+	<main id="main">
+		<section class="page-width writing-intro">
+			<p class="eyebrow">Advice · Thoughts · Articles</p>
+			<h1>Beyond <em>the booth.</em></h1>
+			<p class="hero-lead">Weddings. DJing. The industry. And everything I've learned along the way.</p>
+		</section>
+		<section class="page-width writing-list" aria-labelledby="articles-heading">
+			<h2 id="articles-heading">My <em>writing.</em></h2>
+			{articles.length ? <div class="writing-grid">{articles.map(article => <a class="writing-card" href={article.url}>
+				<p class="eyebrow">{article.frontmatter.topic}</p>
+				<h3>{article.frontmatter.title}</h3>
+				<p>{article.frontmatter.description}</p>
+				<span class="text-link">Read article →</span>
+			</a>)}</div> : <p>New writing and past articles will be shared here soon.</p>}
+		</section>
+	</main>
+</SiteLayout>
+<style>
+	.writing-intro { padding-block: 70px 35px; }
+	h1 { font-size: clamp(3rem, 8vw, 7rem); }
+	.writing-list { padding-block: 35px 90px; }
+	h2 { font-size: clamp(2.8rem, 5vw, 4.5rem); }
+	.writing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 24px; }
+	.writing-card { padding: 28px; border: 3px solid var(--pink); color: inherit; text-decoration: none; }
+	.writing-card:hover, .writing-card:focus-visible { background: #f8e6ed; }
+	h3 { font-family: var(--display); font-size: 1.6rem; }
+</style>

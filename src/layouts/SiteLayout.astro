@@ -17,6 +17,7 @@ const links = [
 	{ label: "Private Events", href: "/private-events/" },
 	{ label: "About", href: "/about/" },
 	{ label: "Reviews", href: "/reviews/" },
+	{ label: "Writing", href: "/writing/" },
 ];
 const contactHref = currentPath === "/" ? "#contact" : "/#contact";
 ---
@@ -43,7 +44,7 @@ const contactHref = currentPath === "/" ? "#contact" : "/#contact";
 				<nav class="desktop-nav" aria-label="Main navigation">
 					<a href="/" aria-current={currentPath === "/" ? "page" : undefined}>Home</a>
 					{links.map((link) => (
-						<a href={link.href} aria-current={currentPath === link.href ? "page" : undefined}>{link.label}</a>
+						<a href={link.href} aria-current={(currentPath === link.href || (link.href === "/writing/" && currentPath.startsWith("/writing/"))) ? "page" : undefined}>{link.label}</a>
 					))}
 				</nav>
 				<a class="button button--small header-cta" href={contactHref}>Check my availability</a>
@@ -52,7 +53,7 @@ const contactHref = currentPath === "/" ? "#contact" : "/#contact";
 					<nav class="mobile-nav__panel" aria-label="Mobile navigation">
 						<a href="/" aria-current={currentPath === "/" ? "page" : undefined}>Home</a>
 						{links.map((link) => (
-							<a href={link.href} aria-current={currentPath === link.href ? "page" : undefined}>{link.label}</a>
+							<a href={link.href} aria-current={(currentPath === link.href || (link.href === "/writing/" && currentPath.startsWith("/writing/"))) ? "page" : undefined}>{link.label}</a>
 						))}
 						<a href={contactHref}>Check my availability</a>
 					</nav>

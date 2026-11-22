@@ -19,20 +19,20 @@ const instagram = "https://www.instagram.com/djrachelrlynch/";
 		<section class="about-story" aria-labelledby="my-story">
 			<div class="page-width about-story__inner">
 				<h2 id="my-story">My Story</h2>
-				<p>Nearly 20 years ago, a family medical emergency left a wedding without a DJ on the day it was supposed to happen. A couple was counting on their celebration and having a DJ. Nobody was available to help. I thought I couldn't be worse than having no DJ, and offered to help out. So I said yes.</p>
-				<p>I was a teenager with no wedding experience, just some tinkering on my brother's gear at home. I had no idea how I'd pull it off. I only knew that couple deserved their day.</p>
-				<p>Somewhere in the nerves and chaos, I found a talent I never knew I had. A favor for family turned into a turning point.</p>
-				<p>So I kept saying yes. Yes to nightlife, where I sharpened my skills night after night, and that blossomed into weddings. Yes to corporate events. Yes to bigger stages than I ever dreamed up, including opening for Gloria Gaynor and George Clinton &amp; Parliament-Funkadelic.</p>
-				<p>Along the way, I built The DJ Help Desk, a community of 17,000+ DJs rooted in kindness and education. I wanted it to be a welcoming place for anyone trying to break into the industry, especially women. I also run a YouTube channel with over 17,000 subscribers, where I share what I've learned. I've guest lectured at MIT, keynoted DJX Atlantic City, and in 2024 became the youngest person ever inducted into the Mobile Entertainment Expo Hall of Fame. Most importantly, I've been part of the best days of hundreds of couples' lives.</p>
-				<p>There was never a master plan. Just passion, a willingness to learn, and one opportunity leading to the next.</p>
-				<p>Today I still run on instinct, skill, and fearless energy, powered by a real love for music and people. Two decades of saying yes taught me there's nothing I can't figure out. I was meant to do this and I'm so glad I did.</p>
+				<p>Nearly 20 years ago, a family medical emergency left a wedding without a DJ on the day it was supposed to happen. A couple was counting on their celebration, and nobody was available to help on such short notice. I thought I couldn't be worse than having no DJ, so I offered to help. It was my first yes.</p>
+				<p>I was a teenager with no wedding experience, just some tinkering on my brother's gear at home. I was honestly terrified and had no idea how I'd pull it off. I only knew that couple deserved their wedding day, and that stepping in was the right thing to do.</p>
+				<p>Somewhere in the nerves and chaos, I found a real talent I never knew I had. A favor done out of love for family in a time of crisis became a turning point.</p>
+				<p>After that day, I kept saying yes. Yes to nightlife events, where I sharpened my skills night after night, and that eventually blossomed into weddings. Yes to corporate events. Yes to anything that needed music and a great vibe. Yes to bigger stages than I ever dreamed up, including opening for Gloria Gaynor and George Clinton &amp; Parliament-Funkadelic.</p>
+				<p>Along the way, while trying to figure this whole DJ thing out, I built The DJ Help Desk, a community of 17,000+ DJs rooted in kindness and education. I wanted it to be a place where anyone trying to break into the industry, especially women, would always feel welcome. I also run a YouTube channel with over 17,000 subscribers, where I share everything I've learned to help those starting their DJ journey. I've guest lectured at MIT, keynoted DJX Atlantic City, and in 2024 became the youngest person ever inducted into the Mobile Entertainment Expo Hall of Fame. But what matters most to me is that I've been part of the best days of hundreds of couples' and clients' lives, and I never take that trust or opportunity for granted.</p>
+				<p>There was never a master plan. Just a stressed teen who said yes because she wanted to help, a willingness to learn, and one opportunity leading to the next.</p>
+				<p>Today I still run on instinct, skill, and fearless energy, powered by a real love for music and people. Two decades of saying yes taught me there's nothing I can't figure out. I was meant to do this, and I'm so glad I did.</p>
 			</div>
 		</section>
 
 		<section class="page-width media-section" aria-labelledby="backstage-pass">
 			<div>
 				<p class="eyebrow">On YouTube</p>
-				<h2 id="backstage-pass">Consider this your backstage pass.</h2>
+				<h2 id="backstage-pass">Consider this your <em>backstage pass.</em></h2>
 				<p>Come behind the booth with me. Start with my latest upload.</p>
 				<a class="button" href="https://www.youtube.com/@DJRachelLynch/videos">Browse my YouTube videos</a>
 			</div>
@@ -50,7 +50,7 @@ const instagram = "https://www.instagram.com/djrachelrlynch/";
 		<section class="instagram-section" aria-labelledby="on-instagram">
 			<div class="page-width media-section">
 				<div>
-					<h2 id="on-instagram">Find me on Instagram.</h2>
+					<h2 id="on-instagram">Find me on <em>Instagram.</em></h2>
 					<p>See my recent posts from the booth and beyond. Open any post to see the conversation and join in.</p>
 					<a class="button" href={instagram}>Follow @djrachelrlynch</a>
 				</div>
@@ -73,6 +73,8 @@ const instagram = "https://www.instagram.com/djrachelrlynch/";
 	#backstage-pass {
 		text-transform: none;
 	}
+
+	#backstage-pass, #on-instagram { font-size: clamp(2.8rem, 6vw, 5.5rem); font-weight: 900; text-transform: none; overflow-wrap: anywhere; }
 
 	.about-portrait {
 		display: block;

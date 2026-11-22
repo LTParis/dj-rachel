@@ -1,7 +1,6 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
 import { Image } from "astro:assets";
-import rachelPortrait from "../../public/485803166_3118932788254150_7100244311701559589_n.jpg";
 import ContactCta from "../components/ContactCta.astro";
 import ReviewHighlights from "../components/ReviewHighlights.astro";
 import HeroReviews from "../components/HeroReviews.astro";
@@ -80,14 +79,14 @@ import { serviceCards, values } from "../data/site";
 
 		<section class="about-band">
 			<div class="page-width about-band__inner">
-				<div class="about-band__portrait">
-					<Image src={rachelPortrait} alt="DJ Rachel smiling in a silver jacket." widths={[400, 640, 900]} sizes="(max-width: 700px) 100vw, 45vw" width={900} format="webp" loading="lazy" />
+				<div class="photo-placeholder">
+					<span>Rachel's photo goes here</span>
 				</div>
 				<div class="about-band__copy">
 					<p class="eyebrow">A little about me</p>
 					<h2>Let's get acquainted.<br /><em>I'll go first.</em></h2>
 					<p>
-						Pull up a chair. I'd like to tell you a story. You should love your DJ. Part of that is knowing how this whole thing started. Grab a snack, it's a good one. Spoiler: it wasn't the plan.
+						Pull up a chair and grab a snack, because I'd like to tell you a story. You should love your DJ, and part of that is knowing how this whole thing began. It starts with a wedding that needed a DJ and a yes I never planned on saying.
 					</p>
 					<a class="text-link" href="/about/">Meet Rachel <span aria-hidden="true">→</span></a>
 				</div>

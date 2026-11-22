@@ -12,10 +12,9 @@ const articles = Object.values(import.meta.glob<MarkdownInstance<Article>>("./po
 		<section class="page-width writing-intro">
 			<p class="eyebrow">Advice · Thoughts · Articles</p>
 			<h1>Beyond <em>the booth.</em></h1>
-			<p class="hero-lead">Weddings. DJing. The industry. And everything I've learned along the way.</p>
+			<p class="hero-lead">Nearly 20 years in, I've learned a lot, and I'm not shy about sharing it. Take a look at what I've written for the industry, on my blog and in other publications, and click any article to read it in full.</p>
 		</section>
-		<section class="page-width writing-list" aria-labelledby="articles-heading">
-			<h2 id="articles-heading">My <em>writing.</em></h2>
+		<section class="page-width writing-list" aria-label="Articles">
 			{articles.length ? <div class="writing-grid">{articles.map(article => <a class="writing-card" href={article.url}>
 				<p class="eyebrow">{article.frontmatter.topic}</p>
 				<h3>{article.frontmatter.title}</h3>
@@ -38,9 +37,9 @@ const articles = Object.values(import.meta.glob<MarkdownInstance<Article>>("./po
 	.writing-intro { padding-block: 70px 35px; }
 	h1 { font-size: clamp(3rem, 8vw, 7rem); }
 	.writing-list { padding-block: 35px 90px; }
-	h2 { font-size: clamp(2.8rem, 5vw, 4.5rem); }
 	.writing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 24px; }
-	.writing-card { padding: 28px; border: 3px solid var(--pink); color: inherit; text-decoration: none; }
-	.writing-card:hover, .writing-card:focus-visible { background: #f8e6ed; }
+	.writing-card { padding: 28px; border: 4px solid var(--pink); background: #000; color: #fff; text-decoration: none; }
+	.writing-card:hover, .writing-card:focus-visible { background: #241019; outline: 3px solid var(--pink); outline-offset: 4px; }
+	.writing-card .eyebrow { color: #fff; }
 	h3 { font-family: var(--display); font-size: 1.6rem; }
 </style>

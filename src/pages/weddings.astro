@@ -21,10 +21,21 @@ const mixPlayer = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&
 			{ title: "Ceremony", copy: "Every vow heard. Every cue perfectly timed. Microphones and music for the moments that matter most." },
 			{ title: "Cocktail hour", copy: "A personalized soundtrack that sets the tone, leaves room to talk, and builds toward the night ahead." },
 			{ title: "Reception + dance floor", copy: "This is the part everyone talks about the next day. Your favorite songs, performed like you've never heard them. Your people. Your energy. Smiles and hands in the air all night. Nobody sits this one out. Not even grandma." },
-			{ title: "MC + timeline", copy: "A warm friendly voice on the mic. Every key moment seamlessly coordinated with your vendor team. A day that feels effortless, whatever happens behind the scenes. Your timeline is in good hands." },
+			{ title: "MC + timeline", copy: "A warm, friendly voice on the mic. Every key moment seamlessly coordinated with your vendor team. A day that feels effortless, whatever happens behind the scenes. Your timeline is in good hands." },
 		]}
 		steps={[]}
 	>
+		<section slot="after-hero" class="section page-width wedding-story" aria-labelledby="wedding-story-heading">
+			<h2 id="wedding-story-heading">More than music.<br /><em>More than a great party.</em></h2>
+			<div class="wedding-story__copy">
+				<p>Your wedding is one of the few occasions when all your favorite people come together in one place. Every detail, every moment, and every song should feel like it belongs to you.</p>
+				<p>My job goes far beyond keeping the dance floor full. It's understanding the people, personalities, and priorities that make your celebration uniquely yours.</p>
+				<p>From helping you plan the flow of the evening to coordinating with your vendor team, hosting your guests, and knowing when to turn up the energy or let a moment breathe, I'm there to make sure everything comes together.</p>
+				<p><strong>And when plans change? I adapt.</strong></p>
+				<p>Because you should spend your wedding celebrating, not worrying about what's happening behind the scenes.</p>
+			</div>
+		</section>
+
 		<section slot="planning" class="app-planning" aria-labelledby="app-planning-heading">
 			<div class="page-width">
 				<h2 id="app-planning-heading">Plan the whole celebration from your phone. <em>No, seriously.</em></h2>
@@ -72,6 +83,10 @@ const mixPlayer = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&
 </SiteLayout>
 
 <style>
+	.wedding-story { padding-top: 20px; }
+	.wedding-story h2 { text-transform: none; }
+	.wedding-story__copy { max-width: 780px; margin-top: 32px; font-size: 1.1rem; line-height: 1.8; }
+
 	.app-planning { background: #000; color: #fff; padding-block: 80px; }
 	.app-planning h2 { font-size: clamp(2.5rem, 5.5vw, 5.5rem); font-weight: 900; margin-bottom: 36px; overflow-wrap: anywhere; }
 	.app-planning__grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 40px; }

@@ -16,10 +16,21 @@ const instagram = "https://www.instagram.com/djrachelrlynch/";
 			<img class="about-portrait" src="/rachel-at-the-decks.jpg" width="1280" height="979" alt="Rachel wearing headphones and smiling as she DJs." />
 		</section>
 
+		<section class="section page-width about-details" aria-labelledby="about-details-heading">
+			<h2 id="about-details-heading">Because the best events aren't just about what happens. <em>They're about everything that goes into making it happen.</em></h2>
+			<div class="about-details__copy">
+				<p class="about-details__lead"><strong>Why book DJ Rachel? It's the little things that make all the difference.</strong></p>
+				<p>A great DJ does more than play great music. That's the easy part.</p>
+				<p>It's the timing of an announcement. The unexpected transition. The song that brings generations together. The adjustment made behind the scenes before anyone even realizes something needed to change.</p>
+				<p>It's knowing when to take the lead, when to step back, and how to make everyone in the room feel like they're part of something special.</p>
+				<p>Those little details aren't always obvious, but they make all the difference between someone who simply plays music and an experienced event professional who sees the bigger picture while taking care of the smallest details.</p>
+			</div>
+		</section>
+
 		<section class="about-story" aria-labelledby="my-story">
 			<div class="page-width about-story__inner">
 				<h2 id="my-story">My Story</h2>
-				<p>Nearly 20 years ago, a family medical emergency left a wedding without a DJ on the day it was supposed to happen. A couple was counting on their celebration, and nobody was available to help on such short notice. I thought I couldn't be worse than having no DJ, so I offered to help. It was my first yes.</p>
+				<p>Nearly 20 years ago, a family medical emergency left a wedding without a DJ on the day it was supposed to happen. A couple was counting on their celebration, and nobody was available to help on such short notice. I had no idea if I was ready, but I knew they needed someone willing to show up. It was my first yes.</p>
 				<p>I was a teenager with no wedding experience, just some tinkering on my brother's gear at home. I was honestly terrified and had no idea how I'd pull it off. I only knew that couple deserved their wedding day, and that stepping in was the right thing to do.</p>
 				<p>Somewhere in the nerves and chaos, I found a real talent I never knew I had. A favor done out of love for family in a time of crisis became a turning point.</p>
 				<p>After that day, I kept saying yes. Yes to nightlife events, where I sharpened my skills night after night, and that eventually blossomed into weddings. Yes to corporate events. Yes to anything that needed music and a great vibe. Yes to bigger stages than I ever dreamed up, including opening for Gloria Gaynor and George Clinton &amp; Parliament-Funkadelic.</p>
@@ -69,6 +80,11 @@ const instagram = "https://www.instagram.com/djrachelrlynch/";
 </SiteLayout>
 
 <style>
+	.about-details { padding-top: 20px; }
+	.about-details h2 { color: #000; font-weight: 900; font-size: clamp(2.5rem, 5vw, 4.5rem); text-transform: none; }
+	.about-details__copy { max-width: 780px; margin-top: 32px; font-size: 1.1rem; line-height: 1.8; }
+	.about-details__lead { font-family: var(--display); font-size: 1.25rem; }
+
 	#my-story,
 	#backstage-pass {
 		text-transform: none;

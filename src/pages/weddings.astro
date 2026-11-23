@@ -14,7 +14,7 @@ const mixPlayer = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&
 	<ServicePage
 		eyebrow="Wedding DJ + MC"
 		title="Your love story,<br /><em>your vibe,</em><br />your way."
-		lead="No cookie-cutter playlists here. Plan your music and special moments with your personalized wedding planning app. Then, when your big day arrives, soak in every second. I've got the rest."
+		lead="No cookie-cutter playlist here. Plan your music and moments in your personalized wedding app. Then, when your wedding day finally arrives, soak in every second. I've got the rest."
 		offersHeading="Everything your celebration needs."
 		weddingHero
 		highlightOffers
@@ -28,7 +28,6 @@ const mixPlayer = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&
 	>
 		<section slot="after-hero" class="section page-width wedding-story" aria-labelledby="wedding-story-heading">
 			<h2 id="wedding-story-heading">More than music.<br /><em>More than a great party.</em></h2>
-			<div class="wedding-story__grid">
 			<div class="wedding-story__copy">
 				<p>Your wedding is one of the few occasions when all your favorite people come together in one place. Every detail, every moment, and every song should feel like it belongs to you.</p>
 				<p>My job goes far beyond keeping the dance floor full. It's understanding the people, personalities, and priorities that make your celebration uniquely yours.</p>
@@ -37,7 +36,6 @@ const mixPlayer = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&
 				<p>Because you should spend your wedding celebrating, not worrying about what's happening behind the scenes.</p>
 			</div>
 			<WeddingClips />
-			</div>
 		</section>
 
 		<section slot="planning" class="app-planning" aria-labelledby="app-planning-heading">
@@ -88,10 +86,8 @@ const mixPlayer = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&
 <style>
 	.wedding-story { padding-top: 20px; }
 	.wedding-story h2 { text-transform: none; }
-	.wedding-story__grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: start; gap: clamp(32px, 5vw, 64px); margin-top: 36px; }
-	.wedding-story__copy { min-width: 0; font-size: 1.1rem; line-height: 1.8; }
+	.wedding-story__copy { max-width: 800px; margin-top: 36px; font-size: 1.1rem; line-height: 1.8; }
 	.wedding-story__copy p:last-child { margin-bottom: 0; }
-	@media (max-width: 800px) { .wedding-story__grid { grid-template-columns: minmax(0, 1fr); } }
 
 	.app-planning { background: #000; color: #fff; padding-block: 80px; }
 	.app-planning h2 { font-size: clamp(2.5rem, 5.5vw, 5.5rem); font-weight: 900; margin-bottom: 36px; overflow-wrap: anywhere; }

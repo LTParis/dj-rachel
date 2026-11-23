@@ -1,8 +1,8 @@
 # Wedding video testimonials
 
-The “Real weddings. Real moments. Really good times.” panel sits beside the “More than music” copy on laptops and below it on smaller screens. It has five thumbnail slots: a featured first video and four smaller thumbnails. Unfilled slots say “Video coming soon”; they are not pretend play buttons.
+The “Real weddings. Real moments. Really good times.” panel sits below the “More than music” copy. It has six equal thumbnail slots, arranged in three columns on laptops and two columns on smaller screens. Unfilled slots say “Video coming soon”; they are not pretend play buttons.
 
-Upload Rachel-approved testimonial clips and thumbnail posters to `public/` with unique filenames. MP4 encoded as H.264 with AAC audio works across common browsers. Add up to five entries to `src/data/weddingClips.ts`, in the order they should appear:
+Upload Rachel-approved testimonial clips and thumbnail posters to `public/` with unique filenames. MP4 encoded as H.264 with AAC audio works across common browsers. Add up to six entries to `src/data/weddingClips.ts`, in the order they should appear:
 
 ```ts
 export const weddingClips: WeddingClip[] = [

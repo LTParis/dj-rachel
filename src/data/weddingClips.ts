@@ -7,5 +7,6 @@ export interface WeddingClip {
 	captions?: string;
 }
 
-// Add Rachel-approved clips from public/ here. The first clip appears first.
+// Add up to five Rachel-approved testimonial clips from public/ here, in display order.
+// Supply a poster for each clickable thumbnail; unfilled slots show “Video coming soon.”
 export const weddingClips: WeddingClip[] = [];

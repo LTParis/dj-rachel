@@ -16,17 +16,6 @@ const instagram = "https://www.instagram.com/djrachelrlynch/";
 			<img class="about-portrait" src="/rachel-at-the-decks.jpg" width="1280" height="979" alt="Rachel wearing headphones and smiling as she DJs." />
 		</section>
 
-		<section class="section page-width about-details" aria-labelledby="about-details-heading">
-			<h2 id="about-details-heading">Because the best events aren't just about what happens. <em>They're about everything that goes into making it happen.</em></h2>
-			<div class="about-details__copy">
-				<p class="about-details__lead"><strong>Why book DJ Rachel? It's the little things that make all the difference.</strong></p>
-				<p>A great DJ does more than play great music. That's the easy part.</p>
-				<p>It's the timing of an announcement. The unexpected transition. The song that brings generations together. The adjustment made behind the scenes before anyone even realizes something needed to change.</p>
-				<p>It's knowing when to take the lead, when to step back, and how to make everyone in the room feel like they're part of something special.</p>
-				<p>Those little details aren't always obvious, but they make all the difference between someone who simply plays music and an experienced event professional who sees the bigger picture while taking care of the smallest details.</p>
-			</div>
-		</section>
-
 		<section class="about-story" aria-labelledby="my-story">
 			<div class="page-width about-story__inner">
 				<h2 id="my-story">My Story</h2>
@@ -39,6 +28,18 @@ const instagram = "https://www.instagram.com/djrachelrlynch/";
 				<p>Today I still run on instinct, skill, and fearless energy, powered by a real love for music and people. Two decades of saying yes taught me there's nothing I can't figure out. I was meant to do this, and I'm so glad I did.</p>
 			</div>
 		</section>
+
+		<section class="section page-width about-details" aria-labelledby="about-details-heading">
+			<h2 id="about-details-heading">Because the best events aren't just about what happens. <em>They're about everything that goes into making it happen.</em></h2>
+			<div class="about-details__copy">
+				<p class="about-details__lead"><strong>Why book DJ Rachel? It's the little things that make all the difference.</strong></p>
+				<p>A great DJ does more than play great music. That's the easy part.</p>
+				<p>It's the timing of an announcement. The unexpected transition. The song that brings generations together. The adjustment made behind the scenes before anyone even realizes something needed to change.</p>
+				<p>It's knowing when to take the lead, when to step back, and how to make everyone in the room feel like they're part of something special.</p>
+				<p>Those little details aren't always obvious, but they make all the difference between someone who simply plays music and an experienced event professional who sees the bigger picture while taking care of the smallest details.</p>
+			</div>
+		</section>
+
 
 		<section class="page-width media-section" aria-labelledby="backstage-pass">
 			<div>
@@ -62,16 +63,16 @@ const instagram = "https://www.instagram.com/djrachelrlynch/";
 			<div class="page-width media-section">
 				<div>
 					<h2 id="on-instagram">Find me on <em>Instagram.</em></h2>
-					<p>See my recent posts from the booth and beyond. Open any post to see the conversation and join in.</p>
+					<p>Come behind the booth and beyond. Visit my Instagram for recent posts, videos, and conversations.</p>
 					<a class="button" href={instagram}>Follow @djrachelrlynch</a>
 				</div>
-				<iframe
-					class="instagram-feed"
-					src={`${instagram}embed/`}
-					title="Recent posts from DJ Rachel’s Instagram"
-					loading="lazy"
-					referrerpolicy="strict-origin-when-cross-origin"
-				></iframe>
+				<a class="instagram-card" href={instagram} target="_blank" rel="noopener noreferrer" aria-label="Visit @djrachelrlynch on Instagram (opens in a new tab)">
+					<img src="/rachel-at-the-decks.jpg" width="1280" height="979" alt="Rachel smiling behind the decks." loading="lazy" />
+					<span class="instagram-card__caption">
+						<svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+						<span>@djrachelrlynch <small>See what's happening on Instagram ↗</small></span>
+					</span>
+				</a>
 			</div>
 		</section>
 
@@ -115,13 +116,11 @@ const instagram = "https://www.instagram.com/djrachelrlynch/";
 		background: var(--paper);
 	}
 
-	.instagram-feed {
-		display: block;
-		width: 100%;
-		max-width: 540px;
-		height: clamp(300px, 95vw, 580px);
-		border: 0;
-		border-radius: 8px;
-		background: #fff;
-	}
+	.instagram-card { display: block; width: 100%; max-width: 540px; border: 4px solid var(--pink); border-radius: 8px; overflow: hidden; background: #000; color: #fff; text-decoration: none; }
+	.instagram-card img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+	.instagram-card__caption { display: flex; align-items: center; gap: 14px; padding: 22px; font-family: var(--display); font-size: clamp(1rem, 2vw, 1.35rem); font-weight: 800; }
+	.instagram-card__caption svg { flex-shrink: 0; color: var(--pink); }
+	.instagram-card__caption small { display: block; margin-top: 6px; font-family: var(--body); font-size: .9rem; font-weight: 400; }
+	.instagram-card:hover { border-color: #000; }
+	.instagram-card:focus-visible { outline: 3px solid var(--pink); outline-offset: 5px; }
 </style>

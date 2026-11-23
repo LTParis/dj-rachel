@@ -51,7 +51,7 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 		<div class="section-heading">
 			<div>
 				<p class="eyebrow">The good stuff</p>
-				<h2>{weddingHero ? <>everything your <em>celebration</em> needs</> : offersHeading}</h2>
+				<h2><slot name="offers-heading">{weddingHero ? <>everything your <em>celebration</em> needs</> : offersHeading}</slot></h2>
 			</div>
 
 		</div>

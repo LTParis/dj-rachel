@@ -16,7 +16,6 @@ import wedding19 from "../../public/wedding-original-19.jpg";
 import wedding23 from "../../public/wedding-original-23.jpg";
 import wedding20 from "../../public/wedding-gallery-20.jpg";
 import wedding21 from "../../public/wedding-gallery-21.jpg";
-import wedding22 from "../../public/wedding-gallery-22.jpg";
 import wedding24 from "../../public/wedding-gallery-24.jpg";
 import wedding26 from "../../public/wedding-gallery-26.jpg";
 import receptionToast from "../../public/wedding-reception-toast.jpg";
@@ -47,6 +46,8 @@ import upload45 from "../../public/wedding-upload-45.jpg";
 import upload46 from "../../public/wedding-upload-46.jpg";
 import upload47 from "../../public/wedding-upload-47.webp";
 
+import receptionRoom from "../../public/unnamed (31).jpg";
+
 export const weddingPhotos = [
 	{ src: celebration, alt: "A bride and groom singing and celebrating with guests on a packed wedding dance floor." },
 	{ src: danceFloor, alt: "Wedding guests celebrating together with their hands in the air on the dance floor." },
@@ -70,7 +71,6 @@ export const weddingPhotos = [
 	{ src: wedding23, alt: "Guests gathered around a wedding couple on the dance floor." },
 	{ src: wedding20, alt: "DJ Rachel taking a selfie with wedding guests celebrating behind her." },
 	{ src: wedding21, alt: "A wedding couple and guests celebrating together in a reception hall." },
-	{ src: wedding22, alt: "A wedding couple surrounded by guests on the dance floor." },
 	{ src: wedding24, alt: "Wedding guests dancing in a circle together." },
 	{ src: wedding26, alt: "Guests celebrating under purple lighting in a timber-framed reception hall." },
 	{ src: receptionToast, alt: "A wedding guest speaking into a microphone at a reception table." },
@@ -95,4 +95,5 @@ export const weddingPhotos = [
 	{ src: upload45, alt: "Rachel standing at her DJ controller in a reception room with tall curtains." },
 	{ src: upload46, alt: "Rachel taking a selfie with a group of wedding guests." },
 	{ src: upload47, alt: "A bride and wedding guests dancing together in colorful party glasses." },
+	{ src: receptionRoom, alt: "A reception room with a white DJ setup, red uplighting, exposed beams, and tall windows." },
 ];

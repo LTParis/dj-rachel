@@ -56,7 +56,7 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 
 		</div>
 		<div class="service-pricing">
-			<h3>No cookie-cutter packages. <em>No guesswork.</em></h3>
+			<h3>No cookie-cutter packages.<br /><em>No guesswork.</em></h3>
 			<p>Every event is different, and your entertainment should reflect that.</p>
 			<p>Rather than asking you to choose from a list of packages, I take the time to understand your event, your priorities, and what it will take to deliver the experience you're looking for.</p>
 			<p>From there, I'll put together a personalized proposal with clear pricing and everything needed to make your event look and sound its best. Whether that's premium sound, microphones, uplighting, or other production essentials, it's all accounted for upfront and included in your proposal.</p>
@@ -74,7 +74,7 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 	</section>
 
 	<slot name="planning">
-	<section class="steps-band">
+	{steps.length > 0 && <section class="steps-band">
 		<div class="page-width">
 			<p class="eyebrow">Easy does it</p>
 			<h2>How we make it <em>happen.</em></h2>
@@ -88,7 +88,7 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 				))}
 			</div>
 		</div>
-	</section>
+	</section>}
 
 	</slot>
 

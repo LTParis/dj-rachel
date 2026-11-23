@@ -2,6 +2,7 @@
 import SiteLayout from "../layouts/SiteLayout.astro";
 import ServicePage from "../components/ServicePage.astro";
 import ContactCta from "../components/ContactCta.astro";
+import CorporateReel from "../components/CorporateReel.astro";
 import BrandClients from "../components/BrandClients.astro";
 import PhotoCarousel from "../components/PhotoCarousel.astro";
 import { corporatePhotos } from "../data/corporatePhotos";
@@ -24,16 +25,13 @@ import { corporatePhotos } from "../data/corporatePhotos";
 			{ title: "Company parties, award nights + mixers", copy: "From polished background sound to a dance floor your team still talks about on Monday, I plan every moment around your crowd, so the atmosphere feels right from beginning to end." },
 			{ title: "Galas + fundraisers", copy: "The program has to hit. The mission has to land. The finish has to feel like a celebration. I handle the sound for speeches, raffles, and fundraising moments, then bring the music to send your guests home smiling." },
 		]}
-		steps={[
-			{ title: "Share the brief.", copy: "Talk through your audience, venue, schedule, and event goals." },
-			{ title: "Set the tone.", copy: "Choose the music and sound details that fit your brand and run of show." },
-			{ title: "Bring it to life.", copy: "Enjoy the event while the agreed plan guides the music and mic moments." },
-		]}
+		steps={[]}
 	>
 		<PhotoCarousel slot="hero-media" photos={corporatePhotos} label="Corporate and brand event photos" />
 		<div slot="after-hero">
 		<section class="section event-story" aria-labelledby="event-story-heading">
-			<div class="page-width">
+			<div class="page-width event-story__layout">
+			<div>
 			<h2 id="event-story-heading">Your event has a purpose. <em>Let's make it count.</em></h2>
 			<div class="event-story__copy">
 				<p>Whether you're celebrating your team, launching a product, welcoming customers, or bringing people together around your brand, the entertainment should do more than fill the silence.</p>
@@ -42,6 +40,8 @@ import { corporatePhotos } from "../data/corporatePhotos";
 				<p>Sometimes that means creating excitement and drawing a crowd. Other times it means supporting a presentation, keeping guests engaged, or bringing the right energy without becoming the center of attention.</p>
 				<p>Professional when it matters. Energetic when it counts. Always focused on making your event a success.</p>
 			</div>
+			</div>
+			<CorporateReel />
 			</div>
 		</section>
 		<BrandClients />
@@ -52,7 +52,9 @@ import { corporatePhotos } from "../data/corporatePhotos";
 
 <style>
 	.event-story { background: #000; color: #fff; }
-	.event-story h2 { color: #fff; font-weight: 900; text-transform: none; }
+	.event-story__layout { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: start; gap: clamp(32px, 5vw, 64px); }
+	.event-story h2 { color: #fff; font-weight: 900; font-size: clamp(2.5rem, 4.8vw, 4rem); text-transform: none; }
 	.event-story h2 em { color: var(--pink); }
 	.event-story__copy { max-width: 800px; margin-top: 32px; font-size: 1.1rem; line-height: 1.8; }
+	@media (max-width: 800px) { .event-story__layout { grid-template-columns: minmax(0, 1fr); } }
 </style>

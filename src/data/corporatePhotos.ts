@@ -11,7 +11,6 @@ import photo22 from "../../public/corporate-original-22.jpg";
 import photo27 from "../../public/unnamed (27).jpg";
 import photo29 from "../../public/unnamed (29).jpg";
 import photo30 from "../../public/corporate-original-30.jpg";
-import photo31 from "../../public/unnamed (31).jpg";
 import photo32 from "../../public/corporate-original-32.jpg";
 import photo33 from "../../public/corporate-original-33.jpg";
 import photo34 from "../../public/corporate-original-34.jpg";
@@ -35,7 +34,6 @@ export const corporatePhotos = [
 	{ src: photo27, alt: "DJ Rachel performing beside an outdoor stage with speakers and instruments." },
 	{ src: photo29, alt: "DJ Rachel’s white booth and speakers outside Floor & Decor." },
 	{ src: photo30, alt: "View from behind DJ Rachel toward a crowd gathered on a lawn." },
-	{ src: photo31, alt: "DJ Rachel at her controller during a holiday event inside a store." },
 	{ src: photo32, alt: "Guests gathering at a reception on an outdoor covered patio." },
 	{ src: photo33, alt: "A magazine photo spread featuring DJ Rachel alongside local community events." },
 	{ src: photo34, alt: "Farmington Valley City Lifestyle magazine beside DJ equipment." },

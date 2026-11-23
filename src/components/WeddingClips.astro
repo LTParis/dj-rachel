@@ -5,8 +5,7 @@ const slots = Array.from({ length: 6 }, (_, index) => ({ clip: weddingClips[inde
 
 <wedding-testimonials class="wedding-clips" role="region" aria-labelledby="wedding-testimonials-heading">
 	<h3 id="wedding-testimonials-heading">Real weddings.<br /><em>Real moments.</em></h3>
-	<p class="wedding-clips__intro">Take a look at what happens when it all comes together.</p>
-	<p class="wedding-clips__closing">Because an unforgettable celebration is about more than what you hear. It's about how you and your guests feel from start to finish.</p>
+	<p class="wedding-clips__closing">An unforgettable celebration is about more than what you hear. It's about how you and your guests feel from start to finish.</p>
 	<div class="wedding-clips__grid" role="group" aria-labelledby="wedding-testimonials-heading">
 		{slots.map(({ clip, number }) => clip ? (
 			<button class="testimonial-card" type="button" data-src={clip.src} data-title={clip.title} data-poster={clip.poster} data-captions={clip.captions} aria-label={`Watch ${clip.title}`} aria-haspopup="dialog">
@@ -81,8 +80,7 @@ const slots = Array.from({ length: 6 }, (_, index) => ({ clip: weddingClips[inde
 	.wedding-clips { display: block; min-width: 0; width: 100%; margin-top: 48px; padding: clamp(20px, 3vw, 36px); border: 3px solid var(--pink); border-radius: 12px; background: #000; color: #fff; }
 	h3 { margin-bottom: 20px; font-family: var(--display); font-size: clamp(1.75rem, 3.5vw, 3.25rem); font-weight: 900; line-height: 1.15; letter-spacing: -.03em; text-wrap: balance; }
 	h3 em { color: var(--pink); font-style: normal; }
-	.wedding-clips__intro, .wedding-clips__closing { max-width: 800px; margin-bottom: 20px; font-size: 1rem; line-height: 1.7; }
-	.wedding-clips__closing { margin-bottom: 32px; }
+	.wedding-clips__closing { max-width: 800px; margin-bottom: 32px; font-size: 1rem; line-height: 1.7; }
 	.wedding-clips__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 2vw, 24px); }
 	.testimonial-card { display: flex; flex-direction: column; width: 100%; min-width: 0; overflow: hidden; padding: 0; border: 1px solid #a82c65; border-radius: 6px; background: #1c1218; color: #fff; text-align: center; font: inherit; font-size: .9rem; line-height: 1.4; }
 	.testimonial-card__media { position: relative; display: grid; place-items: center; width: 100%; aspect-ratio: 16 / 9; min-height: 88px; }

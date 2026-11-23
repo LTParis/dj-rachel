@@ -51,7 +51,7 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 				<p class="eyebrow">The good stuff</p>
 				<h2>{weddingHero ? <>everything your <em>celebration</em> needs</> : offersHeading}</h2>
 			</div>
-			<p class="section-aside">Tell me what matters most. No packages to decode. No equipment to worry about. Just my very best, built around your event, from start to finish.</p>
+			<p class="section-aside service-details">Tell me what matters most. No packages to decode. No equipment to worry about. Just my very best, built around your event, from start to finish.</p>
 		</div>
 		<div class:list={["offer-grid", { "offer-grid--highlighted": highlightOffers, "offer-grid--pink": pinkOffers, "offer-grid--dark": darkOffers }]}>
 			{offers.map((offer, index) => (
@@ -85,3 +85,7 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 
 	<slot />
 </main>
+
+<style>
+	.service-details { color: #000; font-weight: 800; }
+</style>

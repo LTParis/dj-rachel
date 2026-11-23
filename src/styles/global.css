@@ -239,8 +239,8 @@ h1,
 h2 {
 	font-family: var(--display);
 	font-weight: 900;
-	letter-spacing: -0.07em;
-	line-height: 0.92;
+	letter-spacing: -0.04em;
+	line-height: 1.12;
 	text-transform: lowercase;
 }
 
@@ -1457,4 +1457,18 @@ h2 {
 @media (min-width: 741px) and (max-width: 1100px) {
 	.site-header__inner { flex-wrap: wrap; padding-block: 12px; }
 	.desktop-nav { order: 3; width: 100%; justify-content: center; flex-wrap: wrap; }
+}
+
+/* Consistent display-heading rhythm across screen sizes. */
+h1, h2 { text-wrap: balance; overflow-wrap: anywhere; }
+.section-heading > div, .page-hero__copy, .about-band__copy { min-width: 0; }
+.section-heading { align-items: start; }
+.section-heading > div { flex: 1 1 0; }
+.section-heading .section-aside { flex: 0 1 360px; max-width: 360px; line-height: 1.7; }
+.about-hero h1, .contact-cta h2 { line-height: 1.12; }
+@media (max-width: 740px) {
+ h2, .about-band__copy h2 { font-size: clamp(2.5rem, 10vw, 3.5rem); }
+ .section-heading .section-aside { flex: auto; max-width: 100%; }
+ .page-hero h1 { font-size: clamp(3rem, 13vw, 5rem); }
+ .section-heading { gap: 24px; margin-bottom: 32px; }
 }

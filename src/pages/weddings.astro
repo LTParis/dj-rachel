@@ -23,12 +23,27 @@ const mixPlayer = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&
 			{ title: "Reception + dance floor", copy: "This is the part everyone talks about the next day. Your favorite songs, performed like you've never heard them. Your people. Your energy. Smiles and hands in the air all night. Nobody sits this one out. Not even grandma." },
 			{ title: "MC + timeline", copy: "A warm voice on the mic. Every key moment coordinated with your vendor team. A day that feels effortless, whatever happens behind the scenes." },
 		]}
-		steps={[
-			{ title: "Let's talk", copy: "Tell me about your plans, your people, and the night you're picturing. What matters most? How should it feel? How should it sound?" },
-			{ title: "Make the plan", copy: "We build it together in your personalized wedding app: the songs, the special moments, and every detail most important to you." },
-			{ title: "Enjoy your day", copy: "Dance. Eat. Celebrate. Enjoy every moment. I'll make sure the music and the schedule come together flawlessly." },
-		]}
+		steps={[]}
 	>
+		<section slot="planning" class="app-planning" aria-labelledby="app-planning-heading">
+			<div class="page-width">
+				<h2 id="app-planning-heading">Plan the whole celebration from your phone. <em>No, seriously.</em></h2>
+				<div class="app-planning__grid">
+					<div>
+						<p>No spreadsheets. No PDFs. Just a modern app that walks you through the music, timeline, and big moments for your event. A few taps and you’re on your way.</p>
+						<p>Pull in songs from Spotify or Apple Music, mark your must-plays and hard passes, and leave me a note like “play <em>this</em> version for our entrance.” Want your guests to weigh in? Invite them to suggest songs while keeping the rest of your plans private.</p>
+						<p>When the party starts, I’ve got your picks, cues, and details in one place. If a detail matters to you, it matters to me, too. Planning with your DJ should feel effortless. You’ve already got a day job.</p>
+					</div>
+					<div class="app-video-placeholder" role="group" aria-label="App walkthrough video coming soon">
+						<svg viewBox="0 0 24 24" width="56" height="56" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" /><path d="M10 8v8l6-4z" fill="currentColor" /></svg>
+						<p>See how the app works</p>
+						<span>Walkthrough video coming soon</span>
+						<!-- Replace this placeholder with Rachel’s approved walkthrough video. -->
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section class="mix-sample" aria-labelledby="wedding-mix">
 			<div class="page-width media-section">
 				<div>
@@ -56,6 +71,16 @@ const mixPlayer = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&
 </SiteLayout>
 
 <style>
+	.app-planning { background: #000; color: #fff; padding-block: 80px; }
+	.app-planning h2 { font-size: clamp(2.5rem, 5.5vw, 5.5rem); font-weight: 900; margin-bottom: 36px; overflow-wrap: anywhere; }
+	.app-planning__grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 40px; }
+	.app-planning__grid p { line-height: 1.8; }
+	.app-video-placeholder { aspect-ratio: 16 / 9; border: 4px solid var(--pink); padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+	.app-video-placeholder svg { color: #f17eb2; }
+	.app-video-placeholder p { font-family: var(--display); font-weight: 900; font-size: 1.25rem; margin: 16px 0 8px; }
+	.app-video-placeholder span { font-size: 0.85rem; }
+	@media (max-width: 760px) { .app-planning__grid { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
+
 	.mix-sample {
 		padding-block: 0;
 	}

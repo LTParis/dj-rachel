@@ -10,7 +10,7 @@ const count = weddingPhotos.length;
 ---
 <SiteLayout title={`Wedding photo ${index + 1} | DJ Rachel Lynch`} description="Explore wedding dance-floor photos from DJ Rachel’s celebrations.">
 	<main id="main" class="gallery page-width">
-		<a class="text-link" href="/weddings/">← Back to weddings</a>
+		<a class="button" href="/weddings/">← Back to weddings</a>
 		<h1>Wedding <em>gallery.</em></h1>
 		<nav class="gallery-controls" aria-label="Photo navigation">
 			<a class="button" href={`/weddings/gallery/${(index + count - 1) % count + 1}/`}>← Previous photo</a>

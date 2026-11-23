@@ -7,24 +7,12 @@ const reviews = reviewData.reviews;
 
 <SiteLayout
 	title="Client Reviews | DJ Rachel Entertainment"
-	description={`Read ${reviews.length} unique client review texts from Google and Facebook for DJ Rachel Entertainment, with each source and rating type identified.`}
+	description="Read client reviews from Google and Facebook for DJ Rachel Entertainment."
 >
 	<main id="main">
 		<section class="reviews-hero page-width">
 			<p class="eyebrow">From the people who booked Rachel</p>
 			<h1>don't take my<br /><em>word for it.</em></h1>
-			<p>
-				These reviews are transcribed from the Google and Facebook export provided
-				for this site. Each review keeps its source and original rating or recommendation
-				type; empty entries and duplicate review text are omitted.
-			</p>
-			<p class="reviews-count">
-				{reviewData.meta.includedUniqueReviews} unique review texts
-				<span aria-hidden="true">·</span>
-				{reviewData.meta.sourceRecords.Google} Google
-				<span aria-hidden="true">·</span>
-				{reviewData.meta.sourceRecords.Facebook} Facebook source entries
-			</p>
 		</section>
 
 		<section class="page-width review-archive" aria-label="Client reviews">

@@ -1,0 +1,41 @@
+---
+import { weddingClips } from "../data/weddingClips";
+---
+
+<aside class="wedding-clips" aria-label="Wedding video clips">
+	<p class="eyebrow">Wedding moments</p>
+	{weddingClips.length ? (
+		<div class="wedding-clips__list">
+			{weddingClips.map((clip) => (
+				<video controls playsinline preload="none" poster={clip.poster} width={clip.width} height={clip.height} aria-label={clip.title}>
+					<source src={clip.src} />
+					{clip.captions && <track kind="captions" src={clip.captions} srclang="en" label="English" default />}
+					<p>Your browser doesn’t support embedded video. <a href={clip.src}>Watch {clip.title}</a>.</p>
+				</video>
+			))}
+		</div>
+	) : (
+		<div class="wedding-clips__placeholder">
+			<svg width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+				<rect x="5" y="12" width="27" height="25" rx="4" />
+				<path d="m32 20 11-6v22l-11-6" stroke-linejoin="round" />
+				<path d="M11 7h15" stroke-linecap="round" />
+			</svg>
+			<p class="wedding-clips__headline">Short clips.<br /><em>Big feelings.</em></p>
+			<p class="wedding-clips__soon">Wedding videos coming soon.</p>
+		</div>
+	)}
+</aside>
+
+<style>
+	.wedding-clips { min-width: 0; width: 100%; max-width: 440px; margin-inline: auto; }
+	.eyebrow { margin-bottom: 16px; }
+	.wedding-clips__list { display: grid; gap: 24px; }
+	video { display: block; width: 100%; height: auto; max-height: 600px; object-fit: contain; background: #000; border: 3px solid var(--pink); border-radius: 12px; }
+	.wedding-clips__placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; aspect-ratio: 4 / 5; padding: clamp(24px, 4vw, 40px); border: 3px solid var(--pink); border-radius: 12px; background: #000; color: #fff; text-align: center; }
+	svg { color: var(--pink); margin-bottom: 28px; flex-shrink: 0; }
+	.wedding-clips__headline { margin-bottom: 20px; font-family: var(--display); font-size: clamp(2rem, 3.2vw, 3.25rem); font-weight: 900; line-height: 1.12; letter-spacing: -.04em; }
+	.wedding-clips__headline em { color: var(--pink); font-style: normal; }
+	.wedding-clips__soon { margin: 0; font-size: .95rem; line-height: 1.6; }
+	@media (max-width: 800px) { .wedding-clips__placeholder { aspect-ratio: 5 / 4; } }
+</style>

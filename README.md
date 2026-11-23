@@ -25,6 +25,7 @@ npm run preview
 - `src/data/` contains the shared navigation and event-page copy.
 - `src/styles/global.css` contains the color, typography, and responsive layout rules.
 - `public/` is for approved photos, video posters, and other static assets.
+- [WEDDING-VIDEOS.md](./WEDDING-VIDEOS.md) explains how to add short clips to the Wedding page's video area.
 - Rachel's supplied logo is used in the shared header and footer at `public/dj-rachel-logo.svg`.
 - `src/data/reviews.json` contains the deduplicated Google and Facebook review export. The source export is not committed; regenerate with `npm run reviews:import -- /path/to/dj-rachel-reviews.json`.
 - `/reviews/` displays the sourced reviews and `/reviews.json` serves their machine-readable data. Reviewer names, source ratings, and recommendations are kept per source; owner replies are excluded.

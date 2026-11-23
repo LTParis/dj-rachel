@@ -19,14 +19,14 @@ const articles = Object.values(import.meta.glob<MarkdownInstance<Article>>("./po
 				<p class="eyebrow">{article.frontmatter.topic}</p>
 				<h3>{article.frontmatter.title}</h3>
 				<p>{article.frontmatter.description}</p>
-				<span class="text-link">Read article →</span>
+				<span class="button button--small">Read article →</span>
 			</a>)}</div> : null}
 			<div class="writing-grid">
 				{publishedArticles.map(article => <a class="writing-card published-article" href={article.href} target="_blank" rel="noopener noreferrer">
 					<p class="eyebrow">{article.publication} · {article.topic}</p>
 					<h3>{article.title}</h3>
 					<p>{article.description}</p>
-					<span class="text-link">{article.archive ? "Read in the publication archive" : "Read the original article"} →</span>
+					<span class="button button--small">{article.archive ? "Read in the publication archive" : "Read the original article"} →</span>
 				</a>)}
 			</div>
 		</section>

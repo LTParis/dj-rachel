@@ -4,7 +4,7 @@ const { frontmatter } = Astro.props;
 ---
 <SiteLayout title={`${frontmatter.title} | DJ Rachel Lynch`} description={frontmatter.description}>
 	<main id="main" class="page-width article">
-		<a class="text-link" href="/writing/">← All blogs</a>
+		<a class="button" href="/writing/">← All blogs</a>
 		<header>
 			<p class="eyebrow">{frontmatter.topic}</p>
 			<h1>{frontmatter.title}</h1>

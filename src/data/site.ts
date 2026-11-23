@@ -1,4 +1,4 @@
-import weddingPhoto from "../../public/unnamed (35).jpg";
+import weddingPhoto from "../../public/wedding-original-35.jpg";
 import corporatePhoto from "../../public/1 corp.jpg";
 import privatePartyPhoto from "../../public/private-bar-party.jpg";
 

@@ -18,6 +18,13 @@ import party16 from "../../public/unnamed (39).jpg";
 import party17 from "../../public/unnamed (40).jpg";
 import party18 from "../../public/unnamed (41).jpg";
 
+import party19 from "../../public/sssss.jpg";
+import party20 from "../../public/unnamed (13).jpg";
+import party21 from "../../public/unnamed (35).jpg";
+import party22 from "../../public/unnamed (37).jpg";
+import party23 from "../../public/unnamed (39)dd.jpg";
+import party24 from "../../public/unnamed3.jpg";
+
 export const partyPhotos = [
 	{ src: barParty, alt: "Guests celebrating together in a bar with green lighting." },
 	{ src: party1, alt: "Rachel mixing music at a party in a brick-walled venue." },
@@ -38,4 +45,10 @@ export const partyPhotos = [
 	{ src: party16, alt: "A DJ booth with purple lighting in an event room." },
 	{ src: party17, alt: "A draped event room illuminated with blue uplighting." },
 	{ src: party18, alt: "Guests seated at tables in a ballroom with chandeliers." },
+	{ src: party19, alt: "Rachel at her DJ setup beside an outdoor stadium." },
+	{ src: party20, alt: "Rachel smiling behind her DJ booth at an outdoor event." },
+	{ src: party21, alt: "Rachel posing beside her DJ setup in a room with red and green lighting." },
+	{ src: party22, alt: "Tables set for a celebration under a tent with red and green lighting." },
+	{ src: party23, alt: "Rachel mixing music for a crowded dance floor, seen from behind the booth." },
+	{ src: party24, alt: "Rachel smiling alongside a guest at an event." },
 ];

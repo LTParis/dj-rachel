@@ -33,14 +33,16 @@ import { corporatePhotos } from "../data/corporatePhotos";
 	>
 		<PhotoCarousel slot="hero-media" photos={corporatePhotos} label="Corporate and brand event photos" />
 		<div slot="after-hero">
-		<section class="section page-width event-story" aria-labelledby="event-story-heading">
+		<section class="section event-story" aria-labelledby="event-story-heading">
+			<div class="page-width">
 			<h2 id="event-story-heading">Your event has a purpose. <em>Let's make it count.</em></h2>
 			<div class="event-story__copy">
 				<p>Whether you're celebrating your team, launching a product, welcoming customers, or bringing people together around your brand, the entertainment should do more than fill the silence.</p>
 				<p>It should support what you're trying to accomplish.</p>
 				<p>I work with you to understand your audience, your objectives, and the experience you want to create. From the music and microphone work to event flow and technical details, every element should have a purpose.</p>
 				<p>Sometimes that means creating excitement and drawing a crowd. Other times it means supporting a presentation, keeping guests engaged, or bringing the right energy without becoming the center of attention.</p>
-				<p>Professional when it matters. Energetic when it counts. Always focused on making your event a success. Deliberate, never generic. No awkward silences. No off-brand song choices. Nothing forgettable. Your guests won’t just remember the event. They’ll remember whose it was.</p>
+				<p>Professional when it matters. Energetic when it counts. Always focused on making your event a success.</p>
+			</div>
 			</div>
 		</section>
 		<BrandClients />
@@ -50,7 +52,8 @@ import { corporatePhotos } from "../data/corporatePhotos";
 </SiteLayout>
 
 <style>
-	.event-story { padding-top: 40px; }
-	.event-story h2 { text-transform: none; }
+	.event-story { background: #000; color: #fff; }
+	.event-story h2 { color: #fff; font-weight: 900; text-transform: none; }
+	.event-story h2 em { color: var(--pink); }
 	.event-story__copy { max-width: 800px; margin-top: 32px; font-size: 1.1rem; line-height: 1.8; }
 </style>

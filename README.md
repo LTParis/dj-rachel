@@ -25,10 +25,15 @@ npm run preview
 - `src/data/` contains the shared navigation and event-page copy.
 - `src/styles/global.css` contains the color, typography, and responsive layout rules.
 - `public/` is for approved photos, video posters, and other static assets.
+- [WEDDING-VIDEOS.md](./WEDDING-VIDEOS.md) explains how to add short clips to the Wedding page's video area.
 - Rachel's supplied logo is used in the shared header and footer at `public/dj-rachel-logo.svg`.
 - `src/data/reviews.json` contains the deduplicated Google and Facebook review export. The source export is not committed; regenerate with `npm run reviews:import -- /path/to/dj-rachel-reviews.json`.
 - `/reviews/` displays the sourced reviews and `/reviews.json` serves their machine-readable data. Reviewer names, source ratings, and recommendations are kept per source; owner replies are excluded.
 - Typography follows the concept: Archivo for headings/navigation and Roboto Slab for body copy. Both are served locally from `@fontsource` packages.
+
+## Heading style
+
+Use sentence case for visible headings, including article titles and service cards. Preserve proper names and acronyms such as DJ, MC, IT, and R&D. Sentence-style marketing headings and action steps end with a period; questions end with a question mark. Short category labels, article titles, and article section labels do not need an added period. Keep capitalization in the source text; do not force headings into lowercase with CSS.
 
 ## Safe handoff
 

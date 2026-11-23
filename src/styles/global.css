@@ -241,7 +241,7 @@ h2 {
 	font-weight: 900;
 	letter-spacing: -0.04em;
 	line-height: 1.12;
-	text-transform: lowercase;
+	text-transform: none;
 }
 
 h1 {

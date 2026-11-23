@@ -28,7 +28,8 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 ---
 
 <main id="main">
-	<section class="page-hero page-width">
+	<section class:list={["service-hero", { "service-hero--dark": weddingHero }]} >
+	<div class="page-hero page-width">
 		<div class="page-hero__copy">
 			<p class="eyebrow">{eyebrow}</p>
 			<h1 set:html={title} />
@@ -41,6 +42,7 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 			<span class="page-hero__art-label">MAKE<br />IT A<br /><em>NIGHT.</em></span>
 		</div>}
 		</slot>
+	</div>
 	</section>
 
 	<slot name="after-hero" />
@@ -51,7 +53,14 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 				<p class="eyebrow">The good stuff</p>
 				<h2>{weddingHero ? <>everything your <em>celebration</em> needs</> : offersHeading}</h2>
 			</div>
-			<p class="section-aside service-details">You tell me what matters most. I'll build everything around it: the lighting, the sound, and the details you didn't know to ask about. No packages to decode, no add-ons to chase. Just my very best, from start to finish. One price. One job. One result.</p>
+
+		</div>
+		<div class="service-pricing">
+			<h3>No cookie-cutter packages. <em>No guesswork.</em></h3>
+			<p>Every event is different, and your entertainment should reflect that.</p>
+			<p>Rather than asking you to choose from a list of packages, I take the time to understand your event, your priorities, and what it will take to deliver the experience you're looking for.</p>
+			<p>From there, I'll put together a personalized proposal that reflects what your event actually needs, with clear pricing and a straightforward explanation of what's included.</p>
+			<p><strong>No unnecessary extras. No confusing packages. Just the right approach for your event.</strong></p>
 		</div>
 		<div class:list={["offer-grid", { "offer-grid--highlighted": highlightOffers, "offer-grid--pink": pinkOffers, "offer-grid--dark": darkOffers }]}>
 			{offers.map((offer, index) => (
@@ -87,5 +96,9 @@ const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = fa
 </main>
 
 <style>
-	.service-details { color: #000; font-weight: 800; }
+	.service-hero--dark { background: #000; color: #fff; }
+	.service-hero--dark :global(h1) { color: #fff; font-weight: 900; }
+	.service-hero--dark :global(.hero-lead) { color: #fff; }
+	.service-pricing { max-width: 800px; margin-bottom: 40px; line-height: 1.8; }
+	.service-pricing h3 { font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: 1.2; font-weight: 900; margin-bottom: 24px; }
 </style>

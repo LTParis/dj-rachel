@@ -1,22 +1,25 @@
 ---
 import { weddingClips } from "../data/weddingClips";
-const slots = Array.from({ length: 5 }, (_, index) => ({ clip: weddingClips[index], number: index + 1 }));
+const slots = Array.from({ length: 6 }, (_, index) => ({ clip: weddingClips[index], number: index + 1 }));
 ---
 
 <wedding-testimonials class="wedding-clips" role="region" aria-labelledby="wedding-testimonials-heading">
 	<h3 id="wedding-testimonials-heading">Real weddings. Real moments. <em>Really good times.</em></h3>
 	<p class="wedding-clips__intro">But don't just take my word for it. Take a look at what happens when it all comes together.</p>
+	<p class="wedding-clips__closing">Because an unforgettable celebration is about more than what you hear. It's about how you and your guests feel from start to finish.</p>
 	<div class="wedding-clips__grid" role="group" aria-labelledby="wedding-testimonials-heading">
 		{slots.map(({ clip, number }) => clip ? (
 			<button class="testimonial-card" type="button" data-src={clip.src} data-title={clip.title} data-poster={clip.poster} data-captions={clip.captions} aria-label={`Watch ${clip.title}`} aria-haspopup="dialog">
-				{clip.poster && <img src={clip.poster} alt="" width={640} height={360} loading="lazy" />}
-				<span class="testimonial-card__play" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 4v16l12-8z" /></svg></span>
+				<span class="testimonial-card__media">
+					{clip.poster && <img src={clip.poster} alt="" width={640} height={360} loading="lazy" />}
+					<span class="testimonial-card__play" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 4v16l12-8z" /></svg></span>
+				</span>
 				<span class="testimonial-card__label">{clip.title}</span>
 			</button>
 		) : (
 			<div class="testimonial-card testimonial-card--empty">
-				<span class="testimonial-card__number" aria-hidden="true">0{number}</span>
-				<span>Video coming soon</span>
+				<span class="testimonial-card__media"><span class="testimonial-card__number" aria-hidden="true">0{number}</span></span>
+				<span class="testimonial-card__label">Video coming soon</span>
 			</div>
 		))}
 	</div>
@@ -75,18 +78,19 @@ const slots = Array.from({ length: 5 }, (_, index) => ({ clip: weddingClips[inde
 </script>
 
 <style>
-	.wedding-clips { display: block; min-width: 0; width: 100%; max-width: 460px; margin-inline: auto; padding: clamp(20px, 3vw, 28px); border: 3px solid var(--pink); border-radius: 12px; background: #000; color: #fff; }
-	h3 { margin-bottom: 20px; font-family: var(--display); font-size: clamp(1.75rem, 2.6vw, 2.4rem); font-weight: 900; line-height: 1.15; letter-spacing: -.03em; }
+	.wedding-clips { display: block; min-width: 0; width: 100%; margin-top: 48px; padding: clamp(20px, 3vw, 36px); border: 3px solid var(--pink); border-radius: 12px; background: #000; color: #fff; }
+	h3 { margin-bottom: 20px; font-family: var(--display); font-size: clamp(1.75rem, 3.5vw, 3.25rem); font-weight: 900; line-height: 1.15; letter-spacing: -.03em; text-wrap: balance; }
 	h3 em { color: var(--pink); font-style: normal; }
-	.wedding-clips__intro { margin-bottom: 24px; font-size: 1rem; line-height: 1.7; }
-	.wedding-clips__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-	.testimonial-card { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; width: 100%; min-width: 0; min-height: 96px; aspect-ratio: 16 / 10; overflow: hidden; padding: 14px; border: 1px solid #a82c65; border-radius: 6px; background: #1c1218; color: #fff; text-align: center; font: inherit; font-size: .85rem; line-height: 1.4; }
-	.testimonial-card:first-child { grid-column: 1 / -1; aspect-ratio: 16 / 9; }
+	.wedding-clips__intro, .wedding-clips__closing { max-width: 800px; margin-bottom: 20px; font-size: 1rem; line-height: 1.7; }
+	.wedding-clips__closing { margin-bottom: 32px; }
+	.wedding-clips__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 2vw, 24px); }
+	.testimonial-card { display: flex; flex-direction: column; width: 100%; min-width: 0; overflow: hidden; padding: 0; border: 1px solid #a82c65; border-radius: 6px; background: #1c1218; color: #fff; text-align: center; font: inherit; font-size: .9rem; line-height: 1.4; }
+	.testimonial-card__media { position: relative; display: grid; place-items: center; width: 100%; aspect-ratio: 16 / 9; min-height: 88px; }
 	button.testimonial-card { cursor: pointer; }
 	button.testimonial-card:hover, button.testimonial-card:focus-visible { border-color: #fff; outline: 3px solid var(--pink); outline-offset: 3px; }
 	.testimonial-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-	.testimonial-card__play { z-index: 1; display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 20px; flex-shrink: 0; border-radius: 50%; background: var(--pink); color: #fff; }
-	.testimonial-card__label { position: absolute; z-index: 1; inset: auto 0 0; padding: 8px; background: #000d; font-family: var(--display); font-weight: 700; overflow-wrap: anywhere; }
+	.testimonial-card__play { z-index: 1; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--pink); color: #fff; }
+	.testimonial-card__label { display: block; width: 100%; padding: 12px 8px; font-family: var(--display); font-weight: 700; overflow-wrap: anywhere; }
 	.testimonial-card__number { color: #f17eb2; font-family: var(--display); font-size: 1.6rem; font-weight: 900; }
 	.wedding-clips__dialog { width: min(960px, calc(100% - 24px)); max-width: none; max-height: 95dvh; padding: 0; border: 2px solid var(--pink); border-radius: 10px; background: #000; color: #fff; }
 	.wedding-clips__dialog::backdrop { background: #000d; }
@@ -94,4 +98,5 @@ const slots = Array.from({ length: 5 }, (_, index) => ({ clip: weddingClips[inde
 	.wedding-clips__title { margin: 0; overflow-wrap: anywhere; font-family: var(--display); font-weight: 700; }
 	.wedding-clips__close { min-height: 44px; padding: 8px 14px; flex-shrink: 0; border: 2px solid var(--pink); border-radius: 4px; background: #000; color: #fff; font: inherit; cursor: pointer; }
 	video { display: block; width: 100%; height: auto; max-height: 75dvh; object-fit: contain; background: #000; }
+	@media (max-width: 800px) { .wedding-clips__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 </style>

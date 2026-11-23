@@ -26,7 +26,8 @@ import { partyPhotos } from "../data/partyPhotos";
 		]}
 	>
 		<PhotoCarousel slot="hero-media" photos={partyPhotos} label="Party photos" />
-		<section slot="after-hero" class="section page-width event-story" aria-labelledby="event-story-heading">
+		<section slot="after-hero" class="section event-story" aria-labelledby="event-story-heading">
+			<div class="page-width">
 			<h2 id="event-story-heading">Your people. Your music. <em>Your kind of party.</em></h2>
 			<div class="event-story__copy">
 				<p>Some occasions deserve more than just getting everyone together. They deserve a celebration people will still be talking about long after the last song.</p>
@@ -35,13 +36,15 @@ import { partyPhotos } from "../data/partyPhotos";
 				<p>Big dance floor energy? Absolutely. Something more laid-back? We can do that too.</p>
 				<p>No default playlists. No overcomplicating things. Just great music, good company, and a celebration that feels exactly the way you want it to.</p>
 			</div>
+			</div>
 		</section>
 		<ContactCta />
 	</ServicePage>
 </SiteLayout>
 
 <style>
-	.event-story { padding-top: 40px; }
-	.event-story h2 { text-transform: none; }
+	.event-story { background: #000; color: #fff; }
+	.event-story h2 { color: #fff; font-weight: 900; text-transform: none; }
+	.event-story h2 em { color: var(--pink); }
 	.event-story__copy { max-width: 800px; margin-top: 32px; font-size: 1.1rem; line-height: 1.8; }
 </style>

@@ -14,7 +14,6 @@ interface Step {
 interface Props {
 	eyebrow: string;
 	title: string;
-	serviceDescription: string;
 	lead: string | string[];
 	offersHeading: string;
 	offers: Offer[];
@@ -25,7 +24,7 @@ interface Props {
 	steps: Step[];
 }
 
-const { eyebrow, title, serviceDescription, lead, offersHeading, offers, steps, highlightOffers = false, pinkOffers = false, darkOffers = false, weddingHero = false } = Astro.props;
+const { eyebrow, title, lead, offersHeading, offers, steps, highlightOffers = false, pinkOffers = false, darkOffers = false, weddingHero = false } = Astro.props;
 ---
 
 <main id="main">
@@ -34,7 +33,6 @@ const { eyebrow, title, serviceDescription, lead, offersHeading, offers, steps, 
 		<div class="page-hero__copy">
 			<p class="eyebrow">{eyebrow}</p>
 			<h1 set:html={title} />
-			<p class="hero-service">{serviceDescription}</p>
 			{(Array.isArray(lead) ? lead : [lead]).map((paragraph) => <p class="hero-lead">{paragraph}</p>)}
 			<a class="button" href="/#contact">Let's plan your event</a>
 		</div>

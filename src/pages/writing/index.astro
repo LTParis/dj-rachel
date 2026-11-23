@@ -7,7 +7,7 @@ const articles = Object.values(import.meta.glob<MarkdownInstance<Article>>("./po
 	.filter(article => !article.frontmatter.draft)
 	.sort((a, b) => String(b.frontmatter.date).localeCompare(String(a.frontmatter.date)));
 ---
-<SiteLayout title="Writing | DJ Rachel Lynch" description="Advice, thoughts, and articles from DJ Rachel about weddings, DJing, the industry, and more.">
+<SiteLayout title="Blogs | DJ Rachel Lynch" description="Advice, thoughts, and articles from DJ Rachel about weddings, DJing, the industry, and more.">
 	<main id="main">
 		<section class="page-width writing-intro">
 			<p class="eyebrow">Advice · Thoughts · Articles</p>

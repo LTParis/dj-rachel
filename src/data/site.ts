@@ -15,7 +15,7 @@ export const serviceCards = [
 		copy: "From ceremony audio to the last song, we’ll make space for the moments and music important to you.",
 	},
 	{
-		title: "Corporate + Brands",
+		title: "Corporate + brands",
 		shortTitle: "corporate",
 		href: "/corporate/",
 		tone: "corporate",
@@ -26,7 +26,7 @@ export const serviceCards = [
 		copy: "A thoughtful soundtrack, clear mics, and the right energy for the room and the people in it. Here your brand is felt, not just seen.",
 	},
 	{
-		title: "Private Events",
+		title: "Private events",
 		shortTitle: "private events",
 		href: "/private-events/",
 		tone: "private",

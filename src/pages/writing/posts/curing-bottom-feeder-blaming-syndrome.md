@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/ArticleLayout.astro
-title: "Curing Bottom Feeder Blaming Syndrome"
+title: "Curing bottom feeder blaming syndrome"
 description: "Stop blaming low prices elsewhere and focus on the service, value, and growth that make your DJ business worth booking."
 date: "2026-11-22"
 topic: "DJ business"
@@ -14,13 +14,13 @@ With tech advancements, abundant music sources, affordable gear, and online tuto
 
 “Your life will be no better than the plans you make and the action you take. You are the architect and builder of your own life, fortune, and destiny.” -Alfred A. Montapert
 
-## How to “cure” BFBS and start taking responsibility for your success:
+## How to “cure” BFBS and start taking responsibility for your success
 
 ### 1. Focus on service and the money will follow.
 
 If you’re losing customers to “bottom feeders”, work on creating a service and experience that customers feel they NEED to have. If money is the driving force behind your effort and end product, you are missing the mark and probably the sale.
 
-### 2. Sell the WHY, not the WHAT.
+### 2. Sell the why, not the what.
 
 What makes you fun, unique, and special? Take some time to get to know WHY people need to have you as their DJ. If you’re having trouble answering this question, then this may be the problem. In the absence of value, a customer will go with the best price. Why are YOU valuable?
 

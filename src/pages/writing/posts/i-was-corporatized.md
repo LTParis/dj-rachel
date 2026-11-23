@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/ArticleLayout.astro
-title: "I Was Corporatized (And It Was Costing Me Bookings)"
+title: "I was corporatized (and it was costing me bookings)"
 description: "How replacing sterile sales conversations with emotional intelligence and genuine connection changed my DJ business."
 date: "2026-11-22"
 topic: "DJ business"

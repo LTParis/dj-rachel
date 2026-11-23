@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/ArticleLayout.astro
-title: "DJing Isn't JUST About the Music"
+title: "DJing isn't just about the music"
 description: "Reading a room is an exercise in empathy: paying attention, listening, and putting people before your own taste."
 date: "2026-11-22"
 topic: "DJing"

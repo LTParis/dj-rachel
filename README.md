@@ -31,6 +31,10 @@ npm run preview
 - `/reviews/` displays the sourced reviews and `/reviews.json` serves their machine-readable data. Reviewer names, source ratings, and recommendations are kept per source; owner replies are excluded.
 - Typography follows the concept: Archivo for headings/navigation and Roboto Slab for body copy. Both are served locally from `@fontsource` packages.
 
+## Heading style
+
+Use sentence case for visible headings, including article titles and service cards. Preserve proper names and acronyms such as DJ, MC, IT, and R&D. Sentence-style marketing headings and action steps end with a period; questions end with a question mark. Short category labels, article titles, and article section labels do not need an added period. Keep capitalization in the source text; do not force headings into lowercase with CSS.
+
 ## Safe handoff
 
 Rachel's plain-language getting-started guide is in [FOR-RACHEL.md](./FOR-RACHEL.md). She has her own GitHub account (`Lynch022`) with write access; never share passwords, recovery codes, or access tokens. She edits through ChatGPT Codex, which reads [AGENTS.md](./AGENTS.md): Codex works on a branch and opens a pull request; Rachel (or Lou) checks the Vercel preview and comments `makeitso`, which builds and merges it ([workflow](./.github/workflows/makeitso.yml), limited to `Lynch022` and `LTParis`), and `main` deploys to the temporary preview site.

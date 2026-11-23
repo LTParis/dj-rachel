@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/ArticleLayout.astro
-title: "Your Wedding Deserves More Than Shuffle"
+title: "Your wedding deserves more than shuffle"
 description: "Why a great wedding DJ brings more than music: meaningful memories, thoughtful details, and moments a playlist can’t create."
 date: "2026-11-22"
 topic: "Weddings"

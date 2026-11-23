@@ -1,35 +1,35 @@
 // Authorship evidence and search limitations are recorded in WRITING-SOURCES.md.
 export const publishedArticles = [
 	{
-		title: "How DJs Can Be Prepared in Emergency Situations",
+		title: "How DJs can be prepared in emergency situations",
 		publication: "DJX",
 		topic: "Industry",
 		href: "https://www.djxshow.com/news/how-djs-can-be-prepared-in-emergency-situations",
 		description: "Preparation, trusted colleagues, and protecting your gear when an unexpected emergency threatens an event.",
 	},
 	{
-		title: "Danbury, CT DJ’s Wedding Playlist By DJ Rachel",
+		title: "Danbury, CT DJ’s wedding playlist by DJ Rachel",
 		publication: "My Wedding Songs",
 		topic: "Weddings",
 		href: "https://www.myweddingsongs.com/weddingblog/danbury-ct-dj-wedding-playlist/",
 		description: "A reception playlist built to bring different generations together on the dance floor.",
 	},
 	{
-		title: "THE “DJ DIET”? Do you need one?",
+		title: "The “DJ diet”: Do you need one?",
 		publication: "DJ Blog",
 		topic: "DJ business",
 		href: "https://www.djblog.org/building-a-better-business/the-dj-diet-do-you-need-one/",
 		description: "A thoughtful look at equipment spending and whether the next upgrade serves your clients and business.",
 	},
 	{
-		title: "DJ Rachel’s VirtualDJ Update Review",
+		title: "DJ Rachel’s VirtualDJ update review",
 		publication: "DJ Blog",
 		topic: "DJing",
 		href: "https://www.djblog.org/dj-gear/dj-rachels-virtualdj-update-review/",
 		description: "A review of VirtualDJ 2020 and its tools for mixing, personalization, and event scheduling.",
 	},
 	{
-		title: "The REAL job of DJing",
+		title: "The real job of DJing",
 		publication: "DJ Blog",
 		topic: "DJing",
 		href: "https://www.djblog.org/2019/04/",

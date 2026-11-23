@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/ArticleLayout.astro
-title: "Less Gear, Same Dance Floor"
+title: "Less gear, same dance floor"
 description: "Why choosing the right setup and adapting to changing conditions matters more than bringing the biggest speakers."
 date: "2026-11-22"
 topic: "DJing"

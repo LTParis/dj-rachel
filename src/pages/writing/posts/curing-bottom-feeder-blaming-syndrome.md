@@ -38,4 +38,4 @@ Not every client is your client. While it may be difficult to swallow, some peop
 
 ### 6. Stop the excuses and do something.
 
-Set realistic and short terms goals and work towards them. Make daily, weekly, monthly, yearly plans. When you stop growing, your business will too. Attend seminars and skill development opportunities as you can. When you stop growing your business will too. Work to become more creative with marketing. Make time to create quality online content and stop making excuses for slumping sales. It is time to get to work!
+Set realistic short-term goals and work towards them. Make daily, weekly, monthly, yearly plans. When you stop growing, your business will too. Attend seminars and skill development opportunities as you can. When you stop growing your business will too. Work to become more creative with marketing. Make time to create quality online content and stop making excuses for slumping sales. It is time to get to work!

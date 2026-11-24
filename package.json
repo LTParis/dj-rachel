@@ -9,6 +9,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "test:reviews": "node tests/review-deck.test.mjs",
     "reviews:import": "node scripts/dedupe-reviews.mjs",
     "astro": "astro"
   },

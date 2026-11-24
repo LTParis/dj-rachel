@@ -15,26 +15,79 @@ const reviews = reviewData.reviews;
 			<h1>Don't take my<br /><em>word for it.</em></h1>
 		</section>
 
-		<section class="page-width review-archive" aria-label="Client reviews">
-			{reviews.map((review) => (
-				<article class="review-archive-card" id={review.id}>
-					<div class="review-archive-card__header">
-						<p class="review-archive-card__author">
-							{review.reviewer ?? "Reviewer name differs by source"}
-						</p>
-						<div class="review-archive-card__sources">
-							{review.sources.map((source) => {
-								const date = formatReviewDate(source.date, source.dateIsExact);
-								const rating = source.rating === null ? null : `${source.rating}-star rating`;
-								const recommendation = source.recommendation ? "recommends Rachel" : null;
-								const details = [source.platform, source.reviewer, rating, recommendation, date].filter(Boolean);
-								return <span>{details.join(" · ")}</span>;
-							})}
+		<section class="page-width review-archive" aria-label="Client reviews" data-review-browser>
+			<div class="review-archive__grid" id="review-batch" role="group" aria-label="Current client reviews" tabindex="-1" data-review-grid>
+				{reviews.map((review) => (
+					<article class="review-archive-card" id={review.id} data-review-id={review.id}>
+						<div class="review-archive-card__header">
+							<p class="review-archive-card__author">
+								{review.reviewer ?? "Reviewer name differs by source"}
+							</p>
+							<div class="review-archive-card__sources">
+								{review.sources.map((source) => {
+									const date = formatReviewDate(source.date, source.dateIsExact);
+									const rating = source.rating === null ? null : `${source.rating}-star rating`;
+									const recommendation = source.recommendation ? "recommends Rachel" : null;
+									const details = [source.platform, source.reviewer, rating, recommendation, date].filter(Boolean);
+									return <span>{details.join(" · ")}</span>;
+								})}
+							</div>
 						</div>
-					</div>
-					<blockquote>{review.text}</blockquote>
-				</article>
-			))}
+						<blockquote>{review.text}</blockquote>
+					</article>
+				))}
+			</div>
+			<div class="review-archive__actions">
+				<button class="button review-refresh" type="button" aria-controls="review-batch" data-review-refresh hidden>
+					<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5" /><path d="M6.1 6a8 8 0 0 1 13.5 4M17.9 18a8 8 0 0 1-13.5-4" /></svg>
+					Refresh reviews
+				</button>
+				<p class="visually-hidden" role="status" data-review-status></p>
+			</div>
 		</section>
 	</main>
 </SiteLayout>
+
+<script>
+	import { createReviewDeck, takeReviewBatch } from "../lib/reviewDeck";
+
+	const browser = document.querySelector<HTMLElement>("[data-review-browser]");
+	const grid = browser?.querySelector<HTMLElement>("[data-review-grid]");
+	const refresh = browser?.querySelector<HTMLButtonElement>("[data-review-refresh]");
+	const status = browser?.querySelector<HTMLElement>("[data-review-status]");
+
+	if (grid && refresh && status) {
+		const cards = new Map(Array.from(grid.querySelectorAll<HTMLElement>("[data-review-id]"), (card) => [card.dataset.reviewId!, card]));
+		const ids = [...cards.keys()];
+		const storageKey = "dj-rachel-review-deck-v1";
+		let saved: unknown = null;
+		try {
+			saved = JSON.parse(localStorage.getItem(storageKey) ?? "null");
+		} catch {
+			// Browsing still works if storage is unavailable or an older value is invalid.
+		}
+		const deck = createReviewDeck(ids, saved);
+		let selection = 0;
+
+		const showNextReviews = (moveToReviews = false) => {
+			const batch = takeReviewBatch(deck);
+			grid.replaceChildren(...batch.map((id) => cards.get(id)!));
+			try {
+				localStorage.setItem(storageKey, JSON.stringify(deck));
+			} catch {
+				// Keep the in-memory queue for subsequent button presses.
+			}
+			status.textContent = `Showing ${batch.length} client reviews. Selection ${++selection}.`;
+			if (moveToReviews) {
+				grid.focus({ preventScroll: true });
+				grid.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block: "start" });
+			}
+		};
+
+		if (ids.length > 0) {
+			showNextReviews();
+			refresh.hidden = false;
+			refresh.addEventListener("click", () => showNextReviews(true));
+		}
+	}
+</script>

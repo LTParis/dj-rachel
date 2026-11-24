@@ -4,7 +4,6 @@ import { Image } from "astro:assets";
 import rachelPortrait from "../../public/485803166_3118932788254150_7100244311701559589_n.jpg";
 import ContactCta from "../components/ContactCta.astro";
 import ReviewHighlights from "../components/ReviewHighlights.astro";
-import HeroReviews from "../components/HeroReviews.astro";
 import { serviceCards } from "../data/site";
 ---
 
@@ -15,9 +14,17 @@ import { serviceCards } from "../data/site";
 	<main id="main">
 		<section class="home-hero">
 		<div class="hero page-width">
-			<div class="hero-copy">
+			<div class="hero-heading">
 				<p class="eyebrow">Connecticut Wedding &amp; Event DJ · Serving the Northeast</p>
 				<h1 class="hero-title">Your vibe.<br /><em>Your way.</em></h1>
+			</div>
+			<div class="hero-media">
+				<video class="hero-reel" autoplay muted loop controls playsinline preload="auto" poster="/homepage-sizzle-poster.jpg" width="1080" height="1920" aria-label="DJ Rachel wedding and event sizzle reel">
+					<source src="/homepage-sizzle-reel.mp4" type="video/mp4" />
+					<p>Your browser doesn’t support embedded video. <a class="button" href="/homepage-sizzle-reel.mp4">Watch the sizzle reel</a>.</p>
+				</video>
+			</div>
+			<div class="hero-copy">
 				<p class="hero-lead"><strong>I'm DJ Rachel, an open-format DJ and MC bringing creative, high-energy entertainment to weddings, corporate events, private parties, and moments worth celebrating throughout Connecticut and the Northeast.</strong></p>
 				<p class="hero-lead"><strong>But great music is just the beginning.</strong></p>
 				<p class="hero-lead">Club-style mixing. Packed dance floors. No cheesy gimmicks. Thoughtful planning, professional hosting, and an experience that feels entirely your own.</p>
@@ -25,13 +32,6 @@ import { serviceCards } from "../data/site";
 					<a class="button" href="#contact">Let’s connect</a>
 					<a class="button" href="/about/">Get to know Rachel</a>
 				</div>
-			</div>
-			<div class="hero-media">
-				<video class="hero-reel" autoplay muted loop controls playsinline preload="auto" poster="/homepage-sizzle-poster.jpg" width="1080" height="1920" aria-label="DJ Rachel wedding and event sizzle reel">
-					<source src="/homepage-sizzle-reel.mp4" type="video/mp4" />
-					<p>Your browser doesn’t support embedded video. <a class="button" href="/homepage-sizzle-reel.mp4">Watch the sizzle reel</a>.</p>
-				</video>
-				<HeroReviews />
 			</div>
 		</div>
 		</section>

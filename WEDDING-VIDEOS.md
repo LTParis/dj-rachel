@@ -25,15 +25,15 @@ Keep upload and editing instructions in this repository. Run `npm run build`, ch
 
 ## Current approved clips
 
-Rachel supplied these six files in chat. They fill slots 1–6 in this order; their public filenames are `wedding-testimonial-01.mp4` through `wedding-testimonial-06.mp4`, with matching JPEG thumbnail posters.
+Rachel supplied these six files in chat. The table shows their current display order. Public filenames stay with the original clips when their positions change; each has a matching JPEG thumbnail poster.
 
-| Slot | Couple | Uploaded file |
-| --- | --- | --- |
-| 1 | Krista & Harold | `Video_1_under_25MB.mp4` |
-| 2 | Jill & Jason | `Video_2_under_25MB (1).mp4` |
-| 3 | Allie & Scott | `video-output-4AB95C5E-1A59-45DD-B41B-B58EDA7FCDBF-1.mov` |
-| 4 | Taylor & Dom | `Video_4_under_25MB.mp4` |
-| 5 | Becky & Zack | `Video_5_under_25MB.mp4` |
-| 6 | Laura & Charlie | `video-output-BDB1CFA4-7D5B-4449-B69A-5BF26BC50C2C-1.mov` |
+| Slot | Couple | Public video | Uploaded file |
+| --- | --- | --- | --- |
+| 1 | Allie & Scott | `wedding-testimonial-03.mp4` | `video-output-4AB95C5E-1A59-45DD-B41B-B58EDA7FCDBF-1.mov` |
+| 2 | Jill & Jason | `wedding-testimonial-02.mp4` | `Video_2_under_25MB (1).mp4` |
+| 3 | Krista & Harold | `wedding-testimonial-01.mp4` | `Video_1_under_25MB.mp4` |
+| 4 | Taylor & Dom | `wedding-testimonial-04.mp4` | `Video_4_under_25MB.mp4` |
+| 5 | Becky & Zack | `wedding-testimonial-05.mp4` | `Video_5_under_25MB.mp4` |
+| 6 | Laura & Charlie | `wedding-testimonial-06.mp4` | `video-output-BDB1CFA4-7D5B-4449-B69A-5BF26BC50C2C-1.mov` |
 
 The published copies use browser-compatible H.264 video and AAC audio with a fast-start MP4 container. HDR recordings are tone-mapped to standard BT.709 color. Full frames, duration, and original audio are preserved; thumbnail posters omit the recordings' black padding. Couple names were supplied by Rachel and are used consistently on thumbnails, accessible labels, and player titles. In November 2026 the published copies were re-encoded at 720×900 (from 1080×1350) to cut their size by about 70%; the full-quality versions remain in git history.

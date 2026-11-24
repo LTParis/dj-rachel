@@ -211,10 +211,28 @@ a {
 .hero {
 	display: grid;
 	min-height: 600px;
-	grid-template-columns: 1fr 0.93fr;
+	grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+	grid-template-areas: "heading media" "copy media";
 	align-items: center;
-	gap: clamp(42px, 8vw, 108px);
-	padding-block: 70px 82px;
+	column-gap: clamp(32px, 4.5vw, 64px);
+	row-gap: 28px;
+	padding-block: 48px 64px;
+}
+
+.hero-heading {
+	grid-area: heading;
+	min-width: 0;
+	align-self: end;
+}
+
+.hero-heading .hero-title {
+	margin-bottom: 0;
+}
+
+.hero-copy {
+	grid-area: copy;
+	min-width: 0;
+	align-self: start;
 }
 
 .eyebrow {
@@ -278,21 +296,22 @@ h2 em {
 }
 
 .hero-media {
-	position: relative;
-	display: grid;
-	gap: 20px;
+	grid-area: media;
+	width: min(100%, 460px);
+	justify-self: end;
+	align-self: center;
 }
 
 .hero-reel {
 	display: block;
-	width: min(100%, 320px);
+	width: 100%;
 	height: auto;
 	aspect-ratio: 9 / 16;
-	max-height: 570px;
-	margin-inline: auto;
-	border-radius: 20px;
+	border: 2px solid var(--pink);
+	border-radius: 28px;
 	background: #000;
 	object-fit: contain;
+	box-shadow: 0 20px 70px rgb(210 11 113 / 18%);
 }
 
 .hero-reviews {
@@ -1151,7 +1170,20 @@ h2 {
 	}
 
 	.hero {
-		gap: 40px;
+		grid-template-columns: minmax(0, 1fr);
+		grid-template-areas: "heading" "media" "copy";
+		gap: 28px;
+	}
+
+	.hero-heading,
+	.hero-copy {
+		width: min(100%, 620px);
+		justify-self: center;
+	}
+
+	.hero-media {
+		width: min(100%, 420px);
+		justify-self: center;
 	}
 
 }
@@ -1228,7 +1260,7 @@ h2 {
 
 	.hero {
 		min-height: 0;
-		padding-block: 66px 54px;
+		padding-block: 36px 48px;
 	}
 
 	h1 {

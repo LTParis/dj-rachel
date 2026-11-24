@@ -12,7 +12,6 @@
 	--cream: #f7f4ef;
 	--paper: #fffdfa;
 	--pink: #d20b71;
-	--pink-dark: #a9075b;
 	--line: #ded8d2;
 	--display: "Archivo", sans-serif;
 	--body: "Roboto Slab", Georgia, serif;
@@ -142,7 +141,7 @@ a {
 .desktop-nav a[aria-current="page"],
 .mobile-nav__panel a:hover,
 .footer-nav a:hover {
-	color: var(--pink-dark);
+	color: var(--pink);
 }
 
 .mobile-nav {
@@ -169,8 +168,8 @@ a {
 
 .button:hover {
 	transform: translateY(-2px);
-	background: var(--pink-dark);
-	border-color: var(--pink-dark);
+	background: var(--pink);
+	border-color: var(--pink);
 }
 
 .button--small {
@@ -237,7 +236,7 @@ a {
 
 .eyebrow {
 	margin: 0 0 19px;
-	color: var(--pink-dark);
+	color: var(--pink);
 	font-family: var(--display);
 	font-size: 0.72rem;
 	font-weight: 700;
@@ -311,7 +310,7 @@ h2 em {
 	border-radius: 28px;
 	background: #000;
 	object-fit: contain;
-	box-shadow: 0 20px 70px rgb(210 11 113 / 18%);
+	box-shadow: 0 20px 70px color-mix(in srgb, var(--pink) 18%, transparent);
 }
 
 .hero-reviews {
@@ -449,7 +448,7 @@ h2 em {
 }
 
 .intro-strip span {
-	color: #f17eb2;
+	color: var(--pink);
 	font-size: 1.15rem;
 }
 
@@ -507,7 +506,7 @@ h2 {
 .value-card__number,
 .offer-card__number,
 .step-card__number {
-	color: var(--pink-dark);
+	color: var(--pink);
 	font-size: 0.68rem;
 	font-weight: 800;
 	letter-spacing: 0.12em;
@@ -522,8 +521,8 @@ h2 {
 	place-items: center;
 	background:
 		linear-gradient(145deg, transparent 48%, rgb(33 27 30 / 9%) 48.2% 49%, transparent 49.2%),
-		linear-gradient(35deg, transparent 48%, rgb(210 11 113 / 12%) 48.2% 49%, transparent 49.2%),
-		#f1dfe5;
+		linear-gradient(35deg, transparent 48%, color-mix(in srgb, var(--pink) 12%, transparent) 48.2% 49%, transparent 49.2%),
+		var(--pink);
 	color: #67535d;
 	font-size: 0.68rem;
 	font-weight: 750;
@@ -550,7 +549,7 @@ h2 {
 }
 
 .service-card__image--private {
-	background-color: #f0d7e2;
+	background-color: var(--pink);
 }
 
 .service-card__image > span {
@@ -569,7 +568,7 @@ h2 {
 
 .service-card__eyebrow {
 	margin-bottom: 13px;
-	color: var(--pink-dark);
+	color: var(--pink);
 	font-size: 0.68rem;
 	font-weight: 750;
 	letter-spacing: 0.06em;
@@ -789,9 +788,9 @@ h2 {
 	place-items: center;
 	border: 1px dashed #9e8d95;
 	background:
-		linear-gradient(145deg, transparent 48%, rgb(210 11 113 / 12%) 48.2% 49%, transparent 49.2%),
+		linear-gradient(145deg, transparent 48%, color-mix(in srgb, var(--pink) 12%, transparent) 48.2% 49%, transparent 49.2%),
 		linear-gradient(35deg, transparent 48%, rgb(33 27 30 / 8%) 48.2% 49%, transparent 49.2%),
-		#f8e6ed;
+		var(--pink);
 	color: #67535d;
 	font-size: 0.75rem;
 	font-weight: 750;
@@ -904,9 +903,9 @@ h2 {
 
 .footer-nav h2 {
 	margin: 0 0 12px;
-	color: #ff80bd;
+	color: var(--pink);
 	font-family: var(--display);
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: 800;
 	line-height: 1.4;
 }
@@ -933,7 +932,10 @@ h2 {
 
 .footer-nav a:hover,
 .footer-nav a:focus-visible {
-	color: #ff80bd;
+	color: #eee8eb;
+	text-decoration: underline;
+	text-decoration-color: var(--pink);
+	text-underline-offset: 5px;
 }
 
 .site-footer__bottom {
@@ -975,7 +977,7 @@ h2 {
 	min-height: 340px;
 	place-items: center;
 	overflow: hidden;
-	background: #efc4d5;
+	background: var(--pink);
 }
 
 .page-hero__art-disc {
@@ -1074,11 +1076,11 @@ h2 {
 }
 
 .steps-band h2 em {
-	color: #f17eb2;
+	color: var(--pink);
 }
 
 .steps-band .eyebrow {
-	color: #f17eb2;
+	color: var(--pink);
 }
 
 .steps-grid {
@@ -1429,7 +1431,7 @@ h2 {
 .mix-sample .eyebrow { color: #fff; }
 .mix-sample h2 { font-size: clamp(2.1rem, 5vw, 4.8rem); }
 .mix-sample__play { display: flex; align-items: center; gap: 24px; padding: 28px; border: 3px solid var(--pink); color: #fff; text-decoration: none; }
-.mix-sample__play:hover, .mix-sample__play:focus-visible { background: #241019; outline: 3px solid #fff; outline-offset: 5px; }
+.mix-sample__play:hover, .mix-sample__play:focus-visible { background: var(--ink); outline: 3px solid #fff; outline-offset: 5px; }
 .mix-sample__record { display: grid; place-items: center; flex: 0 0 120px; aspect-ratio: 1; border-radius: 50%; background: repeating-radial-gradient(circle, #292329 0 2px, #111 3px 6px); }
 .mix-sample__record > span { display: grid; place-items: center; width: 55px; height: 55px; border-radius: 50%; background: var(--pink); font-size: 24px; }
 .mix-sample__play strong { display: block; font-family: var(--display); font-size: 1.25rem; }

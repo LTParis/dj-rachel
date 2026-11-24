@@ -82,14 +82,14 @@ const slots = Array.from({ length: 6 }, (_, index) => ({ clip: weddingClips[inde
 	h3 em { color: var(--pink); font-style: normal; }
 	.wedding-clips__closing { max-width: 800px; margin-bottom: 32px; font-size: 1rem; line-height: 1.7; }
 	.wedding-clips__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 2vw, 24px); }
-	.testimonial-card { display: flex; flex-direction: column; width: 100%; min-width: 0; overflow: hidden; padding: 0; border: 1px solid #a82c65; border-radius: 6px; background: #1c1218; color: #fff; text-align: center; font: inherit; font-size: .9rem; line-height: 1.4; }
+	.testimonial-card { display: flex; flex-direction: column; width: 100%; min-width: 0; overflow: hidden; padding: 0; border: 1px solid var(--pink); border-radius: 6px; background: #1c1218; color: #fff; text-align: center; font: inherit; font-size: .9rem; line-height: 1.4; }
 	.testimonial-card__media { position: relative; display: grid; place-items: center; width: 100%; aspect-ratio: 16 / 9; min-height: 88px; }
 	button.testimonial-card { cursor: pointer; }
 	button.testimonial-card:hover, button.testimonial-card:focus-visible { border-color: #fff; outline: 3px solid var(--pink); outline-offset: 3px; }
 	.testimonial-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 	.testimonial-card__play { z-index: 1; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--pink); color: #fff; }
 	.testimonial-card__label { display: block; width: 100%; padding: 12px 8px; font-family: var(--display); font-weight: 700; overflow-wrap: anywhere; }
-	.testimonial-card__number { color: #f17eb2; font-family: var(--display); font-size: 1.6rem; font-weight: 900; }
+	.testimonial-card__number { color: var(--pink); font-family: var(--display); font-size: 1.6rem; font-weight: 900; }
 	.wedding-clips__dialog { width: min(960px, calc(100% - 24px)); max-width: none; max-height: 95dvh; padding: 0; border: 2px solid var(--pink); border-radius: 10px; background: #000; color: #fff; }
 	.wedding-clips__dialog::backdrop { background: #000d; }
 	.wedding-clips__toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px; }

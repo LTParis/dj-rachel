@@ -1,5 +1,6 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
+import { serviceSchema } from "../data/business";
 import ServicePage from "../components/ServicePage.astro";
 import ContactCta from "../components/ContactCta.astro";
 import WeddingClips from "../components/WeddingClips.astro";
@@ -22,7 +23,7 @@ const weddingMixes = [
 }));
 ---
 
-<SiteLayout title="Connecticut Wedding DJ & MC | DJ Rachel Lynch" description="Plan a wedding soundtrack that feels like you with DJ Rachel Lynch. Wedding DJ and MC services, ceremony audio, and thoughtful event coordination.">
+<SiteLayout schema={[serviceSchema("weddings", Astro.site!)]} title="Connecticut Wedding DJ & MC | DJ Rachel Lynch" description="Plan a wedding soundtrack that feels like you with DJ Rachel Lynch. Wedding DJ and MC services, ceremony audio, and thoughtful event coordination.">
 	<ServicePage
 		eyebrow="Connecticut Wedding DJ + MC"
 		title="Your love story,<br /><em>your vibe,</em><br />your way."

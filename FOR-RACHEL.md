@@ -50,6 +50,12 @@ Good examples:
 
 When Codex finishes, tap **Create PR** (pull request), then tap the link Codex shows to open it on GitHub. Nothing goes on the website until the pull request is merged.
 
+### Adding photos or video
+
+Attach the files to your Codex request (or upload them to the `incoming` folder on GitHub) and say where they should go, for example: "Add these three photos to the wedding gallery." Codex shrinks them for the web, removes the phone's location data, and gives them sensible names, so the site stays fast.
+
+Please don't upload files to the website's main page on GitHub with **Add files via upload**: those skip the preview and get published at full size. If a photo is already on the site and you'd like it gone, just say so in your request.
+
 ## Step 4: preview and publish
 
 You can publish your own changes. Lou can also review them if you'd like a second look.

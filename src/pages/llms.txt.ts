@@ -1,11 +1,26 @@
 import type { APIRoute } from "astro";
+import type { MarkdownInstance } from "astro";
 import { reviewData } from "../data/reviews";
+import { business, services } from "../data/business";
+
+interface Article { title: string; description: string; date: string; draft?: boolean; }
+const articles = Object.values(import.meta.glob<MarkdownInstance<Article>>("./writing/posts/*.md", { eager: true }))
+	.filter((article) => !article.frontmatter.draft)
+	.sort((a, b) => String(b.frontmatter.date).localeCompare(String(a.frontmatter.date)));
 
 const SITE = "https://djrachellynch.com";
 
 const content = `# DJ Rachel Entertainment
 
-> DJ Rachel Entertainment is the event-DJ brand of DJ Rachel, serving weddings, corporate events, and private celebrations. The website is a draft and is not open for bookings yet.
+> DJ Rachel Entertainment is the event-DJ brand of DJ Rachel (Rachel Lynch), an open-format DJ and MC serving weddings, corporate events, and private celebrations in Connecticut and across the Northeast. The website is a draft and is not open for bookings yet.
+
+## Business facts
+
+- Services: ${Object.values(services).map((service) => service.name).join("; ")}
+- Service area: Connecticut and the Northeastern United States
+- Email: ${business.email}
+- Phone: ${business.telephone}
+- Profiles: ${business.sameAs.join(", ")}
 
 ## Main pages
 
@@ -16,6 +31,10 @@ const content = `# DJ Rachel Entertainment
 - [About Rachel](${SITE}/about/): About page
 - [Reviews](${SITE}/reviews/): ${reviewData.meta.includedUniqueReviews} deduplicated review texts with source attribution
 - [Review data](${SITE}/reviews.json): machine-readable review records and source metadata
+
+## Blog posts by DJ Rachel
+
+${articles.map((article) => `- [${article.frontmatter.title}](${SITE}${String(article.url).replace(/\/?$/, "/")}): ${article.frontmatter.description}`).join("\n")}
 
 ## Review data notes
 

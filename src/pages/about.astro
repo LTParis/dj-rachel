@@ -1,6 +1,8 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
 import ContactCta from "../components/ContactCta.astro";
+import { Image } from "astro:assets";
+import rachelAtTheDecks from "../assets/photos/rachel-at-the-decks.jpg";
 
 const uploads = "UU4qAyR0Rh2FslaZBxeK3Mgw";
 const instagram = "https://www.instagram.com/djrachelrlynch/";
@@ -13,7 +15,7 @@ const instagram = "https://www.instagram.com/djrachelrlynch/";
 				<h1>The day I said <span class="story-heading-ending"><em>yes</em><span class="story-heading-period">.</span></span></h1>
 				<a class="button" href="/#contact">Let’s connect</a>
 			</div>
-			<img class="about-portrait" src="/rachel-at-the-decks.jpg" width="1280" height="979" alt="Rachel wearing headphones and smiling as she DJs." />
+			<Image class="about-portrait" src={rachelAtTheDecks} widths={[480, 800, 1280]} sizes="(max-width: 740px) calc(100vw - 36px), 50vw" width={1280} format="webp" loading="eager" fetchpriority="high" alt="Rachel wearing headphones and smiling as she DJs." />
 		</section>
 
 		<section class="about-story" aria-labelledby="my-story">

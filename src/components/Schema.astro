@@ -1,31 +1,99 @@
 ---
-const siteUrl = Astro.site!.href;
-const organizationId = new URL("/#organization", siteUrl).href;
-const websiteId = new URL("/#website", siteUrl).href;
-const logoUrl = new URL("/dj-rachel-logo.svg", siteUrl).href;
+// Site-wide schema.org structured data (JSON-LD) for search engines and AI assistants.
+// Facts come from src/data/business.ts. Never add Review or AggregateRating nodes for
+// first-party testimonials (see AGENTS.md).
+import { business, sectionNames } from "../data/business";
+
+interface Props {
+	title: string;
+	description: string;
+	/** Extra page-specific nodes (Service, BlogPosting, VideoObject, ...). */
+	nodes?: Record<string, unknown>[];
+}
+
+const { title, description, nodes = [] } = Astro.props;
+const site = Astro.site!;
+const abs = (path: string) => new URL(path, site).href;
+const pageUrl = abs(Astro.url.pathname);
+
+const organizationId = abs("/#organization");
+const personId = abs("/#rachel");
+const websiteId = abs("/#website");
+const pageId = `${pageUrl}#webpage`;
+
+// Home > Section > Page, skipping structural folders like /posts/ and /gallery/.
+const segments = Astro.url.pathname.split("/").filter(Boolean);
+const crumbs = [{ name: "Home", url: abs("/") }];
+segments.forEach((segment, i) => {
+	if (segment === "posts" || segment === "gallery") return;
+	const isLast = i === segments.length - 1;
+	const name = isLast ? title.split(" | ")[0] : sectionNames[segment];
+	if (name) crumbs.push({ name, url: abs(`/${segments.slice(0, i + 1).join("/")}/`) });
+});
 
 const graph = {
 	"@context": "https://schema.org",
 	"@graph": [
 		{
-			"@type": "Organization",
+			"@type": "EntertainmentBusiness",
 			"@id": organizationId,
-			name: "DJ Rachel Entertainment",
-			url: siteUrl,
-			logo: logoUrl,
-			image: logoUrl,
-			description: "DJ and event-host services for weddings, corporate events, and private celebrations.",
+			name: business.name,
+			url: abs("/"),
+			logo: abs("/dj-rachel-logo.svg"),
+			image: abs("/social-card.png"),
+			description: business.description,
+			email: business.email,
+			telephone: business.telephone,
+			areaServed: business.areaServed,
+			founder: { "@id": personId },
+			sameAs: business.sameAs,
+		},
+		{
+			"@type": "Person",
+			"@id": personId,
+			name: business.person,
+			alternateName: business.personAlternateName,
+			jobTitle: business.jobTitle,
+			url: abs("/about/"),
+			worksFor: { "@id": organizationId },
+			sameAs: business.sameAs,
 		},
 		{
 			"@type": "WebSite",
 			"@id": websiteId,
-			url: siteUrl,
-			name: "DJ Rachel Entertainment",
+			url: abs("/"),
+			name: business.name,
 			publisher: { "@id": organizationId },
 			inLanguage: "en-US",
 		},
+		{
+			"@type": "WebPage",
+			"@id": pageId,
+			url: pageUrl,
+			name: title,
+			description,
+			isPartOf: { "@id": websiteId },
+			about: { "@id": organizationId },
+			inLanguage: "en-US",
+			...(crumbs.length > 1 && { breadcrumb: { "@id": `${pageUrl}#breadcrumb` } }),
+		},
+		...(crumbs.length > 1
+			? [
+					{
+						"@type": "BreadcrumbList",
+						"@id": `${pageUrl}#breadcrumb`,
+						itemListElement: crumbs.map((crumb, i) => ({
+							"@type": "ListItem",
+							position: i + 1,
+							name: crumb.name,
+							item: crumb.url,
+						})),
+					},
+				]
+			: []),
+		...nodes,
 	],
 };
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(graph)} />
+<script type="application/ld+json" set:html={JSON.stringify(graph).replace(/</g, "\\u003c")} />

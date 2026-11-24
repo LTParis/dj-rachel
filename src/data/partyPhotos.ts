@@ -1,29 +1,29 @@
-import barParty from "../../public/private-bar-party.jpg";
-import party1 from "../../public/unnamed (16).jpg";
-import party2 from "../../public/unnamed (18).jpg";
-import party3 from "../../public/unnamed (19).jpg";
-import party4 from "../../public/unnamed (20).jpg";
-import party5 from "../../public/unnamed (21).jpg";
-import party6 from "../../public/unnamed (22).jpg";
-import party7 from "../../public/unnamed (23).jpg";
-import party8 from "../../public/unnamed (24).jpg";
-import party9 from "../../public/unnamed (25).jpg";
-import party10 from "../../public/unnamed (30).jpg";
-import party11 from "../../public/unnamed (32).jpg";
-import party12 from "../../public/unnamed (33).jpg";
-import party13 from "../../public/unnamed (34).jpg";
-import party14 from "../../public/unnamed (36).jpg";
-import party15 from "../../public/unnamed (38).jpg";
-import party16 from "../../public/unnamed (39).jpg";
-import party17 from "../../public/unnamed (40).jpg";
-import party18 from "../../public/unnamed (41).jpg";
+import barParty from "../assets/photos/private-bar-party.jpg";
+import party1 from "../assets/photos/unnamed (16).jpg";
+import party2 from "../assets/photos/unnamed (18).jpg";
+import party3 from "../assets/photos/unnamed (19).jpg";
+import party4 from "../assets/photos/unnamed (20).jpg";
+import party5 from "../assets/photos/unnamed (21).jpg";
+import party6 from "../assets/photos/unnamed (22).jpg";
+import party7 from "../assets/photos/unnamed (23).jpg";
+import party8 from "../assets/photos/unnamed (24).jpg";
+import party9 from "../assets/photos/unnamed (25).jpg";
+import party10 from "../assets/photos/unnamed (30).jpg";
+import party11 from "../assets/photos/unnamed (32).jpg";
+import party12 from "../assets/photos/unnamed (33).jpg";
+import party13 from "../assets/photos/unnamed (34).jpg";
+import party14 from "../assets/photos/unnamed (36).jpg";
+import party15 from "../assets/photos/unnamed (38).jpg";
+import party16 from "../assets/photos/unnamed (39).jpg";
+import party17 from "../assets/photos/unnamed (40).jpg";
+import party18 from "../assets/photos/unnamed (41).jpg";
 
-import party19 from "../../public/sssss.jpg";
-import party20 from "../../public/unnamed (13).jpg";
-import party21 from "../../public/unnamed (35).jpg";
-import party22 from "../../public/unnamed (37).jpg";
-import party23 from "../../public/unnamed (39)dd.jpg";
-import party24 from "../../public/unnamed3.jpg";
+import party19 from "../assets/photos/sssss.jpg";
+import party20 from "../assets/photos/unnamed (13).jpg";
+import party21 from "../assets/photos/unnamed (35).jpg";
+import party22 from "../assets/photos/unnamed (37).jpg";
+import party23 from "../assets/photos/unnamed (39)dd.jpg";
+import party24 from "../assets/photos/unnamed3.jpg";
 
 export const partyPhotos = [
 	{ src: barParty, alt: "Guests celebrating together in a bar with green lighting." },

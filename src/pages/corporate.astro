@@ -1,5 +1,6 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
+import { serviceSchema } from "../data/business";
 import ServicePage from "../components/ServicePage.astro";
 import ContactCta from "../components/ContactCta.astro";
 import CorporateReel from "../components/CorporateReel.astro";
@@ -8,7 +9,7 @@ import PhotoCarousel from "../components/PhotoCarousel.astro";
 import { corporatePhotos } from "../data/corporatePhotos";
 ---
 
-<SiteLayout title="Connecticut Corporate Event DJ | DJ Rachel Lynch" description="DJ and event-host services for corporate events, brand activations, grand openings, company celebrations, and galas.">
+<SiteLayout schema={[serviceSchema("corporate", Astro.site!)]} title="Connecticut Corporate Event DJ | DJ Rachel Lynch" description="DJ and event-host services for corporate events, brand activations, grand openings, company celebrations, and galas.">
 	<ServicePage
 		eyebrow="Connecticut Corporate + brand events"
 		title="Your brand,<br /><em>your crowd,</em><br />my energy."

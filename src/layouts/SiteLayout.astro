@@ -7,9 +7,11 @@ import SocialLinks from "../components/SocialLinks.astro";
 interface Props {
 	title: string;
 	description: string;
+	/** Page-specific schema.org nodes, added to the site-wide structured data. */
+	schema?: Record<string, unknown>[];
 }
 
-const { title, description } = Astro.props;
+const { title, description, schema } = Astro.props;
 const currentPath = Astro.url.pathname;
 const links = [
 	{ label: "Weddings", href: "/weddings/" },
@@ -30,7 +32,7 @@ const contactHref = currentPath === "/" ? "#contact" : "/#contact";
 		<meta name="theme-color" content="#f7f4ef" />
 		<meta name="generator" content={Astro.generator} />
 		<Seo {title} {description} />
-		<Schema />
+		<Schema {title} {description} nodes={schema} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	</head>
 	<body>

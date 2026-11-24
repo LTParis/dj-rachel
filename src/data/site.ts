@@ -1,6 +1,6 @@
-import weddingPhoto from "../../public/wedding-original-35.jpg";
-import corporatePhoto from "../../public/1 corp.jpg";
-import privatePartyPhoto from "../../public/private-bar-party.jpg";
+import weddingPhoto from "../assets/photos/wedding-original-35.jpg";
+import corporatePhoto from "../assets/photos/1 corp.jpg";
+import privatePartyPhoto from "../assets/photos/private-bar-party.jpg";
 
 export const serviceCards = [
 	{

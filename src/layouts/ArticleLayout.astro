@@ -1,8 +1,24 @@
 ---
 import SiteLayout from "./SiteLayout.astro";
 const { frontmatter } = Astro.props;
+const site = Astro.site!;
+const url = new URL(Astro.url.pathname, site).href;
+const articleSchema = {
+	"@type": "BlogPosting",
+	"@id": `${url}#article`,
+	headline: frontmatter.title,
+	description: frontmatter.description,
+	url,
+	mainEntityOfPage: { "@id": `${url}#webpage` },
+	...(frontmatter.date && { datePublished: frontmatter.date }),
+	...(frontmatter.updated && { dateModified: frontmatter.updated }),
+	...(frontmatter.topic && { articleSection: frontmatter.topic }),
+	author: { "@id": new URL("/#rachel", site).href },
+	publisher: { "@id": new URL("/#organization", site).href },
+	inLanguage: "en-US",
+};
 ---
-<SiteLayout title={`${frontmatter.title} | DJ Rachel Lynch`} description={frontmatter.description}>
+<SiteLayout title={`${frontmatter.title} | DJ Rachel Lynch`} description={frontmatter.description} schema={[articleSchema]}>
 	<main id="main" class="page-width article">
 		<a class="button" href="/writing/">← All blogs</a>
 		<header>

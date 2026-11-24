@@ -1,13 +1,28 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
 import { Image } from "astro:assets";
-import rachelPortrait from "../../public/485803166_3118932788254150_7100244311701559589_n.jpg";
+import rachelPortrait from "../assets/photos/485803166_3118932788254150_7100244311701559589_n.jpg";
 import ContactCta from "../components/ContactCta.astro";
+
+const site = Astro.site!;
+// Structured data for the homepage sizzle reel. uploadDate is when the reel was first published on this site.
+const reelSchema = {
+	"@type": "VideoObject",
+	"@id": new URL("/#sizzle-reel", site).href,
+	name: "DJ Rachel wedding and event sizzle reel",
+	description: "Highlights from weddings and events with DJ Rachel Lynch.",
+	thumbnailUrl: new URL("/homepage-sizzle-poster.jpg", site).href,
+	contentUrl: new URL("/homepage-sizzle-reel.mp4", site).href,
+	uploadDate: "2026-11-24T01:18:01Z",
+	duration: "PT53S",
+	publisher: { "@id": new URL("/#organization", site).href },
+};
 import ReviewHighlights from "../components/ReviewHighlights.astro";
 import { serviceCards } from "../data/site";
 ---
 
 <SiteLayout
+	schema={[reelSchema]}
 	title="DJ Rachel Lynch | Connecticut Wedding & Event DJ"
 	description="DJ Rachel Lynch brings personalized DJ and MC services to weddings, corporate events, and private celebrations in Connecticut and across the Northeast."
 >
@@ -19,7 +34,8 @@ import { serviceCards } from "../data/site";
 				<h1 class="hero-title">Your vibe.<br /><em>Your way.</em></h1>
 			</div>
 			<div class="hero-media">
-				<video class="hero-reel" autoplay muted loop controls playsinline preload="auto" poster="/homepage-sizzle-poster.jpg" width="1080" height="1920" aria-label="DJ Rachel wedding and event sizzle reel">
+				<video class="hero-reel" autoplay muted loop controls playsinline preload="metadata" poster="/homepage-sizzle-poster.jpg" width="720" height="1280" aria-label="DJ Rachel wedding and event sizzle reel">
+					<source src="/homepage-sizzle-reel-mobile.mp4" type="video/mp4" media="(max-width: 700px)" />
 					<source src="/homepage-sizzle-reel.mp4" type="video/mp4" />
 					<p>Your browser doesn’t support embedded video. <a class="button" href="/homepage-sizzle-reel.mp4">Watch the sizzle reel</a>.</p>
 				</video>

@@ -1,24 +1,24 @@
-import corporateEvent from "../../public/1 corp.jpg";
-import retailEvent from "../../public/corporate-retail-event.jpg";
-import photo15 from "../../public/corporate-event-15.jpg";
-import photo16 from "../../public/corporate-original-16.jpg";
-import photo17 from "../../public/unnamed (17).jpg";
-import photo18 from "../../public/corporate-original-18.jpg";
-import photo19 from "../../public/corporate-event-19.jpg";
-import photo20 from "../../public/corporate-original-20.jpg";
-import photo21 from "../../public/corporate-original-21.jpg";
-import photo22 from "../../public/corporate-original-22.jpg";
-import photo27 from "../../public/unnamed (27).jpg";
-import photo29 from "../../public/unnamed (29).jpg";
-import photo30 from "../../public/corporate-original-30.jpg";
-import photo32 from "../../public/corporate-original-32.jpg";
-import photo33 from "../../public/corporate-original-33.jpg";
-import photo34 from "../../public/corporate-original-34.jpg";
-import photo4 from "../../public/corporate-event-4.jpg";
-import photo9 from "../../public/corporate-event-9.jpg";
-import photo10 from "../../public/corporate-event-10.jpg";
-import photo11 from "../../public/corporate-event-11.jpg";
-import photo13 from "../../public/corporate-event-13.jpg";
+import corporateEvent from "../assets/photos/1 corp.jpg";
+import retailEvent from "../assets/photos/corporate-retail-event.jpg";
+import photo15 from "../assets/photos/corporate-event-15.jpg";
+import photo16 from "../assets/photos/corporate-original-16.jpg";
+import photo17 from "../assets/photos/unnamed (17).jpg";
+import photo18 from "../assets/photos/corporate-original-18.jpg";
+import photo19 from "../assets/photos/corporate-event-19.jpg";
+import photo20 from "../assets/photos/corporate-original-20.jpg";
+import photo21 from "../assets/photos/corporate-original-21.jpg";
+import photo22 from "../assets/photos/corporate-original-22.jpg";
+import photo27 from "../assets/photos/unnamed (27).jpg";
+import photo29 from "../assets/photos/unnamed (29).jpg";
+import photo30 from "../assets/photos/corporate-original-30.jpg";
+import photo32 from "../assets/photos/corporate-original-32.jpg";
+import photo33 from "../assets/photos/corporate-original-33.jpg";
+import photo34 from "../assets/photos/corporate-original-34.jpg";
+import photo4 from "../assets/photos/corporate-event-4.jpg";
+import photo9 from "../assets/photos/corporate-event-9.jpg";
+import photo10 from "../assets/photos/corporate-event-10.jpg";
+import photo11 from "../assets/photos/corporate-event-11.jpg";
+import photo13 from "../assets/photos/corporate-event-13.jpg";
 
 // Rachel-approved event photos; descriptions use only visible details.
 export const corporatePhotos = [

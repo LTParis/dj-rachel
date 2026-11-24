@@ -2,7 +2,7 @@
 
 The “Real weddings. Real moments.” panel sits below the “More than music” copy. It has six equal thumbnail slots, arranged in three columns on laptops and two columns on smaller screens. Unfilled slots say “Video coming soon”; they are not pretend play buttons.
 
-Upload Rachel-approved testimonial clips and thumbnail posters to `public/` with unique filenames. MP4 encoded as H.264 with AAC audio works across common browsers. Add up to six entries to `src/data/weddingClips.ts`, in the order they should appear:
+Put Rachel-approved testimonial clips in `incoming/` and process each with `npm run media:add -- incoming/<file> wedding-testimonial-07` (see "Photos and video" in `AGENTS.md`). It creates a compressed H.264/AAC MP4 and a poster in `public/` and prints the dimensions to use. Add up to six entries to `src/data/weddingClips.ts`, in the order they should appear:
 
 ```ts
 export const weddingClips: WeddingClip[] = [
@@ -36,4 +36,4 @@ Rachel supplied these six files in chat. They fill slots 1–6 in this order; th
 | 5 | Becky & Zack | `Video_5_under_25MB.mp4` |
 | 6 | Laura & Charlie | `video-output-BDB1CFA4-7D5B-4449-B69A-5BF26BC50C2C-1.mov` |
 
-The published copies use browser-compatible H.264 video and AAC audio with a fast-start MP4 container. HDR recordings are tone-mapped to standard BT.709 color. Full frames, duration, and original audio are preserved; thumbnail posters omit the recordings' black padding. Couple names were supplied by Rachel and are used consistently on thumbnails, accessible labels, and player titles.
+The published copies use browser-compatible H.264 video and AAC audio with a fast-start MP4 container. HDR recordings are tone-mapped to standard BT.709 color. Full frames, duration, and original audio are preserved; thumbnail posters omit the recordings' black padding. Couple names were supplied by Rachel and are used consistently on thumbnails, accessible labels, and player titles. In November 2026 the published copies were re-encoded at 720×900 (from 1080×1350) to cut their size by about 70%; the full-quality versions remain in git history.

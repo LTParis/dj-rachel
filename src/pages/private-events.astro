@@ -1,12 +1,13 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
+import { serviceSchema } from "../data/business";
 import ServicePage from "../components/ServicePage.astro";
 import ContactCta from "../components/ContactCta.astro";
 import PhotoCarousel from "../components/PhotoCarousel.astro";
 import { partyPhotos } from "../data/partyPhotos";
 ---
 
-<SiteLayout title="Connecticut Private Party DJ | DJ Rachel Lynch" description="Make birthdays, anniversaries, reunions, graduations, and private celebrations memorable with DJ Rachel Lynch.">
+<SiteLayout schema={[serviceSchema("private", Astro.site!)]} title="Connecticut Private Party DJ | DJ Rachel Lynch" description="Make birthdays, anniversaries, reunions, graduations, and private celebrations memorable with DJ Rachel Lynch.">
 	<ServicePage
 		eyebrow="Connecticut Private events"
 		title="Your party,<br /><em>your people,</em><br />your way."

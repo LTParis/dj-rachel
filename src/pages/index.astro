@@ -27,13 +27,10 @@ import { serviceCards } from "../data/site";
 				</div>
 			</div>
 			<div class="hero-media">
-				<!-- Placeholder until Rachel approves the sizzle reel. Final: muted, looping
-				     vertical video with a still poster frame that loads first. -->
-				<div class="hero-reel">
-					<svg viewBox="0 0 24 24" width="56" height="56" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M10 8l6 4-6 4z" /></svg>
-					<p class="hero-reel__title">Sizzle reel</p>
-					<p class="hero-reel__note">Rachel's best event clips will play here: a muted loop with a still frame that loads first.</p>
-				</div>
+				<video class="hero-reel" controls playsinline preload="none" poster="/homepage-sizzle-poster.jpg" width="1080" height="1920" aria-label="DJ Rachel wedding and event sizzle reel">
+					<source src="/homepage-sizzle-reel.mp4" type="video/mp4" />
+					<p>Your browser doesn’t support embedded video. <a class="button" href="/homepage-sizzle-reel.mp4">Watch the sizzle reel</a>.</p>
+				</video>
 				<HeroReviews />
 			</div>
 		</div>

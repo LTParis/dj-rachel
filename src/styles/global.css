@@ -279,50 +279,25 @@ h2 em {
 
 .hero-media {
 	position: relative;
-	padding-bottom: 44px;
+	display: grid;
+	gap: 20px;
 }
 
 .hero-reel {
-	display: flex;
-	aspect-ratio: 4 / 5;
-	max-height: 620px;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
-	padding: 24px 24px 140px;
-	border-radius: 28px;
-	background-color: #f4eef1;
-	background-image: repeating-linear-gradient(135deg, rgb(33 27 30 / 5%) 0 2px, transparent 2px 14px);
-	color: var(--muted);
-	text-align: center;
-}
-
-.hero-reel svg {
-	fill: none;
-	stroke: currentColor;
-	stroke-width: 1.6;
-}
-
-.hero-reel__title {
-	margin: 0;
-	color: var(--ink);
-	font-family: var(--display);
-	font-weight: 700;
-}
-
-.hero-reel__note {
-	max-width: 260px;
-	margin: 0;
-	font-size: 0.82rem;
-	line-height: 1.5;
+	display: block;
+	width: min(100%, 320px);
+	height: auto;
+	aspect-ratio: 9 / 16;
+	max-height: 570px;
+	margin-inline: auto;
+	border-radius: 20px;
+	background: #000;
+	object-fit: contain;
 }
 
 .hero-reviews {
-	position: absolute;
-	right: 40px;
-	bottom: 0;
-	left: -28px;
+	position: static;
+	width: 100%;
 	padding: 22px 24px 18px;
 	border-radius: 20px;
 	background: white;
@@ -1132,10 +1107,6 @@ h2 {
 		gap: 40px;
 	}
 
-	.hero-reviews {
-		left: -16px;
-		right: 16px;
-	}
 }
 
 @media (max-width: 740px) {
@@ -1221,21 +1192,6 @@ h2 {
 		font-size: clamp(3.9rem, 15vw, 6rem);
 	}
 
-	.hero-media {
-		padding-bottom: 0;
-	}
-
-	.hero-reel {
-		aspect-ratio: 4 / 3;
-		padding-bottom: 24px;
-	}
-
-	.hero-reviews {
-		position: relative;
-		right: auto;
-		left: auto;
-		margin: -48px 12px 0;
-	}
 
 	.page-hero {
 		min-height: 0;

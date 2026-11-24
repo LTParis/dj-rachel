@@ -1,0 +1,12 @@
+// Cloudflare Workers config: serves the static Astro build in dist/ (no server code).
+// Cloudflare runs `npm run build` and then `npx wrangler deploy` on every push.
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "dj-rachel",
+	"compatibility_date": "2026-11-01",
+	"assets": {
+		"directory": "./dist",
+		"html_handling": "auto-trailing-slash",
+		"not_found_handling": "none"
+	}
+}

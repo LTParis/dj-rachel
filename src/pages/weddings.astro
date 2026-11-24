@@ -4,10 +4,22 @@ import ServicePage from "../components/ServicePage.astro";
 import ContactCta from "../components/ContactCta.astro";
 import WeddingClips from "../components/WeddingClips.astro";
 
-const latestMix = "https://www.mixcloud.com/djrachellynch/dj-rachel-wedding-reception-rewind-edm-festival-vibes-2hrs/";
-const publicMixPath = "/djrachellynch/dj-rachel-wedding-reception-rewind-meredith-caleb-part-1/";
-const publicMix = `https://www.mixcloud.com${publicMixPath}`;
-const mixPlayer = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=${encodeURIComponent(publicMixPath)}`;
+const weddingMixes = [
+	{
+		path: "/djrachellynch/dj-rachel-wedding-reception-rewind-meredith-caleb-part-1/",
+		title: "Mixcloud player for Meredith and Caleb’s wedding reception mix",
+		label: "Open Meredith and Caleb’s mix on Mixcloud",
+	},
+	{
+		path: "/djrachellynch/dj-rachel-wedding-reception-rewind-edm-festival-vibes-2hrs/",
+		title: "Mixcloud player for DJ Rachel’s EDM Festival Vibes wedding reception mix",
+		label: "Latest wedding mix · EDM Festival Vibes",
+	},
+].map((mix) => ({
+	...mix,
+	url: `https://www.mixcloud.com${mix.path}`,
+	player: `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=${encodeURIComponent(mix.path)}`,
+}));
 ---
 
 <SiteLayout title="Connecticut Wedding DJ & MC | DJ Rachel Lynch" description="Plan a wedding soundtrack that feels like you with DJ Rachel Lynch. Wedding DJ and MC services, ceremony audio, and thoughtful event coordination.">
@@ -63,18 +75,21 @@ const mixPlayer = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&
 				<div>
 					<p class="eyebrow">On Mixcloud</p>
 					<h2 id="wedding-mix">Hear a <em>real wedding</em> set.</h2>
-					<p>Press play for a set from Meredith and Caleb’s reception.</p>
-					<a class="button wedding-mix-link" href={latestMix}>Latest wedding mix · EDM Festival Vibes</a>
+					<p>Press play and get a taste of the energy, creativity, and mixing I bring to every celebration.</p>
 				</div>
-				<div class="wedding-mix-player">
-					<iframe
-						src={mixPlayer}
-						title="Mixcloud player for Meredith and Caleb’s wedding reception mix"
-						height="120"
-						loading="lazy"
-						allow="autoplay"
-					></iframe>
-					<a class="button wedding-mix-link" href={publicMix}>Open Meredith and Caleb’s mix on Mixcloud</a>
+				<div class="wedding-mix-players">
+					{weddingMixes.map((mix) => (
+						<div class="wedding-mix-player">
+							<iframe
+								src={mix.player}
+								title={mix.title}
+								height="120"
+								loading="lazy"
+								allow="autoplay"
+							></iframe>
+							<a class="button wedding-mix-link" href={mix.url}>{mix.label}</a>
+						</div>
+					))}
 				</div>
 			</div>
 		</section>
@@ -102,8 +117,15 @@ const mixPlayer = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&
 		padding-block: 0;
 	}
 
+	.wedding-mix-players {
+		display: grid;
+		min-width: 0;
+		gap: 28px;
+	}
+
 	.wedding-mix-player {
 		display: grid;
+		min-width: 0;
 		gap: 12px;
 	}
 

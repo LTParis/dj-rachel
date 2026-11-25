@@ -7,7 +7,7 @@ This is your website's first draft. You don't need to know how to code. You ask 
 | What | Where | What it's for |
 | --- | --- | --- |
 | The website's files | [github.com/LTParis/dj-rachel](https://github.com/LTParis/dj-rachel) (public: anyone can read it, only you and Lou can change it) | Where your site lives. ChatGPT makes its edits here. |
-| The temporary website | [dj-rachel.vercel.app](https://dj-rachel.vercel.app) | What the draft looks like right now. Share it only with people you trust. |
+| Your website | [djrachellynch.com](https://djrachellynch.com) | What the draft looks like right now. Search engines can't find it yet; share it only with people you trust until you approve the final version. |
 | ChatGPT (Codex) | [chatgpt.com/codex](https://chatgpt.com/codex) | Where you ask for changes. |
 
 ## Step 1: accept your GitHub invitation (one time)
@@ -60,10 +60,10 @@ Please don't upload files to the website's main page on GitHub with **Add files 
 
 You can publish your own changes. Lou can also review them if you'd like a second look.
 
-1. On the pull request page, wait a minute for the **Vercel** check. Tap its **Preview** link (or **Details**) to see your change before it goes live.
+1. On the pull request page, wait a couple of minutes for the **Cloudflare** check. Tap its preview link (or **Details**) to see your change before it goes live.
 2. Not quite right? Go back to the same Codex task and ask for changes; the pull request updates on its own.
 3. Happy with it? Scroll to the comment box at the bottom of the pull request, type **makeitso**, and tap **Comment**.
-4. A rocket appears on your comment while it checks the site. About a minute later, a reply says **Published**, and two minutes after that the change is on [dj-rachel.vercel.app](https://dj-rachel.vercel.app).
+4. A rocket appears on your comment while it checks the site. About a minute later, a reply says **Published**, and a few minutes after that the change is on [djrachellynch.com](https://djrachellynch.com).
 
 If the reply says it wasn't published, nothing on the website changed. Tell Lou.
 
@@ -71,8 +71,8 @@ If something goes wrong after a merge, tell Lou: every earlier version is saved 
 
 ## Good to know
 
-- The temporary website and the website's files are both public. Don't put private client info, passwords, or anything you wouldn't want shared on the site.
-- Search engines are blocked while the site is a draft. The planned address is `djrachellynch.com`, and it will only be connected after you approve the finished site.
+- The website and its files are both public. Don't put private client info, passwords, or anything you wouldn't want shared on the site.
+- Search engines are blocked while the site is a draft. The site is already at `djrachellynch.com`, but Google and others won't list it until you approve the finished site.
 - The "Working preview" banner at the top stays until you approve the final words and photos.
 - The Reviews page uses the Google and Facebook reviews you shared, each labeled with its source and rating. A review posted on both platforms is shown once with both sources listed.
 

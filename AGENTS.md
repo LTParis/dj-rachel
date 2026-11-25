@@ -6,7 +6,7 @@
 - Keep review source, reviewer, date, and source-provided rating/recommendation together. Never infer ratings, merge reviewer identities, add review links that were not supplied, or add Review/AggregateRating structured data for first-party testimonials.
 - Re-import the review source with `npm run reviews:import -- <source.json>`; do not edit the generated `src/data/reviews.json` by hand.
 - Keep pages usable on mobile, keyboard accessible, and free of unnecessary client-side JavaScript or third-party trackers.
-- Do not publish, connect the custom domain, or change hosting settings without the site owner's approval.
+- Do not launch the site publicly (remove the draft notice, `noindex`, or robots blocking), change the custom domain, or change hosting settings without the site owner's approval.
 - Run `npm run build` after code changes.
 
 ## Photos and video (follow every time media is added)
@@ -36,9 +36,9 @@ Large photos and video are what make the site slow and use up hosting space, so 
 - Never commit or push directly to `main`. Work on a new branch named for the change (for example `rachel/update-about-copy`) and open a pull request into `main`.
 - End every pull request description with: "To publish this change, comment `makeitso` on this pull request."
 - In the pull request, list what changed in plain language, note anything you left out or need Rachel to confirm, and mention the preview link if the host posts one.
-- `main` deploys to the temporary preview site, and each pull request gets its own Vercel preview link. Merging is a person's decision, never the agent's: Rachel or Lou publishes by commenting `makeitso` on the pull request, which runs `.github/workflows/makeitso.yml` (build check, then merge).
+- `main` deploys to https://djrachellynch.com on Cloudflare Workers, and each pull request gets its own Cloudflare preview link. Merging is a person's decision, never the agent's: Rachel or Lou publishes by commenting `makeitso` on the pull request, which runs `.github/workflows/makeitso.yml` (build check, then merge).
 - Use Node.js 22.23.4 or newer. Run `npm install` once, then `npm run build` before opening a pull request; do not open one if the build fails.
-- Do not change hosting settings, DNS, the custom domain, the `noindex`/robots launch settings, repository access, or GitHub/Vercel configuration.
+- Do not change hosting settings, DNS, the custom domain, the `noindex`/robots launch settings, repository access, or GitHub/Cloudflare configuration.
 - The repository is public. Never add passwords, tokens, private client details, or personal phone numbers/addresses to it.
 - If Rachel asks for something that conflicts with these rules (for example, a made-up stat or an unapproved photo), explain the rule and ask her for the real detail instead.
 

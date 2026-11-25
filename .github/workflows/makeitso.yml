@@ -1,7 +1,7 @@
 # Publish a pull request when Rachel or Lou comments "makeitso" on it.
 #
 # Flow: comment -> check who asked -> build the pull request -> merge it into
-# main -> Vercel deploys main to the temporary site.
+# main -> Cloudflare builds main and deploys it to djrachellynch.com.
 #
 # Security: this repository is public, so anyone can comment. Only the logins
 # listed in the check job's `if` can trigger a merge, pull requests from forks are refused, and
@@ -83,7 +83,7 @@ jobs:
           # GitHub's auto-delete skips merges made by Actions, so tidy up here.
           branch=$(gh pr view "$PR" --repo "$REPO" --json headRefName --jq .headRefName)
           gh api -X DELETE "repos/$REPO/git/refs/heads/$branch" || true
-          gh pr comment "$PR" --repo "$REPO" --body "Published. The change will be on https://dj-rachel.vercel.app in about two minutes."
+          gh pr comment "$PR" --repo "$REPO" --body "Published. The change will be on https://djrachellynch.com in a few minutes."
 
   report-failure:
     needs: [check, publish]

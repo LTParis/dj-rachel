@@ -72,18 +72,6 @@ a {
 	transform: translateY(0);
 }
 
-.draft-ribbon {
-	padding: 7px 16px;
-	background: var(--ink);
-	color: white;
-	text-align: center;
-	font-size: 0.68rem;
-	font-family: var(--display);
-	font-weight: 800;
-	letter-spacing: 0.14em;
-	text-transform: uppercase;
-}
-
 .site-header {
 	position: relative;
 	z-index: 5;

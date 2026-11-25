@@ -18,7 +18,7 @@ const slides = await Promise.all(photos.map(async (photo) => {
 
 <photo-carousel class="page-hero__art photo-carousel" role="region" aria-label={label} aria-roledescription="carousel">
 	{slides.length ? slides.map((photo, index) => (
-		<img src={photo.src} alt={photo.alt} hidden={index !== 0} width={photo.width} height={photo.height} loading={index === 0 ? "eager" : "lazy"} />
+		<img src={photo.src} alt={photo.alt} class:list={{ "is-active": index === 0 }} hidden={index !== 0} aria-hidden={index !== 0 ? "true" : undefined} width={photo.width} height={photo.height} loading={index === 0 ? "eager" : "lazy"} decoding="async" />
 	)) : <p class="photo-carousel__placeholder">{emptyMessage}</p>}
 	{galleryBase && slides.length > 0 && <a class="photo-carousel__gallery" href={`${galleryBase}1/`} aria-label="Open wedding photo gallery"><span>View photo gallery ↗</span></a>}
 	{slides.length > 1 && <div class="photo-carousel__controls">
@@ -34,15 +34,56 @@ const slides = await Promise.all(photos.map(async (photo) => {
 			const photos = [...this.querySelectorAll("img")];
 			if (photos.length < 2) return;
 			let index = 0;
-			let paused = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+			let requestedIndex = 0;
+			let changing = false;
+			let animation: Animation | undefined;
+			const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+			let paused = motion.matches;
 			const gallery = this.querySelector<HTMLAnchorElement>(".photo-carousel__gallery");
 			const pause = this.querySelector<HTMLButtonElement>("[data-pause]")!;
 			const updatePause = () => { pause.textContent = paused ? "Play slideshow" : "Pause slideshow"; };
+			const changePhoto = async () => {
+				if (changing) return;
+				changing = true;
+				try {
+					while (index !== requestedIndex && this.isConnected) {
+						const target = requestedIndex;
+						const current = photos[index];
+						const next = photos[target];
+						next.loading = "eager";
+						try {
+							await next.decode();
+						} catch {
+							if (!next.naturalWidth) { requestedIndex = index; return; }
+						}
+						if (!this.isConnected) return;
+						if (target !== requestedIndex) continue;
+						// Keep the current photo opaque until the decoded replacement covers it.
+						next.hidden = false;
+						next.classList.add("is-active");
+						next.style.zIndex = "2";
+						if (!motion.matches) {
+							animation = next.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 450, easing: "ease-in-out" });
+							await animation.finished.catch(() => {});
+						}
+						if (!this.isConnected) return;
+						current.hidden = true;
+						current.setAttribute("aria-hidden", "true");
+						current.classList.remove("is-active");
+						next.removeAttribute("aria-hidden");
+						next.style.zIndex = "";
+						animation?.cancel();
+						animation = undefined;
+						index = target;
+						if (gallery) gallery.href = gallery.href.replace(/\d+\/$/, `${index + 1}/`);
+					}
+				} finally {
+					changing = false;
+				}
+			};
 			const show = (offset: number) => {
-				photos[index].hidden = true;
-				index = (index + offset + photos.length) % photos.length;
-				photos[index].hidden = false;
-				if (gallery) gallery.href = gallery.href.replace(/\d+\/$/, `${index + 1}/`);
+				requestedIndex = (requestedIndex + offset + photos.length) % photos.length;
+				void changePhoto();
 			};
 			this.querySelector("[data-previous]")?.addEventListener("click", () => show(-1));
 			this.querySelector("[data-next]")?.addEventListener("click", () => show(1));
@@ -51,7 +92,7 @@ const slides = await Promise.all(photos.map(async (photo) => {
 			const timer = window.setInterval(() => {
 				if (!paused && !document.hidden && !this.matches(":hover, :focus-within")) show(1);
 			}, 5000);
-			this.cleanup = () => window.clearInterval(timer);
+			this.cleanup = () => { window.clearInterval(timer); animation?.cancel(); };
 		}
 		cleanup?: () => void;
 		disconnectedCallback() { this.cleanup?.(); }
@@ -60,12 +101,14 @@ const slides = await Promise.all(photos.map(async (photo) => {
 </script>
 
 <style>
-	.photo-carousel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+	.photo-carousel { background: #000; isolation: isolate; }
+	.photo-carousel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; }
+	.photo-carousel img.is-active { opacity: 1; z-index: 1; }
 	.photo-carousel img[hidden] { display: none; }
 	.photo-carousel__placeholder { padding: 24px; text-align: center; font-weight: 700; }
-	.photo-carousel__gallery { position: absolute; inset: 0; color: white; }
+	.photo-carousel__gallery { position: absolute; inset: 0; z-index: 3; color: white; }
 	.photo-carousel__gallery span { position: absolute; top: 12px; right: 12px; padding: 8px 12px; background: #000; font-weight: 700; }
 	.photo-carousel__gallery:focus-visible { outline: 4px solid var(--pink); outline-offset: -4px; }
-	.photo-carousel__controls { position: absolute; inset: auto 12px 12px; display: flex; justify-content: center; gap: 8px; }
+	.photo-carousel__controls { position: absolute; inset: auto 12px 12px; z-index: 4; display: flex; justify-content: center; gap: 8px; }
 	.photo-carousel__controls button { padding: 10px 14px; border: 2px solid white; background: #191216; color: white; cursor: pointer; font: inherit; }
 </style>

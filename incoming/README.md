@@ -49,5 +49,8 @@ These files were in the repository but weren't used on any page. They were moved
 | `unnamed (9).jpg` | public/ (not used on any page) |
 | `unnamed.jpg` | public/ (not used on any page) |
 | `unnamed.webp` | top folder (uploaded but never added to a page) |
-| `website_enhanced.mov` | public/ (uploaded to `main` on Nov 25, 2026; 23.8 MB .mov, too large to publish as-is. Rachel: where should it go and what should it replace?) |
 | `wedding-gallery-22.jpg` | public/ (not used on any page) |
+
+## Processed for the site
+
+Rachel approved `website_enhanced.mov` for the Corporate sizzle reel. A 64-pixel crop from the top removes the CapCut logo throughout the clip. The cropped video was processed with `media:add` as `public/corporate-sizzle-reel.mp4` (720×900, H.264/AAC), with its poster taken from the cropped footage. The raw upload was removed after processing; it remains available in git history.

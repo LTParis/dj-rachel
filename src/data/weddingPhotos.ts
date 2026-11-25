@@ -47,6 +47,8 @@ import upload46 from "../assets/photos/wedding-upload-46.jpg";
 import upload47 from "../assets/photos/wedding-upload-47.webp";
 
 import receptionRoom from "../assets/photos/unnamed (31).jpg";
+import warmReceptionRoom from "../assets/photos/unnamed (32).jpg";
+import warmReceptionLighting from "../assets/photos/unnamed (33).jpg";
 
 export const weddingPhotos = [
 	{ src: celebration, alt: "A bride and groom singing and celebrating with guests on a packed wedding dance floor." },
@@ -96,4 +98,6 @@ export const weddingPhotos = [
 	{ src: upload46, alt: "Rachel taking a selfie with a group of wedding guests." },
 	{ src: upload47, alt: "A bride and wedding guests dancing together in colorful party glasses." },
 	{ src: receptionRoom, alt: "A reception room with a white DJ setup, red uplighting, exposed beams, and tall windows." },
+	{ src: warmReceptionRoom, alt: "A white DJ booth in a wedding reception room illuminated with orange and yellow uplighting." },
+	{ src: warmReceptionLighting, alt: "Orange and yellow beams of light across a wedding reception room’s white walls and windows." },
 ];

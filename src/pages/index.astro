@@ -39,6 +39,10 @@ import { serviceCards } from "../data/site";
 					<source src="/homepage-sizzle-reel.mp4" type="video/mp4" />
 					<p>Your browser doesn’t support embedded video. <a class="button" href="/homepage-sizzle-reel.mp4">Watch the sizzle reel</a>.</p>
 				</video>
+				<button class="button button--small hero-sound-toggle" type="button" data-hero-sound aria-label="Turn video sound on" hidden>
+					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 5-5 4H3v6h3l5 4z" /><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14" /></svg>
+					<span>Sound on</span>
+				</button>
 			</div>
 			<div class="hero-copy">
 				<p class="hero-lead"><strong>I'm DJ Rachel, an open-format DJ and MC bringing creative, high-energy entertainment to weddings, corporate events, private parties, and moments worth celebrating throughout Connecticut and the Northeast.</strong></p>
@@ -136,8 +140,36 @@ import { serviceCards } from "../data/site";
 	</main>
 </SiteLayout>
 
+<script>
+	const reel = document.querySelector<HTMLVideoElement>(".hero-reel");
+	const sound = document.querySelector<HTMLButtonElement>("[data-hero-sound]");
+	const label = sound?.querySelector("span");
+	if (reel && sound && label) {
+		const updateSound = () => {
+			const audible = !reel.muted && reel.volume > 0;
+			label.textContent = audible ? "Sound off" : "Sound on";
+			sound.setAttribute("aria-label", audible ? "Turn video sound off" : "Turn video sound on");
+		};
+		sound.addEventListener("click", () => {
+			if (reel.muted || reel.volume === 0) {
+				reel.muted = false;
+				if (reel.volume === 0) reel.volume = 1;
+				void reel.play().catch(() => {});
+			} else {
+				reel.muted = true;
+			}
+			updateSound();
+		});
+		reel.addEventListener("volumechange", updateSound);
+		updateSound();
+		sound.hidden = false;
+	}
+</script>
 
 <style>
+	.hero-media { display: grid; gap: 12px; }
+	.hero-sound-toggle { justify-self: end; gap: 8px; cursor: pointer; }
+	.hero-sound-toggle[hidden] { display: none; }
 	.hero-title { text-transform: none; }
 	.hero-copy .hero-lead { margin-bottom: 20px; font-family: var(--body); font-size: 1.1rem; font-weight: 700; }
 	.hero-copy .hero-lead strong { font: inherit; }

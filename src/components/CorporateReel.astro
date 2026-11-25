@@ -6,7 +6,7 @@ import { corporateReel } from "../data/corporateReel";
 	<h3 id="corporate-reel-heading">Corporate sizzle reel</h3>
 	{corporateReel ? (
 		<video controls playsinline preload="none" poster={corporateReel.poster} width={corporateReel.width} height={corporateReel.height} aria-labelledby="corporate-reel-heading">
-			<source src={corporateReel.src} />
+			<source src={corporateReel.src} type="video/mp4" />
 			<p>Your browser doesn’t support embedded video. <a href={corporateReel.src}>Watch the corporate sizzle reel</a>.</p>
 		</video>
 	) : (

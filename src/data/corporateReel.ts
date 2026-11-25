@@ -5,6 +5,10 @@ interface CorporateReel {
 	height: number;
 }
 
-// Set this to Rachel's approved corporate reel when supplied.
-// Use public/ assets, for example { src: "/corporate-reel.mp4", poster: "/corporate-reel.jpg", width: 1080, height: 1920 }.
-export const corporateReel: CorporateReel | null = null;
+// Rachel-approved Corporate reel, cropped to remove the CapCut watermark.
+export const corporateReel: CorporateReel | null = {
+	src: "/corporate-sizzle-reel.mp4",
+	poster: "/corporate-sizzle-reel-poster.jpg",
+	width: 720,
+	height: 900,
+};

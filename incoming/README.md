@@ -49,4 +49,5 @@ These files were in the repository but weren't used on any page. They were moved
 | `unnamed (9).jpg` | public/ (not used on any page) |
 | `unnamed.jpg` | public/ (not used on any page) |
 | `unnamed.webp` | top folder (uploaded but never added to a page) |
+| `website_enhanced.mov` | public/ (uploaded to `main` on Nov 25, 2026; 23.8 MB .mov, too large to publish as-is. Rachel: where should it go and what should it replace?) |
 | `wedding-gallery-22.jpg` | public/ (not used on any page) |

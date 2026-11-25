@@ -1,5 +1,6 @@
 // Cloudflare Workers config: serves the static Astro build in dist/ (no server code).
-// Cloudflare runs `npm run build` and then `npx wrangler deploy` on every push.
+// Cloudflare runs `npm run build`, then `npx wrangler deploy` on pushes to main
+// and `npx wrangler preview` on other branches and pull requests.
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "dj-rachel",
@@ -8,5 +9,7 @@
 		"directory": "./dist",
 		"html_handling": "auto-trailing-slash",
 		"not_found_handling": "none"
-	}
+	},
+	// Required for per-branch and pull request previews (`npx wrangler preview`).
+	"previews": {}
 }

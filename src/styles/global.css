@@ -841,6 +841,7 @@ h2 {
 
 .contact-cta__inner {
 	display: flex;
+	flex-wrap: wrap;
 	min-height: 310px;
 	align-items: center;
 	justify-content: space-between;
@@ -865,7 +866,16 @@ h2 {
 }
 
 .contact-cta__action {
-	max-width: 320px;
+	width: min(100%, 340px);
+	flex-shrink: 0;
+}
+
+.contact-cta__action .button {
+	width: 100%;
+	min-height: clamp(64px, 6vw, 88px);
+	padding: 18px 32px;
+	font-size: clamp(1.05rem, 1.7vw, 1.4rem);
+	line-height: 1.25;
 }
 
 .contact-cta__action p {
@@ -1149,19 +1159,16 @@ h2 {
 	color: #fff;
 }
 
-.about-story__inner {
-	max-width: 760px;
-}
-
 .about-story h2 {
 	margin-bottom: 25px;
 }
 
 .about-story__inner > p {
-	max-width: 650px;
 	margin-bottom: 24px;
 	color: #fff;
+	font-size: 1.1rem;
 	font-weight: 700;
+	line-height: 1.8;
 }
 
 .about-story__inner > p:last-child {

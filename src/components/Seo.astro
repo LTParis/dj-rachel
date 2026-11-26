@@ -7,11 +7,13 @@ interface Props {
 const { title, description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const image = new URL("/social-card.png", Astro.site).href;
+const isWeddingGallery = Astro.url.pathname.startsWith("/weddings/gallery/");
 ---
 
 <title>{title}</title>
 <meta name="description" content={description} />
-<meta name="robots" content="noindex, nofollow" />
+{isWeddingGallery && <meta name="robots" content="noindex, follow" />}
+<link rel="sitemap" type="application/xml" href={new URL("/sitemap-index.xml", Astro.site).href} />
 <link rel="canonical" href={canonical} />
 <meta property="og:type" content="website" />
 <meta property="og:title" content={title} />

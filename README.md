@@ -29,6 +29,7 @@ npm run preview
 - The Corporate sizzle-reel area uses `src/data/corporateReel.ts`; upload an approved video/poster to `public/` and set that configuration to replace its coming-soon panel.
 - Rachel's supplied logo is used in the shared header and footer at `public/dj-rachel-logo.svg`.
 - `src/data/reviews.json` contains the deduplicated Google and Facebook review export. The source export is not committed; regenerate with `npm run reviews:import -- /path/to/dj-rachel-reviews.json`.
+- To add a source file containing only newly verified reviews, use `npm run reviews:import -- /path/to/new-reviews.json --append`. Assign unused numeric source IDs. This preserves existing reviews and import counts, and rejects an already imported text or source ID before writing.
 - `/reviews/` displays the sourced reviews and `/reviews.json` serves their machine-readable data. Reviewer names, source ratings, and recommendations are kept per source; owner replies are excluded.
 - Typography follows the concept: Archivo for headings/navigation and Roboto Slab for body copy. Both are served locally from `@fontsource` packages.
 

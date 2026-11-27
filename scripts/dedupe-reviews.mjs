@@ -1,10 +1,12 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
-const [inputFile, outputFile = "src/data/reviews.json"] = process.argv.slice(2);
+const args = process.argv.slice(2);
+const append = args.includes("--append");
+const [inputFile, outputFile = "src/data/reviews.json"] = args.filter((arg) => arg !== "--append");
 
 if (!inputFile) {
-	throw new Error("Usage: node scripts/dedupe-reviews.mjs <source.json> [output.json]");
+	throw new Error("Usage: node scripts/dedupe-reviews.mjs <source.json> [output.json] [--append]");
 }
 
 const sourceRecords = JSON.parse(await readFile(resolve(inputFile), "utf8"));
@@ -83,6 +85,33 @@ const output = {
 	},
 	reviews,
 };
+
+if (append) {
+	// New reviews can be imported without the original full export. Preserve every
+	// existing review and its source metadata, including historical empty counts.
+	const previous = JSON.parse(await readFile(resolve(outputFile), "utf8"));
+	const existingSources = new Set(previous.reviews.flatMap((review) =>
+		review.sources.map((source) => source.id),
+	));
+	const existingTexts = new Set(previous.reviews.map((review) => normalize(review.text)));
+	for (const review of output.reviews) {
+		const sourceIds = review.sources.map((source) => source.id);
+		if (existingTexts.has(normalize(review.text)) || new Set(sourceIds).size !== sourceIds.length ||
+			sourceIds.some((id) => existingSources.has(id))) {
+			throw new Error("This review or source ID is already imported. Use the full source export to consolidate duplicate sources.");
+		}
+		for (const id of sourceIds) existingSources.add(id);
+	}
+	output.reviews = [...previous.reviews, ...output.reviews]
+		.sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
+	output.meta.inputRecords += previous.meta.inputRecords;
+	output.meta.includedUniqueReviews = output.reviews.length;
+	output.meta.excludedEmptyRecords += previous.meta.excludedEmptyRecords;
+	output.meta.mergedDuplicateRecords += previous.meta.mergedDuplicateRecords;
+	for (const [source, count] of Object.entries(previous.meta.sourceRecords)) {
+		output.meta.sourceRecords[source] = (output.meta.sourceRecords[source] ?? 0) + count;
+	}
+}
 
 await writeFile(resolve(outputFile), `${JSON.stringify(output, null, 2)}\n`);
 console.log(JSON.stringify(output.meta, null, 2));

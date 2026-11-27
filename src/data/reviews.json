@@ -1,15 +1,32 @@
 {
   "meta": {
-    "inputRecords": 130,
-    "includedUniqueReviews": 108,
+    "inputRecords": 131,
+    "includedUniqueReviews": 109,
     "excludedEmptyRecords": 16,
     "mergedDuplicateRecords": 6,
     "sourceRecords": {
-      "Google": 68,
+      "Google": 69,
       "Facebook": 46
     }
   },
   "reviews": [
+    {
+      "id": "rachel-review-131",
+      "text": "Truly the best of the best! We couldn’t have asked for a better DJ. She was super organized and super on top of everything. She uses the Vibo app which helps you lay out your entire timeline and exactly what you want to happen at each moment of the day. She also was amazing at coordinating with other vendors to make sure everyone had the time they needed. It was about a week before the wedding that we realized catering and DJ were not in sync and she was awesome about helping figure that out. Throughout the night she was also super attentive to us and all of our guests. She made sure we had drinks at dinner and kept us on schedule. Our dance floor wasn’t the most packed since we did have an older crowd but she got everyone pumping and kept them going for most of the night. She truly was so attentive and kind. Couldn’t have asked for a better night!",
+      "reviewer": "Katherine Rein",
+      "sources": [
+        {
+          "id": 131,
+          "platform": "Google",
+          "reviewer": "Katherine Rein",
+          "date": "2026-11-27",
+          "dateIsExact": true,
+          "rating": 5,
+          "recommendation": null
+        }
+      ],
+      "date": "2026-11-27"
+    },
     {
       "id": "rachel-review-1",
       "text": "We’re probably DJ Rachel’s most recent wedding at the time of this writing (my wedding was on 11/6) so look no further and trust when I say this: you should hire her. My wedding had unique cultural elements (a whole tea ceremony among other things) but we communicated a lot to make sure we pulled it off smoothly. And that’s one of the best things about her: communication on every detail. Her playlist app is a godsend and easy to use. The amount of professionalism she exhibited with me and my wife, the photographer and videographer, the officiant, and the venue coordinator was nothing short of impressive from beginning to end. It’s thanks to her that people kept telling us that our wedding was so fun. You won’t regret having Rachel on board for your wedding!",
